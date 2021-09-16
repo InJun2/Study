@@ -8,6 +8,7 @@ public class InputTest1 {
 
 	public static void main(String[] args) {
 		FileInputStream fin = null;
+		String str ="";
 		
 		try {
 			fin = new FileInputStream("C:\\khJava\\fileoutput.txt");
@@ -19,7 +20,7 @@ public class InputTest1 {
 		
 		try {
 			while((var_read = fin.read()) != -1) {
-				System.out.print((char)var_read);
+				str+=(char)var_read;
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -30,6 +31,8 @@ public class InputTest1 {
 				e.printStackTrace();
 			}
 		}
+		
+		System.out.println(str);
 	}
 
 }
