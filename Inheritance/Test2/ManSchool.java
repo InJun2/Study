@@ -1,10 +1,12 @@
 package kr.or.kh02;
 
+import java.util.Scanner;
+
 public class ManSchool extends SChool {
 	private int gis;
 	
 	public String manInfo() {
-		return "±¹¾î : " + getKor() + "¿µ¾î : " + getEng() + "¼öÇĞ : " + getMath() + " ±â¼ú: " + getGis();
+		return "êµ­ì–´ : " + getKor() + "ì˜ì–´ : " + getEng() + "ìˆ˜í•™ : " + getMath() + " ê¸°ìˆ : " + getGis();
 	}
 	
 	public int getGis() {
@@ -13,6 +15,19 @@ public class ManSchool extends SChool {
 
 	public void setGis(int gis) {
 		this.gis = gis;
+	}
+	
+	protected static void inputManSchool(Scanner scanner) {
+		ManSchool manshool = new ManSchool();
+		System.out.print("êµ­ì–´ : ");
+		manshool.setKor(scanner.nextInt());
+		System.out.print("ì˜ì–´ : ");
+		manshool.setEng(scanner.nextInt());
+		System.out.print("ìˆ˜í•™ : ");
+		manshool.setMath(scanner.nextInt());
+		System.out.print("ê¸°ìˆ  : ");
+		manshool.setGis(scanner.nextInt());
+		System.out.println(manshool.manInfo());
 	}
 
 }
