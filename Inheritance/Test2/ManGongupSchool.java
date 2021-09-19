@@ -1,10 +1,12 @@
 package kr.or.kh02;
 
+import java.util.Scanner;
+
 public class ManGongupSchool extends ManSchool {
 	private int gongup;
 
 	public String manGongupInfo() {
-		return "±¹¾î : " + getKor() + "¿µ¾î : " + getEng() + "¼öÇĞ : " + getMath() + " ±â¼ú: " + getGis()+" °ø¾÷: " + getGongup();
+		return "êµ­ì–´ : " + getKor() + "ì˜ì–´ : " + getEng() + "ìˆ˜í•™ : " + getMath() + " ê¸°ìˆ : " + getGis()+" ê³µì—…: " + getGongup();
 	}
 	
 	public int getGongup() {
@@ -15,5 +17,19 @@ public class ManGongupSchool extends ManSchool {
 		this.gongup = gongup;
 	}
 	
+	protected static void inputManGongupSchool(Scanner scanner) {
+		ManGongupSchool mansgongupschool = new ManGongupSchool();
+		System.out.print("êµ­ì–´ : ");
+		mansgongupschool.setKor(scanner.nextInt());
+		System.out.print("ì˜ì–´ : ");
+		mansgongupschool.setEng(scanner.nextInt());
+		System.out.print("ìˆ˜í•™ : ");
+		mansgongupschool.setMath(scanner.nextInt());
+		System.out.print("ê¸°ìˆ  : ");
+		mansgongupschool.setGis(scanner.nextInt());
+		System.out.print("ê³µì—… : ");
+		mansgongupschool.setGongup(scanner.nextInt());
+		System.out.println(mansgongupschool.manGongupInfo());
+	}
 	
 }
