@@ -1,5 +1,7 @@
 package kr.or.kh02;
 
+import java.util.Scanner;
+
 public class WomanSangupSchool extends WomanSchool {
 	private int sangup;
 	
@@ -12,6 +14,21 @@ public class WomanSangupSchool extends WomanSchool {
 	}
 
 	public String womanSangupInfo() {
-		return "±¹¾î : " + getKor() + "¿µ¾î : " + getEng() + "¼öÇĞ : " + getMath() + " °¡Á¤: " + getGajong()+ " »ó¾÷: " + getSangup();
+		return "êµ­ì–´ : " + getKor() + "ì˜ì–´ : " + getEng() + "ìˆ˜í•™ : " + getMath() + " ê°€ì •: " + getGajong()+ " ìƒì—…: " + getSangup();
+	}
+	
+	protected static void inputWomanSangupSchool(Scanner scanner) {
+		WomanSangupSchool womansangupshool = new WomanSangupSchool();
+		System.out.print("êµ­ì–´ : ");
+		womansangupshool.setKor(scanner.nextInt());
+		System.out.print("ì˜ì–´ : ");
+		womansangupshool.setEng(scanner.nextInt());
+		System.out.print("ìˆ˜í•™ : ");
+		womansangupshool.setMath(scanner.nextInt());
+		System.out.print("ê°€ì • : ");
+		womansangupshool.setGajong(scanner.nextInt());
+		System.out.print("ìƒì—… : ");
+		womansangupshool.setSangup(scanner.nextInt());
+		System.out.println(womansangupshool.womanSangupInfo());
 	}
 }
