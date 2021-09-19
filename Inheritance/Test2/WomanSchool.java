@@ -1,10 +1,12 @@
 package kr.or.kh02;
 
+import java.util.Scanner;
+
 public class WomanSchool extends SChool {
 	private int gajong;
 
 	public String womanInfo() {
-		return "±¹¾î : " + getKor() + "¿µ¾î : " + getEng() + "¼öÇĞ : " + getMath() + " °¡Á¤: " + getGajong();
+		return "êµ­ì–´ : " + getKor() + "ì˜ì–´ : " + getEng() + "ìˆ˜í•™ : " + getMath() + " ê°€ì •: " + getGajong();
 	}
 	
 	public void setGajong(int gajong) {
@@ -13,6 +15,19 @@ public class WomanSchool extends SChool {
 	
 	public int getGajong() {
 		return gajong;
+	}
+	
+	protected static void inputWomanSchool(Scanner scanner) {
+		WomanSchool womanshool = new WomanSchool();
+		System.out.print("êµ­ì–´ : ");
+		womanshool.setKor(scanner.nextInt());
+		System.out.print("ì˜ì–´ : ");
+		womanshool.setEng(scanner.nextInt());
+		System.out.print("ìˆ˜í•™ : ");
+		womanshool.setMath(scanner.nextInt());
+		System.out.print("ê°€ì • : ");
+		womanshool.setGajong(scanner.nextInt());
+		System.out.println(womanshool.womanInfo());
 	}
 	
 }
