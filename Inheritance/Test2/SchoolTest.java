@@ -3,89 +3,32 @@ package kr.or.kh02;
 import java.util.Scanner;
 
 public class SchoolTest {
-	
+
 	private static final Scanner scanner = new Scanner(System.in);
-	
+
 	public static void main(String[] args) {
-		while(true) {
+		while (true) {
 			int bunho = selectSchool();
-			if(bunho==1) {
-				inputManSchool();
+			if (bunho == 1) {
+				ManSchool.inputManSchool(scanner);
 			}
-			if(bunho==2) {
-				inputWomanSchool();
+			if (bunho == 2) {
+				WomanSchool.inputWomanSchool(scanner);
 			}
-			if(bunho==3) {
-				inputManGongupSchool();
+			if (bunho == 3) {
+				ManGongupSchool.inputManGongupSchool(scanner);
 			}
-			if(bunho==4) {
-				inputWomanSangupSchool();
+			if (bunho == 4) {
+				WomanSangupSchool.inputWomanSangupSchool(scanner);
 			}
-			
+
 		}
-		
+
 	}
-	
+
 	private static int selectSchool() {
-		System.out.println("1.³²ÀÚÁßÇĞ±³ 2.¿©ÀÚÁßÇĞ±³ 3.³²ÀÚ°ø¾÷°íµîÇĞ±³ 4.¿©ÀÚ»ó¾÷°íµîÇĞ±³");
+		System.out.println("1.ë‚¨ìì¤‘í•™êµ 2.ì—¬ìì¤‘í•™êµ 3.ë‚¨ìê³µì—…ê³ ë“±í•™êµ 4.ì—¬ììƒì—…ê³ ë“±í•™êµ");
 		int bunho = scanner.nextInt();
 		return bunho;
 	}
-	
-	private static void inputManSchool() {
-		ManSchool manshool = new ManSchool();
-		System.out.print("±¹¾î : ");
-		manshool.setKor(scanner.nextInt());
-		System.out.print("¿µ¾î : ");
-		manshool.setEng(scanner.nextInt());
-		System.out.print("¼öÇĞ : ");
-		manshool.setMath(scanner.nextInt());
-		System.out.print("±â¼ú : ");
-		manshool.setGis(scanner.nextInt());
-		System.out.println(manshool.manInfo());
-	}
-	
-	private static void inputWomanSchool() {
-		WomanSchool womanshool = new WomanSchool();
-		System.out.print("±¹¾î : ");
-		womanshool.setKor(scanner.nextInt());
-		System.out.print("¿µ¾î : ");
-		womanshool.setEng(scanner.nextInt());
-		System.out.print("¼öÇĞ : ");
-		womanshool.setMath(scanner.nextInt());
-		System.out.print("°¡Á¤ : ");
-		womanshool.setGajong(scanner.nextInt());
-		System.out.println(womanshool.womanInfo());
-	}
-	
-	private static void inputManGongupSchool() {
-		ManGongupSchool mansgongupschool = new ManGongupSchool();
-		System.out.print("±¹¾î : ");
-		mansgongupschool.setKor(scanner.nextInt());
-		System.out.print("¿µ¾î : ");
-		mansgongupschool.setEng(scanner.nextInt());
-		System.out.print("¼öÇĞ : ");
-		mansgongupschool.setMath(scanner.nextInt());
-		System.out.print("±â¼ú : ");
-		mansgongupschool.setGis(scanner.nextInt());
-		System.out.print("°ø¾÷ : ");
-		mansgongupschool.setGongup(scanner.nextInt());
-		System.out.println(mansgongupschool.manGongupInfo());
-	}
-	
-	private static void inputWomanSangupSchool() {
-		WomanSangupSchool womansangupshool = new WomanSangupSchool();
-		System.out.print("±¹¾î : ");
-		womansangupshool.setKor(scanner.nextInt());
-		System.out.print("¿µ¾î : ");
-		womansangupshool.setEng(scanner.nextInt());
-		System.out.print("¼öÇĞ : ");
-		womansangupshool.setMath(scanner.nextInt());
-		System.out.print("°¡Á¤ : ");
-		womansangupshool.setGajong(scanner.nextInt());
-		System.out.print("»ó¾÷ : ");
-		womansangupshool.setSangup(scanner.nextInt());
-		System.out.println(womansangupshool.womanSangupInfo());
-	}
-
 }
