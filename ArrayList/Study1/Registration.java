@@ -1,6 +1,6 @@
 package Test;
 
-import java.util.HashMap;
+
 import java.util.Scanner;
 
 public class Registration {
@@ -8,37 +8,41 @@ public class Registration {
 	
 	Registration(Person per) {		
 		View.RegistrationView();
-		int select2 = sc.nextInt();
-		if (select2 == 1) {
-			setStudent(per);
-		} if (select2 == 2) {
-			setProfessor(per);
-		} if (select2 == 3) {
-			setManager(per);
-		} if (select2 == 4) {
+		int select = sc.nextInt();
+		boolean selectNum = false;
+		if (select == 1) {
+			selectNum = setStudent(per);
+		} if (select == 2) {
+			selectNum = setProfessor(per);
+		} if (select == 3) {
+			selectNum = setManager(per);
+		} if (select == 4) {
 			return;
-		} else {
-			RuntimeException("Àß¸øµÈ ¹øÈ£ÀÔ´Ï´Ù");
+		} if(!selectNum) {
+			RuntimeException("ì˜ëª»ëœ ë²ˆí˜¸ì…ë‹ˆë‹¤");
 		}
 		
 	}
 	
-	private void setStudent(Person per) {
+	private boolean setStudent(Person per) {
 		Student stu = new Student();
 		stu.setInfo();
 		per.setStu(stu);
+		return true;
 	}
 	
-	private void setProfessor(Person per) {
+	private boolean setProfessor(Person per) {
 		Professor pro = new Professor();
 		pro.setInfo();
 		per.setPro(pro);
+		return true;
 	}
 	
-	private void setManager(Person per) {
+	private boolean setManager(Person per) {
 		Manager man = new Manager();
 		man.setInfo();
 		per.setMan(man);
+		return true;
 	}
 	
 	private void RuntimeException(String str) {
