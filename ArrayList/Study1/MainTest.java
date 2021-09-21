@@ -1,8 +1,6 @@
 package Test;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-import Test.Registration;
 
 public class MainTest {
 	private static final Scanner sc = new Scanner(System.in);
