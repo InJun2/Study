@@ -1,28 +1,71 @@
 package Test;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class FindArrayList {
-	
-	private final Scanner sc = new Scanner(System.in);
-	
-	
+
+	private final Scanner scanner = new Scanner(System.in);
+
 	FindArrayList(Person per) {
+		findSelect(per);
+
+	}
+
+	private void findSelect(Person per) {
 		boolean searchresult = false;
-		System.out.println("√£¿ª ¿Ã∏ß¿ª ¿‘∑¬«ÿ¡÷ººø‰");
-		String name = sc.next();
-		for(int i=0;i<per.list.size();i++) {
-			Person person = per.list.get(i);
-			System.out.println(person.getName(person));
-				
-			searchresult = true;
+		System.out.println("Ï∞æÏùÑ ÏÇ¨ÎûåÏùò Ïú†ÌòïÏùÑ ÏÑ†ÌÉùÌï¥Ï£ºÏÑ∏Ïöî 1.ÌïôÏÉù 2.ÍµêÏàò 3.Í¥ÄÎ¶¨Ïûê");
+		int num = scanner.nextInt();
+		System.out.println("Ï∞æÏùÑ Ïù¥Î¶ÑÏùÑ ÏûÖÎ†•Ìï¥Ï£ºÏÑ∏Ïöî");
+		String name = scanner.next();
+		if (num == 1) {
+			searchresult = findStudent(per, name);
 		}
-		
-		if(!searchresult) {
-			System.out.println("∞Àªˆø° Ω«∆–«œø¥Ω¿¥œ¥Ÿ");
+		if (num == 2) {
+			searchresult = findProfessor(per, name);
+		}
+		if (num == 3) {
+			searchresult = findManager(per, name);
+		}
+		if (num == 4) {
+			return;
+		}
+		if (!searchresult) {
+			System.out.println("Í≤ÄÏÉâÏóê Ïã§Ìå®ÌïòÏòÄÏäµÎãàÎã§");
 		}
 	}
-	
-	
+
+	private boolean findStudent(Person per, String name) {
+		List<Student> student = per.getStu();
+		for (int i = 0; i < student.size(); i++) {
+			if (name.equals(student.get(i).getName())) {
+				per.studentInfo((Student) per.getStu().get(i));
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private boolean findProfessor(Person per, String name) {
+		List<Professor> professor = per.getPro();
+		for (int i = 0; i < professor.size(); i++) {
+			if (name.equals(professor.get(i).getName())) {
+				per.professorInfo((Professor) per.getPro().get(i));
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private boolean findManager(Person per, String name) {
+		List<Manager> manager = per.getMan();
+		for (int i = 0; i < manager.size(); i++) {
+			if (name.equals(manager.get(i).getName())) {
+				per.managerInfo((Manager) per.getMan().get(i));
+				return true;
+			}
+		}
+		return false;
+	}
+
 }
