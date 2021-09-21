@@ -3,28 +3,41 @@ package Test;
 import java.util.ArrayList;
 
 public class Person {	
-
-	private ArrayList<Student> stu;
-	private ArrayList<Manager> man;
-	private ArrayList<Professor> pro;
+	private ArrayList<Student> students = new ArrayList<>();
+	private ArrayList<Manager> managers = new ArrayList<>();
+	private ArrayList<Professor> professors = new ArrayList<>();
 	
-	public ArrayList getStu() {
-		return stu;
+	Person(){
+		
+	}
+	
+	public ArrayList<Student> getStu() {
+		return students;
 	}
 	public void setStu(Student stu) {
-		this.stu.add(stu);
+		students.add(stu);
 	}
-	public ArrayList getMan() {
-		return man;
+	public ArrayList<Manager> getMan() {
+		return managers;
 	}
 	public void setMan(Manager man) {
-		this.man.add(man);
+		managers.add(man);
 	}
-	public ArrayList getPro() {
-		return pro;
+	public ArrayList<Professor> getPro() {
+		return professors;
 	}
 	public void setPro(Professor pro) {
-		this.pro.add(pro);
+		professors.add(pro);
+	}
+	
+	public void studentInfo(Student stu) {
+		stu.getInfo();
+	}
+	public void professorInfo(Professor pro) {
+		pro.getInfo();
+	}
+	public void managerInfo(Manager man) {
+		man.getInfo();
 	}
 	
 	
