@@ -20,8 +20,14 @@ public class MainTest {
 		if (select1 == 1) {
 			new Registration(per);
 		}
-		else if (select1 == 2) {
+		if (select1 == 2) {
 			new FindArrayList(per);
+		}
+		if (select1 == 3) {
+			new DeleteArrayList(per);
+		}
+		if (select1 == 4) {
+			new AllArrayList(per);
 		}
 	}
 
