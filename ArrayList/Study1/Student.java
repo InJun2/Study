@@ -10,11 +10,11 @@ public class Student {
 	private Scanner sc = new Scanner(System.in);
 	
 	public void setInfo() {
-		System.out.printf("³ªÀÌ :");
+		System.out.printf("ë‚˜ì´ :");
 		this.age = sc.nextInt();
-		System.out.printf("ÀÌ¸§ :");
+		System.out.printf("ì´ë¦„ :");
 		this.name = sc.next();
-		System.out.printf("ÇĞ¹ø :");
+		System.out.printf("í•™ë²ˆ :");
 		this.number = sc.nextInt();
 	}
 	
@@ -23,7 +23,7 @@ public class Student {
 	}
 	
 	public void getInfo() {
-		System.out.println("³ªÀÌ : "+age+ "\t ÀÌ¸§: "+ name +"\t ÇĞ¹ø: "+number);
+		System.out.println("*í•™ìƒ ì •ë³´* \në‚˜ì´ : "+age+ "   ì´ë¦„: "+ name +"   í•™ë²ˆ: "+number);
 	}
 	
 	
