@@ -1,4 +1,4 @@
-package kr.or.kh03;
+package kr.or.kh02;
 
 public class CustomerTest {
 
@@ -7,14 +7,14 @@ public class CustomerTest {
 		customerLee.bonusPoint = 1000;
 		System.out.println(customerLee.showCustomerInfo());
 		
-		VIPcustomer customerKim = new VIPcustomer(2864, "±èÀ¯½Å");
+		VIPcustomer customerKim = new VIPcustomer(2864, "ê¹€ìœ ì‹ ");
 		customerKim.bonusPoint = 10000;
 		System.out.println(customerKim.showCustomerInfo());
 	
 	
-//		Customer customer = new VIPcustomer(2851, "È²ÀÎÁØ");	// ¾÷Ä³½ºÆÃ »ı¼º°¡´É
-//		System.out.println(customer.showCustomerInfo());	// µî±Ş VIP Ãâ·Â °¡´É
-//		customer.setAgent();	// Customer Å¸ÀÔÀ¸·Î µé¾î°¡¼­ VIPcustomerÀÇ ¸â¹öº¯¼ö¿Í ¸Ş¼Òµå »ç¿ëºÒ°¡´É
+//		Customer customer = new VIPcustomer(2851, "í™©ì¸ì¤€");	// ì—…ìºìŠ¤íŒ… ìƒì„±ê°€ëŠ¥
+//		System.out.println(customer.showCustomerInfo());	// ë“±ê¸‰ VIP ì¶œë ¥ ê°€ëŠ¥
+//		customer.setAgent();	// Customer íƒ€ì…ìœ¼ë¡œ ë“¤ì–´ê°€ì„œ VIPcustomerì˜ ë©¤ë²„ë³€ìˆ˜ì™€ ë©”ì†Œë“œ ì‚¬ìš©ë¶ˆê°€ëŠ¥
 	
 	}
 
