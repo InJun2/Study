@@ -20,6 +20,12 @@ public class VIPCustomer extends Customer{
 		System.out.println("VIPCustomer(int,String) 생성자 호출");
 	}
 	
+	@Override
+	public int calcPrice(int price) {
+		bonusPoint += price * bonusRatio;
+		return price - (int)(price * saleRatio);
+	}	// 부모클래스와 구현할 내용이 다를경우 오버라이딩해서 가져오고 수정할 수 있음
+	
 	public void setAgent() {
 		this.agentID=agentNum++;
 	}
