@@ -6,13 +6,20 @@ public class Customer{
 	private String customerGrade;
 	int bonusPoint;
 	double bonusRatio;
+
 	
+	public Customer() {
+		setCustomerGrade("SILVER");
+		bonusRatio = 0.01;
+		System.out.println("Customer() ìƒì„±ì í˜¸ì¶œ");
+	}
 
 	public Customer(int customerId, String customerName) {
 		setCustomerId(customerId);
 		setCustomerName(customerName);
 		setCustomerGrade("SILVER");
 		bonusRatio = 0.01;
+		System.out.println("Customer(int,String) ìƒì„±ì í˜¸ì¶œ");
 	}
 	
 	public int calcPrice(int price) {
@@ -21,7 +28,7 @@ public class Customer{
 	}
 	
 	public String showCustomerInfo() {
-		return customerName + "´ÔÀÇ µî±ŞÀº " + customerGrade + " µî±ŞÀÌ¸ç º¸³Ê½ºÆ÷ÀÎÆ®´Â " + bonusPoint + " point ÀÔ´Ï´Ù.";
+		return customerName + "ë‹˜ì˜ ë“±ê¸‰ì€ " + customerGrade + " ë“±ê¸‰ì´ë©° ë³´ë„ˆìŠ¤í¬ì¸íŠ¸ëŠ” " + bonusPoint + " point ì…ë‹ˆë‹¤.";
 	}
 	
 
