@@ -3,10 +3,11 @@ package kr.or.kh02;
 import java.util.Scanner;
 
 public class ManSchool extends SChool {
+	private static final Scanner scanner = new Scanner(System.in);
 	private int gis;
 	
 	public String manInfo() {
-		return "국어 : " + getKor() + "영어 : " + getEng() + "수학 : " + getMath() + " 기술: " + getGis();
+		return "국어 : " + getKor() + " 영어 : " + getEng() + " 수학 : " + getMath() + " 기술: " + getGis() + " 총점 : " + total() + " 평균 : " + avg();
 	}
 	
 	public int getGis() {
@@ -17,17 +18,23 @@ public class ManSchool extends SChool {
 		this.gis = gis;
 	}
 	
-	protected static void inputManSchool(Scanner scanner) {
-		ManSchool manshool = new ManSchool();
+	public int total() {
+		return super.total()+gis;
+	}
+
+	public double avg() {
+		return total()/4.0;
+	}
+
+	protected static void inputManSchool(ManSchool manschool) {
 		System.out.print("국어 : ");
-		manshool.setKor(scanner.nextInt());
+		manschool.setKor(scanner.nextInt());
 		System.out.print("영어 : ");
-		manshool.setEng(scanner.nextInt());
+		manschool.setEng(scanner.nextInt());
 		System.out.print("수학 : ");
-		manshool.setMath(scanner.nextInt());
+		manschool.setMath(scanner.nextInt());
 		System.out.print("기술 : ");
-		manshool.setGis(scanner.nextInt());
-		System.out.println(manshool.manInfo());
+		manschool.setGis(scanner.nextInt());
 	}
 
 }
