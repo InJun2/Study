@@ -6,7 +6,7 @@ public class SChool {
 	private int math;
 	
 	public String SchoolInfo() {
-		return "±¹¾î : " + getKor() + "¿µ¾î : " + getEng() + "¼öÇĞ : " + getMath();
+		return "êµ­ì–´ : " + getKor() + " ì˜ì–´ : " + getEng() + " ìˆ˜í•™ : " + getMath() + " ì´ì  : " + total() + " í‰ê·  : " + avg();
 	}
 	
 	public int getKor() {
@@ -28,6 +28,13 @@ public class SChool {
 		this.math = math;
 	}
 	
+	// 
+	public int total() {
+		return kor+eng+math;
+	}
+	public double avg() {
+		return total()/3.0;
+	}
 	
 	
 	
