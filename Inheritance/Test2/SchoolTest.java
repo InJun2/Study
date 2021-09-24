@@ -10,16 +10,24 @@ public class SchoolTest {
 		while (true) {
 			int bunho = selectSchool();
 			if (bunho == 1) {
-				ManSchool.inputManSchool(scanner);
+				ManSchool manschool = new ManSchool();
+				ManSchool.inputManSchool(manschool);
+				System.out.println(manschool.manInfo());
 			}
 			if (bunho == 2) {
-				WomanSchool.inputWomanSchool(scanner);
+				WomanSchool womanschool = new WomanSchool();
+				WomanSchool.inputWomanSchool(womanschool);
+				System.out.println(womanschool.womanInfo());
 			}
 			if (bunho == 3) {
-				ManGongupSchool.inputManGongupSchool(scanner);
+				ManGongupSchool mansgongupschool = new ManGongupSchool();
+				ManGongupSchool.inputManGongupSchool(mansgongupschool);
+				System.out.println(mansgongupschool.manGongupInfo());
 			}
 			if (bunho == 4) {
-				WomanSangupSchool.inputWomanSangupSchool(scanner);
+				WomanSangupSchool womansangupschool = new WomanSangupSchool();
+				WomanSangupSchool.inputWomanSangupSchool(womansangupschool);
+				System.out.println(womansangupschool.womanSangupInfo());
 			}
 
 		}
