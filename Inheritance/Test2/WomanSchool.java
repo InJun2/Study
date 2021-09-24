@@ -3,10 +3,12 @@ package kr.or.kh02;
 import java.util.Scanner;
 
 public class WomanSchool extends SChool {
+	private static final Scanner scanner = new Scanner(System.in);
 	private int gajong;
 
 	public String womanInfo() {
-		return "국어 : " + getKor() + "영어 : " + getEng() + "수학 : " + getMath() + " 가정: " + getGajong();
+		return "국어 : " + getKor() + " 영어 : " + getEng() + " 수학 : " + getMath() + " 가정: " + getGajong()
+		+ " 총점 : " + total() + " 평균 : " + avg();
 	}
 	
 	public void setGajong(int gajong) {
@@ -17,17 +19,23 @@ public class WomanSchool extends SChool {
 		return gajong;
 	}
 	
-	protected static void inputWomanSchool(Scanner scanner) {
-		WomanSchool womanshool = new WomanSchool();
+	public int total() {
+		return super.total()+gajong;
+	}
+
+	public double avg() {
+		return total()/4.0;
+	}
+	
+	protected static void inputWomanSchool(WomanSchool womanschool) {
 		System.out.print("국어 : ");
-		womanshool.setKor(scanner.nextInt());
+		womanschool.setKor(scanner.nextInt());
 		System.out.print("영어 : ");
-		womanshool.setEng(scanner.nextInt());
+		womanschool.setEng(scanner.nextInt());
 		System.out.print("수학 : ");
-		womanshool.setMath(scanner.nextInt());
+		womanschool.setMath(scanner.nextInt());
 		System.out.print("가정 : ");
-		womanshool.setGajong(scanner.nextInt());
-		System.out.println(womanshool.womanInfo());
+		womanschool.setGajong(scanner.nextInt());
 	}
 	
 }
