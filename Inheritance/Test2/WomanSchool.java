@@ -28,12 +28,7 @@ public class WomanSchool extends SChool {
 	}
 	
 	protected static void inputWomanSchool(WomanSchool womanschool) {
-		System.out.print("국어 : ");
-		womanschool.setKor(scanner.nextInt());
-		System.out.print("영어 : ");
-		womanschool.setEng(scanner.nextInt());
-		System.out.print("수학 : ");
-		womanschool.setMath(scanner.nextInt());
+		inputSchool(womanschool);
 		System.out.print("가정 : ");
 		womanschool.setGajong(scanner.nextInt());
 	}
