@@ -27,12 +27,7 @@ public class ManSchool extends SChool {
 	}
 
 	protected static void inputManSchool(ManSchool manschool) {
-		System.out.print("국어 : ");
-		manschool.setKor(scanner.nextInt());
-		System.out.print("영어 : ");
-		manschool.setEng(scanner.nextInt());
-		System.out.print("수학 : ");
-		manschool.setMath(scanner.nextInt());
+		inputSchool(manschool);
 		System.out.print("기술 : ");
 		manschool.setGis(scanner.nextInt());
 	}
