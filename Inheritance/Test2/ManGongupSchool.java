@@ -28,14 +28,7 @@ public class ManGongupSchool extends ManSchool {
 	}
 	
 	protected static void inputManGongupSchool(ManGongupSchool mansgongupschool) {
-		System.out.print("국어 : ");
-		mansgongupschool.setKor(scanner.nextInt());
-		System.out.print("영어 : ");
-		mansgongupschool.setEng(scanner.nextInt());
-		System.out.print("수학 : ");
-		mansgongupschool.setMath(scanner.nextInt());
-		System.out.print("기술 : ");
-		mansgongupschool.setGis(scanner.nextInt());
+		inputManSchool(mansgongupschool);
 		System.out.print("공업 : ");
 		mansgongupschool.setGongup(scanner.nextInt());
 	}
