@@ -10,7 +10,7 @@ public class CustomerList {
 		Customers.add(customer);
 	}
 	
-	public static List getCustomers() {
+	public static List<Customer> getCustomers() {
 		return Customers;
 	}
 }
