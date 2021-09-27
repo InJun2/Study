@@ -5,15 +5,14 @@ import java.util.List;
 public class OutputInfo {
 	
 	OutputInfo(){
-		System.out.print("¹øÈ£"+ "\t\t");
-		System.out.print("ÀÌ¸§"+ "\t\t");
-		System.out.print("ÀüÈ­¹øÈ£"+ "\t\t");
-		System.out.println("ÀÌ¸ŞÀÏÁÖ¼Ò");
+		System.out.print("ë²ˆí˜¸"+ "\t\t");
+		System.out.print("ì´ë¦„"+ "\t\t");
+		System.out.print("ì „í™”ë²ˆí˜¸"+ "\t\t");
+		System.out.println("ì´ë©”ì¼ì£¼ì†Œ");
 	}
 	
-	protected static void OutputCustomerInfo(List list){
-		List<Customer> Customerlist = list;
-		for(Customer customer : Customerlist) {
+	protected static void OutputCustomerInfo(List<Customer> list){
+		for(Customer customer : list) {
 			System.out.print(customer.getCustomerNum()+ "\t\t");
 			System.out.print(customer.getCustomerName()+ "\t\t");
 			System.out.print(customer.getCustomerTel()+ "\t");
