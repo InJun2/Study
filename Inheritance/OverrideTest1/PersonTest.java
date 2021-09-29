@@ -2,27 +2,27 @@ package kr.or.kh05;
 
 public class PersonTest {
 	public static void main(String[] args) {
-		Person person1 = new Employee();	// ¾÷Ä³½ºÆÃ ¸ğµÎ ºÎ¸ğÅ¬·¡½ºÀÎ PersonÀ¸·Î µé¾î°¨, ±×·¯³ª ¿À¹ö¶óÀÌµùÀ» ÅëÇØ ÀçÁ¤ÀÇ Çß±â¶§¹®¿¡ ¸ğµÎ ÀÚ½ÄÅ¬·¡½ºÀÎ Employee()ÀÇ personDisp() ¸Ş¼Òµå°¡ ½ÇÇàµÊ
+		Person person1 = new Employee();	// ì—…ìºìŠ¤íŒ… ëª¨ë‘ ë¶€ëª¨í´ë˜ìŠ¤ì¸ Personìœ¼ë¡œ ë“¤ì–´ê°, ê·¸ëŸ¬ë‚˜ ì»´íŒŒì¼ëŸ¬ê°€ ì˜¤ë²„ë¼ì´ë”©ì„ í†µí•´ ì¬ì •ì˜ í–ˆê¸°ë•Œë¬¸ì— ëª¨ë‘ ìì‹í´ë˜ìŠ¤ì¸ Employee()ì˜ personDisp() ë©”ì†Œë“œê°€ ì‹¤í–‰ë¨
 		person1.personDisp();
 		ShowDisp(person1);
-		// ¾÷Ä³½ºÆÃÀº Person person1 = (Person) new Employee();¿Í °°´Ù , ÄÄÆÄÀÏ·¯¿¡¼­ ¾Ë¾Æ¼­ ÇØÁÖ´Â °Í
+		// ì—…ìºìŠ¤íŒ…ì€ Person person1 = (Person) new Employee();ì™€ ê°™ë‹¤ , ì»´íŒŒì¼ëŸ¬ì—ì„œ ì•Œì•„ì„œ í•´ì£¼ëŠ” ê²ƒ ( ì˜¤ë²„ë¼ì´ë”©ë˜ì—ˆìŒ)
 		
-		Person person2 = new Student();		// ¾÷Ä³½ºÆÃ
+		Person person2 = new Student();		// ì—…ìºìŠ¤íŒ…
 		person2.personDisp();
 		ShowDisp(person2);
 		
 		President president = new President();
-		Person person3 = president;			// ¾÷Ä³½ºÆÃ
+		Person person3 = president;			// ì—…ìºìŠ¤íŒ…
 		person3.personDisp();
 		ShowDisp(person3);
 		
-		Person person4 = new Parents();		// ¾÷Ä³½ºÆÃ, Parents() Å¬·¡½º¿¡¼­´Â À¯ÀÏÇÏ°Ô ¿À¹ö¶óÀÌµùÀ»ÇÏÁö ¾Ê¾Æ PersonÀÇ ¸Ş¼ÒµåÀÎ personDisp()°¡ È£ÃâµÊ
+		Person person4 = new Parents();		// ì—…ìºìŠ¤íŒ…
 		person4.personDisp();
 		ShowDisp(person4);
 		
 	}
 	
-	public static void ShowDisp(Person person) {	// ÀÌ·± ½ÄÀ¸·Î ¸Ş¼Òµå·Î È®ÀÎ °¡´É (  personDisp ¸Ş¼Òµå¸¦ ¿À¹ö¶óÀÌµù ÇÑ Å¬·¡½º´Â ÀÚ½ÄÅ¬·¡½ºÀÇ personDisp ½ÇÇàµÊ )
+	public static void ShowDisp(Person person) {	// ì´ëŸ° ì‹ìœ¼ë¡œ ë©”ì†Œë“œë¡œ í™•ì¸ ê°€ëŠ¥
 		person.personDisp();
 	}
 }
