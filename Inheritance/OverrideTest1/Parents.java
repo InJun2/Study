@@ -2,6 +2,6 @@ package kr.or.kh05;
 
 public class Parents extends Person {
 	public void personDisp() {	
-		System.out.println("ºÎ¸ğÅ¬·¡½º Parents()");
-	}	// À¯ÀÏÇÏ°Ô ¿À¹ö¶óÀÌµùÀ» ÇÏÁö ¾ÊÀ½
+		System.out.println("ìì‹í´ë˜ìŠ¤ Parents()");
+	}
 }
