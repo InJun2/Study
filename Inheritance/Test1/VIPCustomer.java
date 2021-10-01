@@ -20,7 +20,6 @@ public class VIPCustomer extends Customer{
 		System.out.println("VIPCustomer(int,String) 생성자 호출");
 	}
 	
-	@Override
 	public int calcPrice(int price) {
 		bonusPoint += price * bonusRatio;
 		return price - (int)(price * saleRatio);
