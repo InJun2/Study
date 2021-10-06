@@ -4,27 +4,27 @@ import java.util.Scanner;
 
 public class InputInfo {
 	
-	private static final Scanner scanner = new Scanner(System.in);
+	private final Scanner scanner = new Scanner(System.in);
 	
 	InputInfo(){
-		String name = InputInfo.InputName();
-		String tel = InputInfo.InputTel();
-		String email = InputInfo.InputEmail();
+		String name = InputName();
+		String tel = InputTel();
+		String email = InputEmail();
 		Customer customer = new Customer(name,tel,email);
 		new CustomerList(customer);
 	}
 	
 	
-	public static String InputName() {
-		System.out.print("¼ÒºñÀÚÀÇ ÀÌ¸§ :");
+	public String InputName() {
+		System.out.print("ì†Œë¹„ìì˜ ì´ë¦„ :");
 		return scanner.next();
 	}
-	public static String InputTel() {
-		System.out.print("¼ÒºñÀÚÀÇ ÀüÈ­¹øÈ£ :");
+	public String InputTel() {
+		System.out.print("ì†Œë¹„ìì˜ ì „í™”ë²ˆí˜¸ :");
 		return scanner.next();
 	}
-	public static String InputEmail() {
-		System.out.print("¼ÒºñÀÚÀÇ Eamil :");
+	public String InputEmail() {
+		System.out.print("ì†Œë¹„ìì˜ Eamil :");
 		return scanner.next();
 	}
 	
