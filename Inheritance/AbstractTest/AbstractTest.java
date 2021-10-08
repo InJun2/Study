@@ -1,23 +1,23 @@
 package Test;
 
 public class AbstractTest extends Exam {
-	// Exam Å¬·¡½ºÀÇ sayHi() Ãß»ó ¸Ş¼Òµå ¿À¹ö¶óÀÌµù
+
 	public void sayHi() {
-		System.out.println("¾È³ç?");
+		System.out.println("ì•ˆë…•?");
 	}
 
-	// Exam Å¬·¡½ºÀÇ printSum() Ãß»ó ¸Ş¼Òµå ¿À¹ö¶óÀÌµù
+
 	public void printSum(int a, int b) {
 		int result = sum(a,b);
-		System.out.println(a + "°ú(¿Í) " + b + "ÀÇ ÇÕÀº " + result + "(ÀÌ)¾ß");
+		System.out.println(a + "ê³¼(ì™€) " + b + "ì˜ í•©ì€ " + result + "(ì´)ì•¼");
 	}
 
 	public static void main(String[] args) {
 
-		// ÇÏÀ§ Å¬·¡½ºÀÎ AbstractTest °´Ã¼ »ı¼º
+		// í•˜ìœ„ í´ë˜ìŠ¤ì¸ AbstractTest ê°ì²´ ìƒì„±
 		AbstractTest at = new AbstractTest();
 
-		// AbstractTest Å¬·¡½º¿¡¼­ ÀçÁ¤ÀÇµÈ ¸Ş¼Òµå È£Ãâ
+
 		at.sayHi(); 
 		at.printSum(30, 40); 
 
