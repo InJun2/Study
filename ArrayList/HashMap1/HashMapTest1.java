@@ -20,6 +20,6 @@ public class HashMapTest {
 		
 		for(HashMap<String,String> haksa : haksaList) {
 			System.out.println(haksa.get("age")+" "+haksa.get("name"));
-		}
+		} // 키 age와 name의 값 가져오기
 	}
 }
