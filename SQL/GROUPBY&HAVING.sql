@@ -70,9 +70,11 @@ ORDER BY 1, 2;
         1: FROM        조회하고자 하는 테이블명
         2: WHERE       조건식
         3: GROUP BY    그룹 기준에 해당하는 컬럼명 | 계산식 | 함수식
-        4: HAVING      그룹에 대한 조건식
+        4: HAVING      그룹에 대한 조건식                               -- 그룹에 대한 where 절이라고 생각하면 됨
         6: ORDER BY    정렬 기준에 해당하는 컬럼명 | 별칭 | 컬럼 순번
 */
+
+
 -- 각 부서별 평균 급여 조회
 SELECT DEPT_CODE, FLOOR(AVG(NVL(SALARY, 0)))
 FROM EMPLOYEE
