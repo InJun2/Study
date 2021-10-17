@@ -1,7 +1,6 @@
 package InterfaceTest;
 
 public class Main {
-
 	public static void main(String[] args) {
 		Bank bank = new SHBank();
 	    bank.withDraw(100);
@@ -9,7 +8,7 @@ public class Main {
 	    bank.findDormancyAccount("4311");
 	    Bank.BCAuth("SHBank");
 	         
-	    System.out.println("\n*************ÀÎ½ºÅÏ½º ±³Ã¼!!***************\n");
+	    System.out.println("\n*************ì¸ìŠ¤í„´ìŠ¤ êµì²´!!***************\n");
 	         
 	    bank = new SHBank();
 	    bank.withDraw(100);
@@ -17,16 +16,16 @@ public class Main {
 	    bank.findDormancyAccount("4311");
 	    Bank.BCAuth("SHBank");
 	         
-	    System.out.println("\n*************Ä«Ä«¿ÀÀºÇà ¿¬µ¿ ½ÇÆĞ!!***************\n");	        //È£È¯¼º ºÒ°¡
+	    System.out.println("\n*************ì¹´ì¹´ì˜¤ì€í–‰ ì—°ë™ ì‹¤íŒ¨!!***************\n");	        //í˜¸í™˜ì„± ë¶ˆê°€, ìƒì†í•˜ì§€ ì•Šì•˜ìŒ
 	    /*
 	    bank = new KakaoBank();
 	    bank.withDraw(100);
 	    bank.deposit(100);
 	    bank.findDormancyAccount("4311");
-	    ´ç¿¬ÇÏÁö¸¸ KaKaoBank´Â »ó¼Ó¹ŞÁö¾Ê¾Ò±â ¶§¹®¿¡ Bank bank ¿¡ ÀúÀå ºÒ°¡´É
+	    ë‹¹ì—°í•˜ì§€ë§Œ KaKaoBankëŠ” ìƒì†ë°›ì§€ì•Šì•˜ê¸° ë•Œë¬¸ì— Bank bank ì— ì €ì¥ ë¶ˆê°€ëŠ¥
 	    */
 	         
-	    System.out.println("\n*************´ëÇĞ±³ ÁÖÀºÇà  ±³Ã¼!!***************\n");
+	    System.out.println("\n*************ëŒ€í•™êµ ì£¼ì€í–‰ êµì²´!!***************\n");
 	         
 	    bank = new NHBank(); //new KBBank();
 	    bank.withDraw(20000);
