@@ -138,3 +138,116 @@ ORDER BY DEPT_CODE, JOB_CODE;
 -- ROLLUP(컬럼 1, 컬럼 2, ...) -> 컬럼 1을 가지고 중간집계를 내는 함수
 
 -- CUBE(컬럼 1, 컬럼 2, ...) -> 컬럼 1을 가지고 중간집계를 내고, 컬럼 2를 가지고 중간집계를 낸다. 즉, 전달되는 컬럼 모두 집계하는 함수
+
+/*
+    <집합 연산자>
+        union : 두쿼리문의 수행한 결과값을 더한후 중복되는 행은 제거한다 ( 합집합 )
+        union all : union 문과 동일하게 두 쿼리문을 수행한 결과값을 더하고 중복은 허용한다 ( 합집합 )
+        intersect : 두 쿼리문을 수행한 결과값에 중복한 결과값만 추출한다 ( 교집합 )
+        minus : 선행 쿼리의 결과값에서 후행 쿼리의 결과값을 뺀 나머지 결과값만 추출한다 ( 차집합 )
+*/
+
+-- employee 테이블에서 부서 코드가 D5인 사원들만 조회
+select emp_id, emp_name, dept_code, salary
+from employee
+where dept_code='D5';
+
+-- employee 테이블에서 급여가 300만원 초과인 사원들만 조회
+select emp_id, emp_name, dept_code, salary
+from employee
+where salary>3000000;
+
+
+-- union
+select emp_id, emp_name, dept_code, salary
+from employee
+where dept_code='D5'
+union
+select emp_id, emp_name, dept_code, salary
+from employee
+where salary>3000000;
+
+-- 위 쿼리문 대신에 where절에 or를 사용해서 처리 가능
+select emp_id, emp_name, dept_code, salary
+from employee
+where salary>3000000 or dept_code='D5';
+
+-- union all
+select emp_id, emp_name, dept_code, salary
+from employee
+where dept_code='D5'
+union all
+select emp_id, emp_name, dept_code, salary
+from employee
+where salary>3000000;
+
+-- intersect
+select emp_id, emp_name, dept_code, salary
+from employee
+where dept_code='D5'
+intersect
+select emp_id, emp_name, dept_code, salary
+from employee
+where salary>3000000;
+
+--and 를 이용하여 위와 동일한 결과값을 가짐
+select emp_id, emp_name, dept_code, salary
+from employee
+where dept_code='D5' and salary>3000000;
+
+-- minus
+-- 부서코드가 D5인 사원들 중에서 급여가 300만원 초과인 사원들을 제외해서 조회
+select emp_id, emp_name, dept_code, salary
+from employee
+where dept_code='D5'
+minus
+select emp_id, emp_name, dept_code, salary
+from employee
+where salary>3000000;
+
+-- and 를 이용해서 위와동일하게 실행가능
+select emp_id, emp_name, dept_code, salary
+from employee
+where dept_code='D5' and salary<=3000000;
+
+
+select dept_code, count(*)
+from employee
+group by dept_code;
+
+/* 특정행을 count 하는경우 해당 행의 null값은 제외해서 조회함
+select dept_code, count(dept_code)
+from employee
+group by dept_code;
+*/
+
+/*
+    <grouping set>
+        그룹별로 처리된 여러 개의 select 문을 하나로 합친 결과를 원할때 사용한다
+*/
+
+select dept_code, job_code, count(*), sum(salary),min(salary)
+from employee
+group by grouping sets(dept_code, job_code);
+
+
+
+-- 부서코드, 직급코드, 사수 사번이 동일한 사원의 급여 평균 조회
+select dept_code, job_code, manager_id, floor(avg(nvl(salary,0)))
+from employee
+group by dept_code, job_code, manager_id;
+
+-- 부서코드, 사수 사번이 동일한 사원의 급여 평균 조회
+select dept_code, manager_id, floor(avg(nvl(salary,0)))
+from employee
+group by dept_code, manager_id;
+
+-- 직급 코드, 사수 사번이 동일한 사원의 급여 평균 조회
+select job_code, manager_id, floor(avg(nvl(salary,0)))
+from employee
+group by job_code, manager_id;
+
+-- 위의 쿼리를 각각 실행해서 합친 것과 동일한 결과를 갖는다
+select dept_code, job_code, manager_id, floor(avg(nvl(salary,0)))
+from employee
+group by grouping sets((dept_code, job_code, manager_id),(dept_code,manager_id),(job_code,manager_id));
