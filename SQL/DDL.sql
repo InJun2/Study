@@ -305,7 +305,7 @@ as select emp_id as "사번",
 --  1) 컬럼 : PUB_NO(출판사 번호) -- 기본 키
 --           PUB_NAME(출판사명) -- NOT NULL
 --           PHONE(출판사 전화번호) -- 제약조건 없음
-
+create table 
 --  2) 3개 정도의 샘플 데이터 추가하기
 
 
