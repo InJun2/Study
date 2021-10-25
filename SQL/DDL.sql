@@ -351,3 +351,150 @@ create table
 
 
 ----------------------------------------------------------------------------------------------------------------
+/*  
+    <alter>
+        오라클에서 제공하는 객체를 수정하는 구문
+        
+    <테이블수정>
+        [표현법]
+            alter table 테이블명 수정할내용'
+    
+        *수정할내용
+            1) 컬럼추가/수정/삭제
+            2) 제약 조건 추가/삭제 --> 수정을 불가능(삭제한 후 새로 추가해야 함)
+            3) 테이블명/컬럼명/제약조건명 변경
+*/
+create table dept_copy  -- 연습할 테이블 생성
+as select *
+from department;
+
+--1) 컬럼 추가/수정/삭제
+--1-1) 컬럼 추가(add) : alter table 테이블명 add 컬럼명 데이터타입 [ default 기본값 ]
+-- cname 컬럼을 테이블 맨 뒤에 추가한다
+alter table dept_copy add cname varchar2(20);
+
+-- lname 컬럼을 기본값으로 지정한 채로 추가
+alter table dept_copy add lname varchar2(20) default '대한민국';
+
+--1-2) 컬럼 수정(modify) 
+--      데이터 타입 변경 : alter table 테이블명 modify 컬럼명 변경할 데이터타입
+--      기본값 변경 : alter table 테이블명 modify 컬럼명 default 변경할 기본 값
+alter table dept_copy modify dept_id char(3);   -- 변경하려는 자료형의 크기보다 이미 큰 값이 존재하면 에러발생 ( 이미 값이 들어가 있기때문에 그것보다 작은 공간으로 변경불가능)
+
+alter table dept_copy modify cname number;  -- 변경하려는 자료형이 달라도 들어가 있는 값이 없다면 데이터타입 변경이 가능하다
+
+-- 다중 수정
+-- dept_title 컬럼의 데이터 타입을 varchar2(40)
+-- location_id 컬럼의 데이터 타입을 varchar2(2)
+-- lname 컬럼의 기본 값을 미국으로 변경
+alter table dept_copy 
+modify dept_title varchar2(40) 
+modify location_id varchar2(2) 
+modify lname default '미국';
+
+-- 1-3) 컬럼 삭제 (drop column) alter table 테이블명 drop column 컬럼명;
+-- 데이터 값이 기록되어 있어도 같이 삭제된다 ( 단, 삭제한 컬럼은 복구가 불가능함 )
+-- 테이블에는 최소 한 개의 컬럼은 존재해야 한다.
+-- 참조되고 있는 컬럼이 있다면 삭제가 불가능 하다
+
+-- dept_id 컬럼 지우기
+alter table dept_copy drop column dept_id;
+
+rollback; -- ddl 구문은 rollback으로 복구 불가능
+
+alter table dept_copy drop column dept_title;   
+alter table dept_copy drop column location_id;
+alter table dept_copy drop column cname;
+alter table dept_copy drop column lname;    -- 테이블에 최소 하나의 컬럼은 존재해야하므로 오류가 발생
+
+--create table member( 
+--    no number constraint member_no_pk primary key,
+--    id varchar2(20) constraint member_id_nn not null,
+--    password varchar2(20) constraint member_password_nn not null,
+--    name varchar2(20) constraint member_name_nn not null,
+--    gender char(3) constraint member_gender_ck check (gender in ('남','여')),
+--    age number constraint member_age_ck check(age>0),
+--    grade_id number constraint mumber_grade_id_kf references member_grade (grade_code) on delete set null,  -- 자식행을 삭제하면 해당 행의 정보 null
+--    enroll_date date default sysdate,
+--    constraint member_no_id_uq unique(id) 
+--);
+--
+--create table member_grade(
+--    grade_code number primary key,
+--    grade_name varchar2(30) not null);
+alter table member_grade drop column grade_code;        -- 다른테이블에서 참조하는 컬럼 삭제 불가능
+alter table member_grade drop column grade_code cascade constraints;    -- cascade를 이용해 현재 테이블의 컬럼과 다른 테이블의 참조하는 컬럼도 삭제
+
+---------------------------------------------------------------------------
+-- 2) 제약조건 추가/삭제
+--  2-1) 제약조건 추가
+--      primary key : alter table 테이블명 add [constraint 제약조건명] primary key(컬럼명)
+--      foreign key : alter table 테이블명 add [constraint 제약조건명] foreign key(컬럼명) referances 테이블명 [(컬럼명)];
+--      unique      : alter table 테이블명 add [constraint 제약조건명] unique(컬럼명);
+--      check       : alter talbe 테이블명 add [constraint 제약조건명] check(컬럼에 대한 조건);
+--      not null    : alter table 테이블명 modify 컬럼명 [constraint 제약조건명] not null; 
+
+-- 실습에 사용할 테이블 생성
+create table dept_copy
+as select *
+from department;
+
+-- dept_id는 pk 제약조건 추가
+-- dept_title은 unique, not null 제약조건 추가
+alter table dept_copy
+add constraint dept_copy_dept_id_pk primary key(dept_id)
+add constraint dept_copy_dept_title_uq unique(dept_title)
+modify dept_title constraint dept_copy_dept_title not null;
+
+-- employee 테이블에 dept_code, job_code 컬럼에 foreign key 제약조건을 적용
+alter table employee
+add constraint employee_dept_code_fk foreign key(dept_code) references department(dept_id)
+add constraint employee_job_code_fk foreign key(job_code) references job(job_code);
+
+--  2-2) 제약조건 삭제
+--      not null  : alter table 테이블명 modify 컬럼명 null;
+--      나머지 : alter table 테이블명 drop constraint 제약조건명;
+
+-- dept_copy 테이블에 dept_copy_dept_id_pk 제약조건 삭제
+alter table dept_copy drop constraint dept_copy_dept_id_pk;
+
+-- dept_copy 테이블에 dept_copy_dept_title_nn 제약조건 삭제
+alter table dept_copy
+drop constraint dept_copy_dept_title_uq
+modify dept_title null;
+
+-- 제약조건 수정은 불가능하다 , 즉 삭제후 다시 제약조건을 추가해야 한다.
+
+-- 3) 테이블명/컬럼명/제약조건명 변경
+-- 3-1) 컬럼명 변경 : alter table 테이블명 rename coulmn 기존컬럼명 to  변경할컬럼명;
+-- dept_copy 테이블에 dept_title 컬럼명을 dept_name으로 변경
+alter table dept_copy rename column dept_title to dept_name;
+
+-- 3-2) 제약조건명 변경 : alter table 테이블명 rename constraint 기존제약조건명 to 변경할제약조건명;
+-- dept_copy 테이블에 sys_c007196 제약 조건명을 dept_copy_id_nn으로 변경
+alter table dept_copy rename constraint sys_c007196 to dept_copy_id_nn;
+
+
+-- 3-3) 테이블명 변경
+--      1) alter table 테이블명 rename to 변경할테이블명;
+--      2) rename 기존테이블명 to 변경할테이블명;
+--  dept_copy 테이블의 이름을 dept_test로 변경
+alter table dept_copy rename to dept_test;
+rename dept_copy to dept_test;
+
+----------------------------------------------------------------------------
+/*
+    <drop>
+        오라클에서 제공하는 객체를 삭제하는 구문
+    
+    * 단, 참조되고 있는 부모 테이블은 함부로 삭제가 되지 않는다
+    만약에 삭제하고자 한다면
+    1) 자식 테이블 먼저 삭제하는 방법
+    2) 부모 테이블을 삭제할 때 제약조건도 함께 삭제하는 방법
+
+*/
+-- 테이블 삭제
+drop table member_grade;
+
+select * from dept_test;    -- 조회
+
