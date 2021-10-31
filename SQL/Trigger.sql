@@ -96,7 +96,7 @@ for each row
 begin 
     dbms_output.put_line(:new.status || ', ' || :new.amount || ', ' || :new.pcode);
     
-    -- 상품이 입고된 경우
+    -- 상품이 입고 혹은 출고될 경우 
     if(:new.status ='입고') then
         update product
         set stock = stock + :new.amount
