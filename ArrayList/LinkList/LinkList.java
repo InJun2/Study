@@ -6,37 +6,37 @@ import java.util.LinkedList;
 
 public class LinkList {
 	public static void main(String[] args) {
-		LinkedList<Integer> num = new LinkedList<>();	// integer °ªÀ» ÀúÀåÇÏ´Â linklist
+		LinkedList<Integer> num = new LinkedList<>();	// integer ê°’ì„ ì €ì¥í•˜ëŠ” linklist
 		LinkedList<Integer> num2 = new LinkedList<>(Arrays.asList(1,2,3));	
-		// integer °ª Çü½ÄÀÇ linklist»ı¼º ¹× 1,2,3À» ÀúÀå
+		// integer ê°’ í˜•ì‹ì˜ linklistìƒì„± ë° 1,2,3ì„ ì €ì¥
 		
-		num2.addFirst(1);//°¡Àå ¾Õ¿¡ µ¥ÀÌÅÍ Ãß°¡
-		num2.addLast(2);//°¡Àå µÚ¿¡ µ¥ÀÌÅÍ Ãß°¡
-		num2.add(3);//µ¥ÀÌÅÍ Ãß°¡
-		num2.add(1, 10);//index 1¿¡ µ¥ÀÌÅÍ 10 Ãß°¡
+		num2.addFirst(1);//ê°€ì¥ ì•ì— ë°ì´í„° ì¶”ê°€
+		num2.addLast(2);//ê°€ì¥ ë’¤ì— ë°ì´í„° ì¶”ê°€
+		num2.add(3);//ë°ì´í„° ì¶”ê°€
+		num2.add(1, 10);//index 1ì— ë°ì´í„° 10 ì¶”ê°€
 		
-		num2.removeFirst(); //°¡Àå ¾ÕÀÇ µ¥ÀÌÅÍ Á¦°Å
-		num2.removeLast(); //°¡Àå µÚÀÇ µ¥ÀÌÅÍ Á¦°Å
-		num2.remove(); //»ı·«½Ã 0¹øÂ° indexÁ¦°Å
-		num2.remove(1); //index 1 Á¦°Å
-		num.clear(); //¸ğµç °ª Á¦°Å
+		num2.removeFirst(); //ê°€ì¥ ì•ì˜ ë°ì´í„° ì œê±°
+		num2.removeLast(); //ê°€ì¥ ë’¤ì˜ ë°ì´í„° ì œê±°
+		num2.remove(); //ìƒëµì‹œ 0ë²ˆì§¸ indexì œê±°
+		num2.remove(1); //index 1 ì œê±°
+		num.clear(); //ëª¨ë“  ê°’ ì œê±°
 		
-		System.out.println(num2.size()); //list Å©±â : 3
-		System.out.println(num2.get(0));//0¹øÂ° index Ãâ·Â
+		System.out.println(num2.size()); 		//list í¬ê¸° : 3
+		System.out.println(num2.get(0));		//0ë²ˆì§¸ index ì¶œë ¥
 		
-		for(Integer i : num2) { //for¹®À» ÅëÇÑ ÀüÃ¼Ãâ·Â
+		for(Integer i : num2) { 		//forë¬¸ì„ í†µí•œ ì „ì²´ì¶œë ¥
 		    System.out.print(i + " ");
 		}
 		
 		System.out.println();
 
-		Iterator<Integer> iter = num2.iterator(); //Iterator ¼±¾ğ 
-		while(iter.hasNext()){//´ÙÀ½°ªÀÌ ÀÖ´ÂÁö Ã¼Å©
-		    System.out.print(iter.next() + " "); //°ª Ãâ·Â
+		Iterator<Integer> iter = num2.iterator(); //Iterator ì„ ì–¸ 
+		while(iter.hasNext()){		// ë‹¤ìŒê°’ì´ ìˆëŠ”ì§€ ì²´í¬
+		    System.out.print(iter.next() + " "); 		// ê°’ ì¶œë ¥
 		}
 		
-		System.out.println("\nlist¿¡ 1ÀÌ ÀÖ´ÂÁö °Ë»ö : "+num2.contains(1)); //list¿¡ 1ÀÌ ÀÖ´ÂÁö °Ë»ö : true
-		System.out.println("list¿¡ 1 À§Ä¡ °Ë»ö ¹× ÇØ´ç ÀÎµ¦½º : " + num2.indexOf(1)); //1ÀÌ ÀÖ´Â index¹İÈ¯ ¾øÀ¸¸é -1
+		System.out.println("\nlistì— 1ì´ ìˆëŠ”ì§€ ê²€ìƒ‰ : "+num2.contains(1)); //listì— 1ì´ ìˆëŠ”ì§€ ê²€ìƒ‰ : true
+		System.out.println("listì— 1 ìœ„ì¹˜ ê²€ìƒ‰ ë° í•´ë‹¹ ì¸ë±ìŠ¤ : " + num2.indexOf(1)); //1ì´ ìˆëŠ” indexë°˜í™˜ ì—†ìœ¼ë©´ -1
 		
 	}
 
