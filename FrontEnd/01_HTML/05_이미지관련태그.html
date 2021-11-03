@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 관련 태그</title>
+</head>
+<body>
+    <h1>이미지 관련 태그</h1>
+    <!-- 절대경로 -->
+    <img src="D:/develop/FrontEnd/01_HTML/resources/image/flower1.PNG">
+
+    <!-- 상대경로 : 환경이 모두 다르기 때문에 개발 시 많이 사용 -->
+    <img src="../01_HTML/resources/image/flower2.PNG">
+
+    <!-- alt 속성에 사진의 경로가 잘못되거나 이미지를 표현하지 못할 경우 alt 출력 -->
+    <img src="../01_HTML/resources/image/flower3.PNG" alt="이 사진은 꽃 사진입니다">
+
+    <hr>
+
+    <h3>width 속성과 height 속성</h3>
+    <!--
+        width 속성과 height 속성을 사용해서 이미지의 높이와 너비를 지정할 수 있다
+        고정 크기 단위(px 등)와 가변 크기 단위(%)로 크기를 지정 가능하다
+    -->
+
+    <h4>고정 크기 단위</h4>
+    <img src="../01_HTML/resources/image/flower1.PNG" width="200" height="200">
+    <img src="../01_HTML/resources/image/flower1.PNG" width="200px" height="200px">
+
+    <hr>
+    <h4>가변 크기 단위</h4>
+    <img src="../01_HTML/resources/image/flower1.PNG" width="15%" height="15%">
+</body>
+</html>
