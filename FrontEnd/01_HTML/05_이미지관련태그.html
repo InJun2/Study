@@ -32,5 +32,31 @@
     <hr>
     <h4>가변 크기 단위</h4>
     <img src="../01_HTML/resources/image/flower1.PNG" width="15%" height="15%">
+    <img src="../01_HTML/resources/image/flower1.PNG" width="15%" height="150">
+    <img src="../01_HTML/resources/image/flower1.PNG" width="15%" height="150px">
+
+    <hr>
+
+    <h4>이미지 구역을 2개로 나누어 각각 링크 설정</h4>
+    <!-- usemap을 이용하여 만들어둔 "map"이란 이름의 map을 연결 -->
+    <img src="../01_HTML/resources/image/river1.PNG" width="600px" height="400px" usemap="#map">
+
+    <!-- 
+        shape는 영역 모양 (rect는 사각형 모양 영역), 
+        coords는 좌표 0,0,300,400이면 해당 usemap을 사용중인 좌표
+            (0,0)에서 오른쪽 아래쪽으로 (300,400)까지 좌표 설정을 의미,
+        herf는 링크 uml, 
+        target은 링크 이동시 (_self면 해당사이트에서 링크로 이동, _blank면 새로운 사이트에서 링크로 이동)
+    -->
+    <map name="map">
+        <area shape="rect" coords="0,0,300,400" href="http://www.naver.com" target="_self">
+        <area shape="rect" coords="300,0,600,400" href="http://www.google.com" target="_blank">
+    </map>
+
+    <img src="../01_HTML/resources/image/river2.PNG" width="600px" height="400px" usemap="#map2">
+    <!-- coords 에서 circle 의 경우 처음 좌표와 반지름 3개를 입력하면 됨-->
+    <map name="map2">
+        <area shape="circle" coords="300,200,100" href="http://www.daum.net">
+    </map>
 </body>
 </html>
