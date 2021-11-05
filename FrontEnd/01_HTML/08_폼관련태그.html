@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <h1>폼 관련 태그</h1>
+    <!--  
+        <form> 태그
+            form 태그는 html에서 사용자가 입력할 수 있는 양식을 제공하는 태그이다.
+            form 태그 내의 <input> 태그들을 통해서 사용자가 입력한 정보를 서버로 넘기면서 요청하는 역할을 한다.
+        * 속성
+            action : 폼 내에 입력된 값들을 전달할 서버에 대한 내용을 기입한다.
+            method : get / post 방식으로 전송 방식을 지정한다.
+                get : 서버에 사용자가 입력한 값들을 URL에 노출시켜서 전달하는 방식
+                post : 서버에 사용자가 입력한 값들을 URL에 노출시키지 않고 전달하는 방식
+            autocomplete : 이전 입력 내용을 출력하는 기능(default : on, 각 태그별로 지정 가능)
+            
+    -->
+
+    <h3>폼 태그의 기본 구조</h3>
+    <form action="" method="post" autocomplete="off">
+        <!--  
+            name :  form 태그 안에서 input 태그를 구분하는 역할을 한다.
+                    나중에 서버로 값을 전달할 때 name 속성과 텍스트 필드에 작성된 값이 세트(key=value)로 넘어간다.
+        -->
+        검색할 내용 : <input type="text" name="search" size="15">
+
+        <!--  
+            submit 버튼을 눌렀을 때 method 요청 전송 방식으로 action에 지정한 서버로 사용자가 입력한 값(key=value)을 전달한다.
+        -->
+        <input type="submit" value="검색">
+    </form>
+
+    <hr>
+
+    <h4>fieldset, legend</h4>
+    <form>
+        <!--  
+            fieldset : 폼 요소를 그룹으로 묶는 태그이다.
+            legend : 묶은 폼 요소에 명칭을 붙이는 태그이다.
+        -->
+        <fieldset>
+            <legend>회원정보</legend>
+
+            <label>아이디 : <input type="text"></label><br>    
+            <label>패스워드 : <input type="password"></label>
+        </fieldset>
+        
+        <br><br>
+        
+        <fieldset>
+            <legend>배송정보</legend>
+            
+            <label>수령인 : <input type="text"></label><br>
+            <label>주소 : <input type="text"></label>
+        </fieldset>
+        
+        <br><br>
+
+        <input type="submit" value="회원가입">
+    </form>
+
+    <hr>
+
+    <h3>텍스트와 관련된 input 태그들</h3>
+    <!-- type="text" : 한 줄짜리 텍스트를 입력 할 수있는 텍스트 상자이다 -->
+    <form action="">
+        <h4>* type="text"에서 새로 추가된 기능</h4>
+        <!-- datalist 태그를 사용하면 텍스트 필드에서 데이터 목록 중에서 값을 선택하도록 만들수 있다 -->
+        <label>색상 : <input type="text" name="color" list="myColor"></label>
+        <datalist id="myColor">
+            <option value="black">검정색</option>
+            <option value="white">흰색</option>
+            <option value="skyblue">하늘색</option>
+        </datalist>
+
+        <br><br>
+        <label>아이디 : <input type="text" name="userId"
+            size="20" maxlength="15" placeholder="아이디를 입력하세요." value="초기값"></label>
+        <br><br>
+
+        <!-- type="password" : 비밀번호를 입력할 수 있는 텍스트 상자 -->
+        <label>비밀번호 : <input type="password" name="userPwd" size="20"
+            maxlength="15" placeholder="비밀번호를 입력하세요" required></label>
+        <br><br>
+
+        <!-- 
+            type="search", type="url", type="email", type="tel" 
+            겉모습은 텍스트필드와 비슷하지만 각각 정보에 맞게 세분화된 기능 제공하는 텍스트 상자
+        -->
+        <label>검색 : <input type="search" name="searchTest" placeholder="검색할 내용 입력"></label>
+        <br><br>
+        <label>홈페이지 : <input type="url" name="homePage" value="https://"></label>
+
+        <br><br>
+        <label>이메일 : <input type="email" name=email" placeholder="이메일을 입력하세요"></label>
+
+        <br><br>
+        <label>전화번호 : <input type="tel" name="phone" placeholder="전화번호를 입력하세요"></label>
+        
+        <br><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+    <hr>
+    <h3>숫자와 관련된 input 태그들</h3>
+    <form>
+        <!--  
+            type="number"
+            입력창에 숫자를 입력하는 것이 기본이지만, 브라우저에 따라서 스핀 박스가 표시되기도 한다
+            (스핀박스 : 입력창 오른쪽에 위/아래 화살표 버튼)
+        -->
+        <label>수량 : <input type="number" name="amount"
+            value="0" min="0" max="100" step="5"></label>
+        <br><br>
+
+        <!-- type="range" : 슬라이드바를 통한 숫자 지정 가능 -->
+        <input type="range" name="point" min="0" max="1000" step="100" value="300">
+        <br><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+    <hr>
+
+    <h3>날짜/시간 관련된 input 태그들</h3>
+    <form>
+        <!-- type="data|month|week|time|datetime|datetime_local" -->
+        <label for="dataIn">data : </label>
+        <input type="date" name="dataIn" id="dataIn" value="2021-11-04">
+        <br><br>
+        
+        <label for="monthIn">month : </label>
+        <input type="month" name="monthIn" id="monthIn" value="2021-11">
+        <br><br>
+
+        <label for="weekIn">week : </label>
+        <input type="week" name="weekIn" id="weekIn">
+        <br><br>
+
+        <label for="timeIn">time : </label>
+        <input type="time" name="timeIn" id="timeIn" value="23:59">
+        <br><br>
+
+        <!-- datetime은 크롬, 익스플로러, 엣지 지원하지 않음 -> datetime-local 타입으로 대체 -->
+        <label for="dtIn">datetime : </label>
+        <input type="datetime"id="dtIn">
+        <br><br>
+
+        <label for="dtlIn">datetime_local : </label>
+        <input type="datetime-local" name="dtlIn" id="dtlIn">
+        <br><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+    <hr>
+    <h3>라디오 버튼과 체크박스</h3>
+    <form>
+        <!-- type="radio" 
+            여러 항목 중 한 가지만 선택해야 할 경우 사용한다.
+            태그 여러 개를 선언하여 하나의 용도로 사용할 경우 name 속성의 값이 같아야 한다
+        -->
+        <fieldset>
+                <legend>성별</legend>
+
+                <label><input type="radio" name="gender" value="M">남자</label>
+                <label><input type="radio" name="gender" value="W">여자</label>
+        </fieldset>
+        <br>
+
+        <!--  
+            type="checkbox"
+            여러 항목 중 여러가지를 선택해도 가능할 경우에 사용한다
+        -->
+        <fieldset>
+            <legend>취미</legend>
+            <label><input type="checkbox" name="hobby" value="baseball">야구</label>
+            <label><input type="checkbox" name="hobby" value="football">축구</label>
+            <label><input type="checkbox" name="hobby" value="basketball">농구</label>
+        </fieldset>
+        <br>
+
+                <input type="submit" value="전송">
+                <input type="reset" value="초기화">
+    </form>
+
+    <hr>
+    <h3>추가 input 태그들</h3>
+    <form>
+        <!-- type="color" -->
+        <label>색상 : <input type="color" name="color"></label>
+        <br><br>
+
+        <!-- type="file" -->
+        <label>파일선택 : <input type="file" name="uploadFile"></label>
+        <br><br>
+
+        <!-- type="hidden" -->
+        <!-- 특정값을 화면에 노출시키고 싶지 않은 경우 사용 -->
+        <input type="hidden" name="hiddenValue" value="1">
+        <br><br>
+
+        <!-- type="button", type="sumbit", type="reset" -->
+        <input type="button" value="버튼">
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+        <br><br>
+
+        <!-- button 태그 사용 (submit과 기존모두 같은 효과)-->
+        <button>전송</button>
+        <button type="submit"><b>전송</b></button>
+
+        <button type="reset">초기화</button>
+        <button type="button">버튼</button>
+
+    </form>
+
+    <hr>
+
+    <h3>여러 값 표현 태그</h3>
+        <!-- 
+            select 태그와 option 태그 
+            사용자가 내용을 입력하는 것이 아닌 여러 옵션 중에서 선택하게 하고 싶을 때 사용하는 드롭 다운 목록
+        -->
+
+        <label for="national">국적</label>
+        <select name="national" id="national">
+            <optgroup label="아시아">
+                <option value="ko">한국</option>
+                <option value="ch">중국</option>
+                <option value="jp">일본</option>
+            </optgroup>
+            <optgroup label="아메리카">
+                <option value="en" label="미국"></option>
+            </optgroup>
+            <optgroup label="유럽">
+                <option value="fr" label="프랑스"></option>
+            </optgroup>
+            <option selected>-----</option>
+        </select>
+
+        <br><br>
+        <!--  
+            textarea 태그
+            input type="text"와 비슷하지만 여러 줄을 입력할 수 있다
+        -->
+        <textarea name="tarea" placeholder="내용을 입력해 주세요"
+            cols="50" rows="20" style="resize: none;"></textarea>
+        <br><br>
+
+        <!-- 
+            progress 태그
+            작업 시작을 0으로 하고 최대값에서 얼마나 진행되었는지는 숫자로 표현한다 
+        -->
+        <progress value="30" max="100"></progress>
+        <br><br>
+
+        <!-- 
+            meter 태그
+            전체 크기 중에서 얼마나 차지하고 있는지 표혈할 때 사용한다
+        -->
+        <meter min="0" max="100" value="45" low="50" high="80"></meter>
+
+        <br><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+
+    </form>
+
+</body>
+</html>
