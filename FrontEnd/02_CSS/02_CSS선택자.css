@@ -1,0 +1,126 @@
+/* 속성 선택자 테스트 */
+/* div 중에 name 속성을 가지고 있는 태그*/
+/* div중 name속성값이 name1과 일치하는 태그만 적용 */
+div[name=name1]{
+    background-color: orangered;
+}
+
+/*
+    div 중에 name 속성안에 name1이 포함되어 있는 태그 
+    ( 단, 속성값이 띄어씌기로 구분되어있어야함 )
+*/
+div[name~=name1]{
+    background-color: yellow;
+} /* 스타일은 동일한 우선순위를 가지면 아래 적혀있는 스타일이 적용됨 */
+
+/* div 중에 class 속성에서 calss로 시작되는 태그 ( 단 -로 구분 )*/
+div[class|=class]{
+    background-color: springgreen;
+}
+
+/* div중에 name의 속성이 name으로 시작되는 태그 */
+div[name^=name]{
+    background-color: blue;
+}
+
+/* div 중에 class속성이 class로 끝나는 태그 */
+div[class$=class]{
+    color: white;
+}
+
+/* div 중에 class 속성에 i를 포함하는 태그 */
+div[class*=i]{
+    background-color: greenyellow;
+    color: red;
+}
+
+/* 클래스 div-class인 것 중 name 속성값에 name3이 포함되어 있는 경우 
+(단, 속성값이 띄어씌기로 구분 ) */
+.div-class[name~=name3]{
+    background-color: orchid;
+}
+
+
+/* -------------------------------------------------- */
+/* 자손 선택자와 후손 선택자 테스트 */
+#test1 > h4 {
+    background-color: orange;
+}
+
+#test1 > ul > h4{
+    background-color: purple;
+}
+
+#test1 li{
+    color:red;
+}
+
+#test>ul>li{
+    background-color: salmon;
+}
+
+/* -------------------------------------------------- */
+/* 동위 선택자 테스트 */
+#div-test{
+    background-color: red;
+}
+
+/* a+b : a 선택자 바로 뒤에 있는 b 선택자 단 한개만 스타일 적용*/
+#div-test + div{
+    background-color: seagreen;
+}
+
+/* a~b : a 선택자 뒤에 있는 모든 b 선택자 모두 스타일 적용 */
+#div-test ~ div{
+    background-color: orange;
+    color : white;
+}
+
+/* -------------------------------------------------- */
+/* 반응 선택자 테스트 */
+#active-test, #hover-test{
+    background-color: yellowgreen;
+    width: 300px;
+    height: 300px;
+}
+
+#active-test:active{
+    background-color: yellow;
+    color: red;
+}
+
+#hover-test:hover{
+    background-color: teal;
+    color: white;
+    cursor : pointer;   /* 마우스 커서 모양 */
+}
+
+/* ------------------------------------------------ */
+/* 상태 선택자 테스트 */
+input[type=checkbox]:checked{
+    width : 20px;
+    height : 20px;
+}
+
+input[type=checkbox]:checked+label{
+    font-size : 1.5em;
+}
+
+#userId:focus, #userPwd:focus{
+    background-color: wheat;
+    border: 3px solid red;
+}
+
+option:enabled{
+    background-color: pink;
+    color:teal;
+}
+
+option:disabled{
+    background-color: grey;
+    color:white;
+}
+
+button:disabled{
+    color:red;
+}
