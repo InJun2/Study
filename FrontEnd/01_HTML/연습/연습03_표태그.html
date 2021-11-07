@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>연습문제2_표태그</title>
+    <style>
+        caption{
+            font-size: 1.5em;
+            color: red;
+            font-weight: bold;
+        }
+        thead{
+            background-color: pink;
+            color: white;
+        }
+        tbody{
+            background-color: yellow;
+        }
+        tfoot{
+            background-color: orangered;
+            color: blue;
+        }
+        td{
+            text-align: center;
+        }
+        button{
+            background-color: skyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>연습문제2_표태그</h2>
+    <table border="1">
+        <caption>KH_정보교육원 강의</caption>
+        <thead>
+            <tr>
+                <th>관</th>
+                <th>강의장</th>
+                <th>인원수</th>
+                <th>강사명</th>
+            </tr>
+        </thead>
+        <tbody>  
+            <tr>
+                <td rowspan="6">1관</td>
+                <td rowspan="2">R강의장</td>
+                <td rowspan="2">30명</td>
+                <td>오전 : 문인수 <button>신청하기</button></td>
+            </tr>
+            <tr>
+                <td>오후 : 문인수 <button>신청하기</button></td>
+            </tr>
+            <tr>
+                <td rowspan="2">S강의장</td>
+                <td rowspan="2">23명</td>
+                <td>오전 : 이수정 <button>신청하기</button></td>
+            </tr>
+            <tr>
+                <td>오후 : 이수정 <button>신청하기</button></td>
+            </tr>
+            <tr>
+                <td rowspan="2">1강의장</td>
+                <td rowspan="2">27명</td>
+                <td>오전 : 김형진 <button>신청하기</button></td>
+            </tr>
+            <tr>
+                <td>오후 : 김형진 <button>신청하기</button></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">많이 참여해 주세요</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

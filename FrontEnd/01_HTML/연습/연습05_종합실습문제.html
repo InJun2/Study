@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합 실습 문제</title>
+</head>
+<body>
+    <h1>납품관리</h1>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <br>
+            <ol>
+                <li><label>납품자명 : <input type="text" placeholder="name"></label></li><br>
+                <li><label>email : <input type="email" placeholder="answs@naver.com"></label></li><br>
+                <li><label>홈페이지 : <input type="url" placeholder="http:// "></label></li><br>
+            </ol>
+        </fieldset>
+        
+        <br>
+        <fieldset>
+            <legend>납품정보</legend>
+            <ul>
+                <li><label>상품명 : <input type="text"></label></li><br>
+                <li><label>납품수량 : <input type="amount" min="100" placeholder="최소 100"></label></li><br>
+                <li><label>납품등급 : <input type="range"></label></li><br>
+                <li><label>기타사항 : <textarea name="other" cols="20" rows="2"></textarea></label></li><br>
+            </ul>
+        </fieldset>
+
+        <br>
+        <button type="submit">send message</button>
+    </form>
+</body>
+</html>
