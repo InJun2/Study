@@ -124,3 +124,90 @@ option:disabled{
 button:disabled{
     color:red;
 }
+
+/* -------------일반구조 선택자 테스트----------------- */
+/* 형제 관계 태그 중 첫 번째 태그 선택 */
+#test2 p:first-child{
+    background-color: red;
+    color : white;
+}
+
+/* 형제 관계 태그 중 마지막 태그 선택 */
+/* 마지막 자식이 p 태그가 아니여서 스타일이 적용되지 않는다 */
+#test2 p:last-child{
+    background-color: orange;
+    color: white;
+}
+
+/* 형제 관계 태그 중 앞에서 수열번 째 태그 선택 */
+/* 수식을 사용하거나 수식 대신 odd(홀수), even(짝수)를 대입해 줄 수 있다 */
+/* #test2 p:nth-child(2n){ */
+#test2 p:nth-child(even){
+    background-color: yellowgreen;
+    color:white;
+}
+
+/* 현재 관계 태그 중 뒤에서 수열번째 태그 선택 */
+/* test2 id를 가진 자식 중 뒤에서 n번째에 위치하는 게 p가 맞으면 스타일 적용 */
+#test2 p:nth-last-child(4){
+    background-color: skyblue;
+}
+
+/* ----------------------------------------------------- */
+/* 형태 구조 선택자 테스트 */
+/* 형제 관계 태그 중 첫 번째 태그 선택 */
+#test3 p:first-of-type{
+    background-color: red;
+    color: white;
+}
+
+/* 형제 관계 태그 중 마지막 태그 선택 */
+#test3 p:last-of-type{
+    background-color: orange;
+    color: white;
+}
+
+/* 형제 관계 태그 중 앞에서 수열번 째 태그선택 */
+#test3 p:nth-of-type(even){
+    background-color: yellowgreen;
+    color:white;
+} 
+
+/* 형제 관계 태그 중 뒤에서 수열번 째 태그 선택 */
+/* test3을 id로 가지는 자식 p 태그중 뒤에서 위치하는 n번째 p태그 스타일 적용 */
+#test3 p:nth-last-of-type(4){
+    background-color: skyblue;
+}
+
+/* ----------------------------------------------------------- */
+/* 문자 선택자 */
+/* 첫번째 글자를 선택해서 스타일을 적용 */
+#test4 p::first-letter{
+    font-size:2em;
+}
+
+/* 첫 번째 라인을 선택해서 스타일 적용 */
+#test4 p::first-line{
+    background-color: wheat;
+}
+
+/* 태그 앞에 위치하는 공간을 선택 */
+#test4 p::before{
+    content: "1.";
+}
+
+#test4 p::after{
+    content: "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@";
+}
+
+/* 드래그 시 선택 공간 */
+#test4 p::selection{
+    background-color: hotpink;
+    color:white;
+}
+
+/* ----------------------------------------- */
+/* 부정 선택자 테스트 */
+#test5 p:not(:nth-of-type(even)){
+    background-color: chocolate;
+}
