@@ -1,0 +1,186 @@
+/* font-family 테스트 */
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+/* 구글 웹 폰트 css 사용  */
+
+
+#ff1{
+    font-family: "궁서체";
+}
+
+#ff2{
+    font-family: "굴림체";
+}
+
+#ff3{
+    font-family: "없는글꼴", "없는글꼴2", "굴림";
+}
+
+#web-font {
+    font-family: 'Dokdo', cursive;
+    font-size: 2em;
+}
+
+/* font-size 테스트 */
+#size1{
+    font-size: 30px;
+}
+
+#size2{
+    font-size: 2em;
+}
+
+#size3{
+    font-size: 150%;
+}
+
+/* font-weight 테스트 */
+#fw1{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#fw2{
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+#fw3{
+    font-weight: 900;
+    font-size: 2em;
+}
+
+#fv{
+    font-variant: small-caps;
+}
+
+/* font-style 테스트 */
+
+#fs1{
+    font-style: italic;
+    font-size: 2em;
+}
+
+#fs2{
+    font-style: oblique;
+    font-size: 2em;
+}
+
+/* color 테스트*/
+#c-name{
+    color : royalblue;
+}
+
+#c-16{
+    color : #47f7cb;
+}
+
+#c-rgb{
+    color: rgb(243, 98, 187);
+}
+
+/* 4번째는 투명 */
+#c-rgba{
+    color: rgba(70, 30, 80, 1);
+}
+
+/* text-decoration */
+#td1 {
+    text-decoration: underline;
+}
+
+#td2 {
+    text-decoration: line-through;
+}
+
+#td3 {
+    text-decoration: overline;
+}
+
+#td4 {
+    text-decoration: none;
+}
+
+/* text-transform 테스트 */
+#tt1 {
+    text-transform: none;
+}
+
+#tt2 {
+    text-transform: capitalize;
+}
+
+#tt3 {
+    text-transform: uppercase;
+}
+
+#tt4 {
+    text-transform: lowercase;
+}
+
+/* text-shadow 테스트 */
+#bg{
+    background-color: black;
+    margin: 30px;
+    padding: 50px;
+}
+
+#ts{
+    font-size: 70px;
+    font-weight: 900;
+    text-shadow: 10px -10px 20px #ccc,
+                    0px -5px 4px #ff3,
+                    2px -10px 6px #fd3,
+                    -2px -15px 11px #f80,
+                    2px -19px 18px #f20;
+}
+
+
+/* letter-spcing 테스트 */
+#ls {
+    letter-spacing: 1.5px;
+}
+
+/* word-spcing 테스트 */
+#ws {
+    word-spacing: 8px;
+}
+
+/* -- 문단 스타일 -- */
+/* text-align */
+#ta1{
+    text-align: left;
+}
+
+#ta2{
+    text-align: right;
+}
+
+#ta3{
+    text-align: center;
+}
+
+#ta4{
+    text-align: justify;
+}
+
+/* text-indent 테스트 */
+#ti {
+    text-indent: 30px;
+}
+
+/* line-height */
+#lh{
+    line-height: 30px;
+}
+
+/* text-overflow 테스트 */
+.over-class{
+    background-color: beige;
+    width:500px;
+}
+
+#to {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
