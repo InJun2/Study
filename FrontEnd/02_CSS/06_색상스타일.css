@@ -1,0 +1,76 @@
+body{
+    /* background-color: rgb(243, 107, 220); */
+    /* background-color: darkcyan; */
+    /* background-color: #fda0af; */
+    /* background-color: rgba(243, 107, 220, .2); */
+    background-color: hsla(30, 80%, 70%, 0.4);
+    /* hsla : 첫번째값은 색상환의 색상, 두번째는 채도, 세번째는 밝기, 네번째는 투명도를 의미  */
+}
+
+#div-bg{
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.clip-test{
+    background-color: white;
+    margin: 30px;
+    padding:30px;
+    width: 30%;
+    border: 15px dashed rgba(0, 0, 0, 0.3);
+}
+
+#clip1{
+    background-clip: border-box;
+}
+
+#clip2{
+    background-clip: padding-box;
+}
+
+#clip3{
+    background-clip: content-box;
+}
+
+#bg-img{
+    border: 15px solid rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 750px;
+    padding: 50px;
+    background-image: url('../01_HTML/resources/image/bgsample.PNG');
+
+    /* 이미지 반복 설정 */
+    /* background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+
+    /* 이미지 크기 설정 */
+    /* 기본값 */
+    /* background-size: auto; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 350px 200px;
+    /* background-size: 100% 100%; */
+
+    /* 이미지 위치 지정 */
+    /* 기본값 left top */
+    /* background-position:center bottom; */
+    /* background-position: center; */
+    /* background-position:50% 50%; */
+    background-position: 70px 350px;
+
+    /* 이미지 배치 기준 설정 */
+    background-origin: border-box;
+    /* 기본값 */
+    /* background-origin: padding-box; */
+    /* background-origin: content-box; */
+
+    /* 이미지를 고정하도록 설정 */
+    /* 기본값 */
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+
+
+
+}
