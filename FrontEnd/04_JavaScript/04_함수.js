@@ -109,7 +109,7 @@ btn7.addEventListener('click', ()=>{
 
     p.innerHTML = `10 / 0 : ${num1} <br>`;
     p.innerHTML += `10 / 'a' : ${num2} <br>`;
-    p.innerHTML += `num1 == Infinity : ${num1 == -Infinity} <br>`;
+    p.innerHTML += `num1 == Infinity : ${num1 == -Infinity} <br>`;  // -를 붙여야함
     p.innerHTML += `num2 == NaN : ${num2 == NaN} <br>`;
     p.innerHTML += `isFinite(num1) : ${isFinite(num1)} <br>`;   // 유한한 함수인지 확인
     p.innerHTML += `isNaN(num2) : ${isNaN(num2)} <br>`; // NaN인지 확인
