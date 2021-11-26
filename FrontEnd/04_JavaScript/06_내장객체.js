@@ -108,7 +108,5 @@ window.onload = () => {
         area.innerHTML += `date1.toLocaleTimeString('en-Us') : ${date1.toLocaleTimeString('en-Us')} <br>`;
         area.innerHTML += `date1.toLocaleString('en-Us') : ${date1.toLocaleString('en-Us')} <br>`;
         area.innerHTML += `date1.toLocaleDateString('en-Us') : ${date1.toLocaleDateString('en-Us')} <br>`;
-
-
     });
 };
