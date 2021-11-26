@@ -44,6 +44,4 @@ btn3.addEventListener('click', (event) => {
     console.log(event.target.parentNode);
 
     event.target.parentNode.removeChild(document.getElementById('area3'));
-
-
 });
