@@ -9,6 +9,7 @@ window.onload = () => {
         // window.open('http://www.naver.com', 'naver');   // 창이름 전달
 
         // 특성의 경우 브라우저마다 다르게 동작하기 때문에 정상적으로 동작하는지 꼭 확인해야 한다.
+        // 특정 브라우저에서 지원하지 않는 브라우저들이 존재
         window.open('http://www.naver.com', 'naver', 'width=500', 'height=600','resizable=no');
     });
 
