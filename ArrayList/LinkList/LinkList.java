@@ -30,14 +30,12 @@ public class LinkList {
 		
 		System.out.println();
 
-		Iterator<Integer> iter = num2.iterator(); //Iterator 선언 
-		while(iter.hasNext()){		// 다음값이 있는지 체크
-		    System.out.print(iter.next() + " "); 		// 값 출력
+		Iterator<Integer> iter = num2.iterator();	//Iterator 선언 
+		while(iter.hasNext()){				// 다음값이 있는지 체크
+		    System.out.print(iter.next() + " "); 	// 값 출력
 		}
 		
-		System.out.println("\nlist에 1이 있는지 검색 : "+num2.contains(1)); //list에 1이 있는지 검색 : true
-		System.out.println("list에 1 위치 검색 및 해당 인덱스 : " + num2.indexOf(1)); //1이 있는 index반환 없으면 -1
-		
+		System.out.println("\nlist에 1이 있는지 검색 : "+num2.contains(1)); 		    //list에 1이 있는지 검색 : true
+		System.out.println("list에 1 위치 검색 및 해당 인덱스 : " + num2.indexOf(1)); 	//1이 있는 index반환 없으면 -1
 	}
-
 }
