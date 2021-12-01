@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="kp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 문제</title>
+    <style>
+    .write_th{
+        width: 100px;
+        text-align: center;
+    }
+
+    #title{
+        width: 350px;
+    }
+
+    #content{
+        width: 350px;
+        height: 120px;
+        resize: none;
+    }
+
+    .writeButton{
+        margin-left: 160px;
+    }
+
+    #table{
+        width: 100%;
+    }
+
+    th{
+        background-color: salmon;
+        color: white;
+        text-align: center;
+    }
+
+    .hrefbutton{
+        width: 100%;
+    }
+
+    .td1{
+        width: 3%;
+    }
+
+    .td2{
+        width: 55%;
+    }
+
+    .td3{
+        width: 7%;
+    }
+
+    .td4{
+        width: 15%;
+    }
+
+    .td5{
+        width: 15%;
+    }
+
+    .td6{
+        width: 5%;
+    }
+    </style>
+</head>
+<body>
+    <h2>포트폴리오 문제</h2>
+
+    <hr>
+    <br>
+
+    <fieldset>
+        <legend>공지 사항 작성하기</legend>
+        <form action="insert.no" method="post">
+            <table>
+                <tr>
+                    <td class="write_th"><b>제목 </b></td>
+                    <td><input type="text" name="title" id="title" placeholder="제목을 입력하시오." required></td>
+                </tr> 
+
+                <tr>
+                    <td class="write_th"><b>내용</b></td>
+                    <td><textarea name="content" id="content" placeholder="내용을 입력하시오." required></textarea></td>
+                </tr> 
+
+                <tr>
+                    <td class="write_th"><b>첨부파일</b></td>
+                    <td><input type="file" name="uploadFile" id="uploadFile"></td>
+                </tr> 
+
+            </table>
+            <br>
+            <input type="submit" value="작성하기" class="writeButton">
+        </form>
+    </fieldset>
+
+    <hr>
+
+    <table id="table" border="1px solid";>
+        <tr>
+            <th>번호</th>
+            <th colspan="2">제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>조회수</th>
+        </tr>
+        <tr>
+            <td class="td1">9</td>
+            <td class="td2">공지사항 제목 9</td>
+            <td class="td3"><button class="hrefbutton">바로가기</button></td>
+            <td class="td4">user01</td>
+            <td class="td5">2021-03-29</td>
+            <td class="td6">34</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>공지사항 제목 6</td>
+            <td><button class="hrefbutton">바로가기</button></td>
+            <td>answ445</td>
+            <td>2021-03-12</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>공지사항 제목 3</td>
+            <td><button class="hrefbutton">바로가기</button></td>
+            <td>testg12</td>
+            <td>2021-03-01</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>공지사항 제목 2</td>
+            <td><button class="hrefbutton">바로가기</button></td>
+            <td>palwe3</td>
+            <td>2021-01-02</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>공지사항 제목 1</td>
+            <td><button class="hrefbutton">바로가기</button></td>
+            <td>xml23</td>
+            <td>2020-12-24</td>
+            <td>124</td>
+        </tr>
+        <tr>
+            <th colspan="4">전체공지사항 갯수</th>
+            <th colspan="2">5개</th>
+        </tr>
+    </table>
+</body>
+</html>
