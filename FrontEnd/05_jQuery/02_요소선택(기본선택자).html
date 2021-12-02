@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 선택자</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>기본 선택자를 이용해서 요소 선택</h1>
+
+    <h3>아이디 선택자</h3>
+    <p>특정 아이디 가진 요소를 기지고 온다</p>
+
+    <h2 id="t1">테스트1(js)</h2>
+    <h2 id="t2">테스트2(jQuery)</h2>
+
+    <script>
+        $(document).ready(function(){
+            //js
+            document.getElementById("t1").style.color = "red";
+        
+            //jQuery
+            $('#t2').css('color','blue');
+            $('#t2').text('테스트2 text 변경');     // innerText
+            $('#t2').html('테스트2 text 변경');     // innerHTML
+            
+            // 요소들 출력
+            console.log(document.getElementById("t1"));
+            console.log($('#t2'));
+        });
+    </script>
+
+    <br><hr><hr><br>
+
+    <h3>태그 선택자</h3>
+
+    <p>사과</p>
+    <p>배</p>
+    <p>딸기</p>
+
+    <h6>민트초코</h6>
+    <h6>레인보우샤베트</h6>
+    <h6>슈팅스타</h6>
+
+    <script>
+        $(function(){
+            const pArr = document.getElementsByTagName("p");
+            for(let i=0; i<pArr.length; ++i){
+                pArr[i].style.color = "purple";
+            }
+        })
+
+        $('h6').css('color','blue');
+
+        $('p,h6,#t1').css('backgroundColor','aqua');
+
+    </script>
+
+    <h3>클래스 선택하기</h3>
+
+    <h4 class="item">i1</h4>
+    <h4 class="item">i2</h4>
+    <h4 class="item">i3</h4>
+
+    <script>
+        $(function(){
+            $('.item').css('color','orange');
+        })
+    </script>
+
+</body>
+</html>

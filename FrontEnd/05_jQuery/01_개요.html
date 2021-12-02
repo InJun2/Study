@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 개요</title>
+    <!-- <script src="resources/js/jquery-3.6.0.js"></> // 파일로 가져와서 사용 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>jQuery 개요</h1>
+
+    <h3>jQuery 란?</h3>
+    <p>
+        존 레식이라는 사람이 만들었음 <br>
+        js를 이용하여 라이브러리를 만들어 놓은 것
+        
+        <br>
+        jQuery를 이용하여 복잡한 자바스크립트 구문을 짧고 편하게 작성이 가능함
+    </p>
+
+    <h3>jQuery의 장점</h3>
+    <p>
+        1) DOM 조작이 간단 <br>
+        2) AJAX 를 지원한다 <br>
+        3) 플러그인, api 지원해주는 곳이 많음 <br>
+    </p>
+
+    <h3>jQuery 라이브러리 연결 방법</h3>
+    <p>
+        1) 파일을 가져와서 사용 <br>
+        2) 링크(CDN 방식)를 이용하여 사용 <br>
+        <a href="https://jquery.com" target="_blank">제이쿼리 사이트</a>
+    </p>
+
+    <br><br>
+
+    <hr><hr>
+
+    <br><br>
+    <h3 id="target">제이쿼리 사용</h3>
+    <p>
+        window.onload = function() {
+            // 실행 내용
+        }
+        window.onload 는 모든 요소 다 로딩되고, 외부문서들도 가져오고 나서 실행
+    </p>
+
+    <script> 
+        // jQuery(document).ready(function(){
+        //     console.log("111");
+        // })
+
+        // $(document).ready(function(){
+        //     console.log("222");
+        // })
+
+        $(function(){
+            console.log("333");
+
+            // // h3 요소를 가져와서, 배경 색 바꾸기 (js)
+            // const h3_ = document.getElementsByTagName("h3");
+            // for(let i=0; i< h3_.length; ++i){
+            //     h3_[i].style.backgroundColor = 'red';
+            // }
+            
+            // h3 요소를 가져와서, 배경 색 바꾸기 (jQuery)
+            $('h3').css('backgroundColor','red');
+            
+            // id가 target인 요소 가져와서 배경색 바꾸기
+            $('#target').css('backgroundColor', 'blue');
+
+            
+        });
+    </script>
+
+    
+</body>
+</html>
