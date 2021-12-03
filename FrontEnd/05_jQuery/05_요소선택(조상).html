@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소선택(조상)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .wrap, .wrap *{
+            border: 1px solid gray;
+            color : gray;
+            display: block;
+            padding: 5px;
+            margin:15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>탐색 메소드</h1>
+
+    <h3>조상메소드 : 상위 요소들 선택</h3>
+    <br>
+    <div class="wrap">
+        <div>증조부모(div)
+            <ul>조부모(ul)
+                <li>부모(li)
+                    <span>나(span)</span>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>1세대(div)
+            <p>2세대(p)
+                <span>3세대 (span)</span>
+            </p>
+        </div>
+    </div>
+
+    <p>
+        <h4>$("선택자").parent()</h4>
+        바로 상위 요소 선택
+
+        <h4>$("선택자").parents()</h4>  <!-- parent 아니고 parents 임 (s 주의)  -->
+        모든 상위 요소 선택
+        
+
+        <h4>$("선택자").parents("선택자")</h4> 
+        바로 상위 요소 중, 인자로 넘어온 요소만 선택 가능
+        
+
+        <h4>$("선택자").parentsUntil("선택자")</h4> 
+        범위 지정해서 선택 target ~ param
+    </p>
+
+    <script>
+        $(function(){
+            //parent()
+            x = $("span").parent(); 
+            console.log(x);
+            $("span").parent().css({color:"red", border:"2px solid red"});
+            
+            //parents()
+            $("li").parents().css("color", "blue");
+
+            //parents("선택자")
+            $("li").parents("div").css("border", "2px dashed purple");
+
+            //parentsUntil("선택자")
+            $("span").parentsUntil("div").css('color', 'gray');
+        })
+    </script>
+
+
+
+
+
+
+</body>
+</html>
