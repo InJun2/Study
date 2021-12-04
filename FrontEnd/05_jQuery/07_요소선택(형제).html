@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .wrap, .wrap *{
+            border: 1px solid lightgray;
+            display: block;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>동위 메소드 : 같은 레벨 (형제) 가져오는 메소드</h1>
+
+    <div class="wrap">
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+
+    <p>
+        <h4>$("선택자").siblings()</h4>
+        형제 가져옴
+
+        <h4>$("선택자").siblings("선택자")</h4>
+        형제 중에서 인자 일치하는 애 가져옴
+
+        <h4>$("선택자").next|prev()</h4>
+        형제 중에서 바로 다음|이전 요소 하나
+
+        <h4>$("선택자").nextAll|prevAll()</h4>
+        형제 중에서 바로 다음|이전 요소 전부
+
+        <h4>$("선택자").nextUntill("선택자")</h4>
+        형제 중 인자값 까지
+
+    </p>
+
+    <script>
+        $(function(){
+            const style1 = {color:"red", border:"2px solid red"};
+            const style2 = {color:"blue", border:"2px solid blue"};
+            const style3 = {color:"green", border:"2px solid green"};
+            const style4 = {color:"purple", border:"2px solid purple"};
+            const style5 = {color:"aqua", border:"2px solid aqua"};
+
+            // 형제 요소 선택하기
+            
+            // siblings         // 형제 요소 (같은 레벨) 모두 다 가져옴
+            $("h2").siblings().css(style1);
+            // siblings("특정값")
+            $("h2").siblings("p").css(style2);
+            // next
+            $("h2").next().css(style3);
+            // nextAll
+            $("h2").nextAll().css(style4);
+            // nextUntil
+            $("h2").nextUntil("p").css(style5);
+            // prev         // 이전 요소
+            $("h2").prev().css("backgroundColor","aqua");
+            // prevAll
+            $("h2").prevAll().css("backgroundColor","salmon");
+            // prevUntil
+            $("h2").prevUntil("p").css("backgroundColor","orange");
+
+        })
+    </script>
+
+</body>
+</html>

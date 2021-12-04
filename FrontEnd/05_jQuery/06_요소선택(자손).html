@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>요소선택(자손)</title>
+    <style>
+        .wrap, .wrap *{
+            border: 1px solid gray;
+            color : gray;
+            display: block;
+            padding: 5px;
+            margin:15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>자손 요소 선택</h1>
+
+    <h3>하위 요소를 선택</h3>
+
+    <div class="wrap">
+        <div>증조부모(div)
+            <ul>조부모(ul)
+                <li>부모(li)
+                    <span>나(span)</span>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>1세대(div)
+            <p>2세대(p)
+                <span>3세대 (span)</span>
+            </p>
+        </div>
+    </div>
+
+    <p>
+        <h4>$("선택자").children()</h4>
+        선택된 요소의 모든 자식 요소를 선택
+
+        <h4>$("선택자").children("선택자")</h4>
+        자식들 중에서 인자값 일치하는 요소 뽑아옴
+
+        <h4>$("선택자").find("선택자")</h4>
+        후손들 중에서 인자값 일치하는 요소 뽑아옴
+    </p>
+
+    <script>
+        $(function(){
+            const style1 = {color:"red", border:"2px solid red"};
+            const style2 = {color:"blue", border:"2px solid blue"};
+            const style3 = {color:"green", border:"2px solid green"};
+            const style4 = {color:"purple", border:"2px solid purple"};
+            const style5 = {color:"aqua", border:"2px solid aqua"};
+
+            // parent
+            $(".wrap").children().css(style1);
+            
+            // $(".wrap").children().children().css(style2);
+            // $(".wrap").children().last().css(style2);
+
+            // 특정 요소만 선택
+            $(".wrap").children().children("ul").css(style3);
+
+            // find
+            $(".wrap").find("li").css(style4);
+
+        })
+    </script>
+</body>
+</html>
