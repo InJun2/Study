@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>기타 함수</title>
+    <style>
+        .c1{
+            background-color: red;
+        }
+        .c2{
+            background-color: blue;
+        }
+        .c3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--  
+        for in
+    -->
+
+    <script>
+        $(function(){
+            const arr = ["a","b","c"];
+            // const arr = new Array("a","b","c");
+
+            // for(let i in arr){
+            //     console.log(arr[i]);
+            // }
+            
+            // jQuery 로 for in 어떻게 쓰는지
+            //(2가지 방법)
+
+            // each
+            // $.each(arr, function(idx, value){
+            //     console.log(idx + "번째 요소는 :" + value);
+            // })
+
+            // $(arr)
+            $(arr).each(function(idx,value){
+                console.log(idx + "번째 요소는 :" + value);
+            })
+
+            // 객체를 만들고, for in 문 사용해보기
+            /*
+                원하는 객체 아무거나 만들고
+                각각의 모든 요소를 출력해보기 
+            */
+            //js
+            const temp = new Array(
+                {"k1":"v1"},
+                {"k2":"v2"},
+                {"k3":"v3"},
+                {"k4":"v4"},
+                {"k5":"v5"}
+            )
+
+            for(let i in temp){
+                console.log(temp[i]);
+            }
+
+            // jQuery
+            $.each(temp, function(iii,ccc){
+                console.log(temp[iii]);
+            })
+
+            $(temp).each(function(iii,ccc){
+                console.log(ccc);
+            })
+        });
+    </script>
+
+    <div id="area1">
+        <h1 class="c1">1</h1>
+        <h1 class="c2">2</h1>
+        <h1 class="c3">3</h1>
+    </div>
+
+    <!-- addClass -->
+    <!-- className(JS) -->
+
+    <!--  
+        1. h1 가져오기
+        2. 가져온얘들, each써서 함수 실행시켜주기
+        3. 그 함수는, calss 추가해주는 함수
+    -->
+
+    <script>
+        $(function(){
+            const h1Arr = $("area1").children();
+            $(h1Arr).each(function(idx,elem){
+                $(elem).addClass("c" + (idx+1));
+            })
+        })
+    </script>
+
+    <!--  
+        js 함수
+    -->
+
+    <div id="isTest" class="ccc">isTest</div>
+
+    <script>
+        $(function(){
+            if($('#isTest').is('.ccc')){
+                console.log($('#isTest'));
+            }
+        })
+    </script>
+
+    <div id="divArea">
+        <h1 class="cc">1</h1>
+        <h1 class="cc">2</h1>
+        <h1 class="cc">3</h1>
+        <h1>none</h1>
+    </div>
+
+    <!--  
+        class가 cc인 친구들만 콘솔에 출력
+    -->
+
+    <script>
+        $(function(){
+            const a = $("#divArea").children();
+            $(a).each(function(idx,elem){
+                if($(elem).is(".cc")){
+                    console.log(elem);
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>

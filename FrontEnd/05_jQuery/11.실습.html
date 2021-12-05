@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>실습</title>
+</head>
+<body>
+    <!--  
+        게시판 만들기 ( 테이블 )
+
+        글번호  제목    작성자  조회수  작성일
+        0      0       0      0      0
+        0      0       0      0      0
+        0      0       0      0      0
+    -->
+    
+    <!-- class 부트 스트랩 적용 -->
+    <table class="table-dark table-striped">
+        <thead>
+            <tr>
+                <td>글번호</td>
+                <td>제목</td>
+                <td>작성자</td>
+                <td>조회수</td>
+                <td>작성일</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="1">
+                <td>1</td>
+                <td>제목1</td>
+                <td>이름1</td>
+                <td>11</td>
+                <td>01.01</td>
+            </tr>
+            <tr class="2">
+                <td>2</td>
+                <td>제목2</td>
+                <td>이름2</td>
+                <td>22</td>
+                <td>01.02</td>
+            </tr>
+            <tr class="3">
+                <td>3</td>
+                <td>제목3</td>
+                <td>이름3</td>
+                <td>33</td>
+                <td>01.03</td>
+            </tr>
+        </tbody>
+    </table>
+
+    result : 
+    <div id="result">
+    </div>
+
+    <script>
+        // 행을 클릭 했을 때 이벤트 발생
+        // 행의 첫번째 td 가져오고 그안의 글자 가져오기
+        // 가져온 글자를 result에 추가하기
+        $(function(){
+            $("tbody>tr").click(function(){
+                // console.log(this);      // this가 tr정보 잘가져오는지 확인
+                let num = $(this).children().eq(0).text();
+                // console.log(num);         // num 으로 넣어둔 글번호 항목 텍스트 잘가져오는지 확인
+                
+                $("#result").text("");
+                $("#result").append(num);
+            })
+        })
+    </script>
+</body>
+</html>
