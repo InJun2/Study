@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    title>이벤트</title>
+</head>
+<body>
+    <!--  
+        클릭, 더블클릭
+    -->
+    <div id="target">target</div>
+
+    <!-- <script>
+        $(function(){
+            $("#target").dbclick(function(){
+                console.log("dbclicked");
+            })
+        })
+    </script> -->
+
+    <!--  
+        이벤트를 다른 방법으로 걸어보기
+        on
+        여러개 이벤트를 걸수 있음
+    -->
+
+    <script>
+        $(function(){
+            $("#target").on(
+                {
+                    "click": function(){
+                        console.log("click");
+                    },
+                    "dbclick": function(){
+                        console.log("dbclick");
+                    }
+                }
+            )
+        })
+    </script>
+
+    <br><br>
+
+    <div id="wrap">
+        <h1>this is h1</h1>
+        <h2>this is h2</h2>
+    </div>
+
+    <h3>div 밖</h3>
+
+    <script>
+        $(function(){
+            // on(이벤트명, 타켓, 함수)
+            $("#wrap").on("click", "h1 h2", function(){
+                console.log("클릭됨");
+            })
+        })
+    </script>
+
+    <!--  
+        이벤트 한번만 걸고 싶을 경우
+        one
+    -->
+
+    <h1 id="oneTest">oneTest</h1>
+
+    <script>
+        $(function(){
+            $("#oneTest").one("click", function(){
+                console.log("클릭됨");
+            })
+        })
+    </script>
+</body>
+</html>
