@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        로그인 폼 만들기
+        1. 비밀번호 클릭하면 제한사항 표시하기
+        2. 앞에 필수 입력 항목 건너뛰면, 필수입력 이라고 표시하기
+     -->
+
+    <span>아이디 : </span><input type="text" id="id">
+    <br><span id="idSpan"></span>
+    <br>
+    <span>비밀번호 : </span><input type="password" id="pwd">
+    <br><span id="pwdSpan"></span>
+    <br>
+    <span>비밀번호 확인 : </span><input type="password" id="pwdCheck">
+    <br><span id="pwdCheckSpan"></span>
+    <br>
+    <span>이메일 : </span><input type="email" id="email">
+
+    <script>
+        const id = document.getElementById("id");
+        const pwd = document.getElementById("pwd");
+        const pwdCheck = document.getElementById("pwdCheck");
+        const email = document.getElementById("email");
+        const idSpan = document.getElementById("idSpan");
+        const pwdSpan = document.getElementById("pwdSpan");
+        const pwdCheckSpan = document.getElementById("pwdCheckSpan");
+
+        pwd.addEventListener("click", function(){
+            pwdSpan.innerText = "8글자 이상, 특수문자 포함";
+        })
+
+        // 1. 이메일 클릭 했을때,
+        // 2. 앞의 아이디 input박스 가 빈칸이라면??
+        // 3. 그 칸 밑에다가 "필수입력" 이라고 표시하기
+
+        email.addEventListener("click", function(){
+            // id.value === ""
+            if(id.value === ""){
+                idSpan.innerText = "필수입력";
+            }
+        })
+
+    </script>
+
+</body>
+</html>
