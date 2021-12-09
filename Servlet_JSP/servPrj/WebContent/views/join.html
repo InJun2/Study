@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+    <!--  
+        아이디 text
+        비번 password
+        이메일 email
+        좋아하는 색 (여러개) checkbox
+        주소 text
+        나이 number
+
+    -->
+
+    <form action="../join" method="post">
+        <label>아이디</label><input type="text" name="userId">
+        <br>
+        <label>비번</label><input type="password" name="userPwd">
+        <br>
+        <label>이메일</label><input type="email" name="userEmail">
+        <br>
+        <label>색</label>
+            빨강 : <input type="checkbox" name="userColor" value = "red">
+            파랑 : <input type="checkbox" name="userColor" value = "blue">
+            초록 : <input type="checkbox" name="userColor" value = "green">
+        <br>
+        <label>성별</label>
+            M : <input type="radio" name="gender" value="M">
+            F : <input type="radio" name="gender" value="F">
+        <br>
+        <label>나이</label><input type="number" name="userAge">
+
+        <input type="submit" value="제출하기"></input>
+        
+
+    </form>
+</body>
+</html>
