@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>calculator</title>
+</head>
+<body>
+	<!--  
+        화면에 데이터를 받아서
+        서버(서블릿)에서 처리하기
+    -->
+
+    <form action="../calculator" method="post">
+        <label>값 넣기</label>
+        <input type="number" name="value1"> 
+        <input type="submit" value="+" name="btn"></input>
+        <input type="submit" value="-" name="btn"></input>
+        <input type="number" name="value2">
+    </form>
+</body>
+</html>
