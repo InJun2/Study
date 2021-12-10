@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order</title>
+</head>
+<body>
+    <h1>피자 주문</h1>
+    <form action="/pizza/order" method="get">
+        <label>피자 선택 : </label>
+        <select name="pizza">
+            <optgroup label="피자종류">
+                <option value="치즈피자" value="치즈피자">치즈피자</option>
+                <option value="콤비네이션피자" value="콤비네이션피자">콤비네이션피자</option>
+                <option value="포테이토피자" value="포테이토피자">포테이토피자</option>
+                <option value="고구마피자" value="고구마피자">고구마피자</option>
+                <option value="불고기피자" value="불고기피자">불고기피자</option>
+            </optgroup>
+        </select>
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>토핑</legend>
+        <label><input type="checkbox" name="topping" value="고구마무스">고구마무스</label>
+        <label><input type="checkbox" name="topping" value="콘크림무스">콘크림무스</label>
+        <label><input type="checkbox" name="topping" value="파인애플토핑">파인애플토핑</label>
+        <label><input type="checkbox" name="topping" value="치즈토핑">치즈토핑</label>
+        <label><input type="checkbox" name="topping" value="치즈크러스트">치즈크러스트</label>
+        <label><input type="checkbox" name="topping" value="치즈바이트">치즈바이트</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>사이드</legend>
+        <label><input type="checkbox" name="side" value="오븐구이통닭">오븐구이통닭</label>
+        <label><input type="checkbox" name="side" value="치킨스틱&윙">치킨스틱&윙</label>
+        <label><input type="checkbox" name="side" value="치즈오븐스파게티">치즈오븐스파게티</label>
+        <label><input type="checkbox" name="side" value="새우링&웨지감자">새우링&웨지감자</label>
+        <label><input type="checkbox" name="side" value="갈릭포테이토">갈릭포테이토</label>
+        <label><input type="checkbox" name="side" value="콜라">콜라</label>
+        <label><input type="checkbox" name="side" value="사이다">사이다</label>
+        <label><input type="checkbox" name="side" value="갈릭소스">갈릭소스</label>
+        <label><input type="checkbox" name="side" value="피클">피클</label>
+        <label><input type="checkbox" name="side" value="핫소스">핫소스</label>
+        <label><input type="checkbox" name="side" value="파마산치즈가루">파마산치즈가루</label>
+    </fieldset>
+    
+    <br><br>
+    
+    <input type="sumbit" value="제출">
+
+    </form>
+</body>
+</html>
