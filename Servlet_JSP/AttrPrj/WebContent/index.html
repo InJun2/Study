@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>index page</h1>
+	
+	<a href="myServlet">request to myServlet (html -> Java)</a>
+	
+	<h3>쿼리 스트링</h3>
+	<pre> 
+	attribute
+		getAttribute(attr 셋팅된 것만 가져올수 있음)
+		setAtrribute(key,value);
+		
+	filter
+		url에 따라 필터 걸어줄 수 있음
+		들어온 필터에 대해서 통과했다면 내보내줘야함
+	
+	service 메소드
+		doGet, doPost가 아닌 service 메소드도 존재
+		모두 해당가능
+		
+	servletContext
+		사용자에 상관없이 다른 서블릿에서 모두 접근이 가능
+		모든 서블릿들에서 처리한 것들이 공유
+	
+	Session
+		여러 서블릿에서 접근가능, 사용자로 구분해서 각각 사용
+		Session에 저장된 다른 여러 서블릿들이 사용자마다 저장공간이 존재
+		서버가 session을 구분하는 방법은 JSESSIONID 쿠키를 이용
+		세션 만료시키는 건 invalidate이용
+		
+	Cookie
+		setPath로 쿠키경로설정 ( 경로 설정 )
+		쿠키 만료시간 설정 ( 만료시간 설정 )
+		
+	request < session < servletContext
+		
+	</pre>
+</body>
+</html>
