@@ -79,6 +79,16 @@ public class OrderController extends HttpServlet {
 		PizzaModel pizzaModel = new PizzaModel(pizza, toppings, sides, orderResult);
 		req.setAttribute("pizzaModel", pizzaModel);
 		
+		req.setAttribute("key01", "value01");
+		
+		req.getSession().setAttribute("sessionKey", "sessionValue");
+		
+		req.setAttribute("testKey", "testValueRequest");
+		req.getSession().setAttribute("testKey", "testValueSession");
+		req.getServletContext().setAttribute("testKey", "testValueApplication");
+//		page < request < session < application(servletContext)
+
+		
 		req.getRequestDispatcher("/WEB-INF/views/orderResult.jsp").forward(req, resp);
 	}
 }
