@@ -2,7 +2,6 @@ package com.kh.member.model.service;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 import static com.kh.common.JDBCTemplate.*;
@@ -55,13 +54,37 @@ public class MemberService {
 	private MemberVo selectMember(Connection conn, MemberVo m) {
 		return new MemberDao().selectMember(conn,m);
 	}
+	
+	private List<MemberVo> selectMemberAll(Connection conn) {
+		return new MemberDao().selectMemberAll(conn);
+	}
+	
+	private List<MemberVo> selectMember(Connection conn, String type, String value) {
+		return new MemberDao().selectMemberBySearch(conn, type, value);
+	}
 
-	public List<MemberVo> search() {
+	public List<MemberVo> search(String type, String value) {
+		List<MemberVo> memberList;
 		Connection conn = getConncetion();
-		List<MemberVo> memberList = new MemberDao().selectMemberAll(conn);
+		if(type== null || value == null) {
+			memberList = selectMemberAll(conn);
+		} else {
+			memberList = selectMember(conn, type, value);
+		}
 		close(conn);
 		
 		return memberList;
+	}
+
+	public int dupCheck(String id) {
+		Connection conn = getConncetion();
+		int result = selectMemberById(conn, id);
+		close(conn);
+		return result;
+	}
+
+	private int selectMemberById(Connection conn, String id) {
+		return new MemberDao().selectMemberById(conn,id);
 	}
 
 }

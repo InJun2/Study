@@ -6,13 +6,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+	#div-wrap{
+		background-color : aqua;
+		width : 70vw;
+		margin : auto;
+	}
+	
+	table{
+		width : 100%;
+	}
+</style>
 </head>
 <body>
 	<%@ include file="../common/header.jsp" %>
 	<h1>탐색</h1>
 	
-	<c:forEach items="${memberList}" var="m">
-		<h1>${m.name}</h1>
-	</c:forEach>
+	<div id="div-wrap">
+		<form action="search" method="get">
+			<select name="searchType">
+				<option value="member_no">번호</option>
+				<option value="id">아이디</option>
+				<option value="name">이름</option>
+			</select>
+			<input type="text" name="searchValue">
+			<input type="submit" value="검색">
+			<table border="1">
+				<tr>
+					<td>회원번호</td>
+					<td>아이디</td>
+					<td>이름</td>
+				</tr>
+				<c:forEach items="${memberList}" var="m">
+					<tr>
+						<td>${m.memberNo}</td>
+						<td>${m.id}</td>
+						<td>${m.name}</td>
+					</tr>
+				</c:forEach>
+			</table>
+		</form>
+	</div>
 </body>
 </html>

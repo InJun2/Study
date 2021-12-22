@@ -17,7 +17,12 @@ import com.kh.member.model.vo.MemberVo;
 public class MemberControlloer extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		List<MemberVo> memberList = new MemberService().search();
+		
+		String type = req.getParameter("searchType");
+		String value = req.getParameter("searchValue");
+		String currentPage = req.getParameter("currentPage");
+		
+		List<MemberVo> memberList = new MemberService().search(type, value);
 		
 		req.setAttribute("memberList", memberList);
 		
