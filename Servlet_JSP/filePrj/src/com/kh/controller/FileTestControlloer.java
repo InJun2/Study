@@ -16,7 +16,7 @@ import javax.servlet.http.Part;
 
 @MultipartConfig(
 //		location="/tempRepo", // 운영체제마다 절대경로를 표현하는 것이 다르므로 기본 자바파일로 임시저장하는 것이 좋음 ( 설정 X )
-//		fileSizeThreshold = 1024 * 1024, // 업로드한 파일의 크기가 태그값보다 크면 location에 지정한 디렉터리에 임시로 파일 복사
+//		fileSizeThreshold = 1024 * 1024, // 업로드한 파일의 크기가 태그값보다 크면 location에 지정한 디렉터리에 임시로 파일 복사 ( 마찬가지로 설정 X )
 		maxFileSize = 1024 * 1024 * 50,
 		maxRequestSize = 1024 * 1024 * 50 * 5
 		)
