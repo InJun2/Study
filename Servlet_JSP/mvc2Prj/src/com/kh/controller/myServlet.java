@@ -14,6 +14,8 @@ import com.kh.vo.Member;
 @WebServlet("/my")
 public class myServlet extends HttpServlet{
 	
+	// WEB-INF 안에 넣은 파일은 직접들어갈수 없고 controller의 링크를 통해 접근
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("123");
