@@ -8,6 +8,7 @@ import java.sql.Statement;
 
 public class JdbcTemplate {
 	// jdbc 하면서 계속 쓰는 것 static 처리해서 사용
+	// Connection, Statement, ResultSet 등 사용한 해당 메소드에서 close 해줘야 함
 	// commit 
 	// rollback
 	// close ( conn, pstmt, stmt, rs )
