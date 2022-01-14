@@ -8,13 +8,15 @@
 </head>
 <body>
 	<h1>join</h1>
-	<form action="join" method="post">
+	<form action="join2" method="post">
 		<!-- id, pwd, nick -->
 		id : <input type="text" name="id">
 		<br>
 		pwd : <input type="password" name="pwd">
 		<br>
 		name : <input type="text" name="name">
+		<br>
+		age : <input type="number" name="age">
 		<br>
 		<input type="submit" value="°¡ÀÔ">
 	</form>
