@@ -1,0 +1,79 @@
+
+Controller 메소드에서 정보를 처리하는 방법
+1. 기존과 같은 방식 (req.getParameter)
+ex) public String join2(HttpServletRequest req) {
+	String id = req.getParameter("id");	// jsp에서의 기존의 방식
+
+2.  메소드의 파라미터 (@RequestParam)
+ex) 	public String join2(String id, String pwd)	// jsp에서의 name과 같으면 자동으로 얻어옴
+=	public String join2(			// 위처럼 실행은 동일하나 @RequestParam을 붙이는 것이 좋음
+		@RequestParam String id, 
+		@RequestParam String pwd,
+		@RequestParam int age)	// parameter를 가져온것을 명시해서 가독성 높임 (메타데이터)
+
+RequestParam (4가지 속성)
+- defaultValue : 받아온 값이 없다면 저장할 기본 값
+- name & value : name과 value는 같음, 화면에서 넘어오는 이름 지정 
+	ex) @RequestParam(name="id") String memberId	
+- required : 화면에서 넘어오는 name값이 존재하는지 여부를 확인 ( 화면에 존재해야하면 true, 없어도 된다면 false)
+
+3. Model (@ModelAttribute ) 			// set메소드의 이름이 화면의 name과 같으면 저장
+ex)	public String join3(
+		@ModelAttribute MemberVo vo)	
+- MemberVo 객체만들어서 @ModelAtrribute 어노테이션 추가 ( 어노테이션이 없어도 실행가능하나 위와 동일 )
+- 해당 객체를 생성하면 값을 바로가져옴, modelVo의 메소드 set을 이용해 데이터를 매핑해줌
+- camelCase 맞춰서 네이밍
+
+
+클라이언트가 새로 요청 : 리다이렉트
+- 리퀘스트에 데이터를 넣을때 포워딩은 유지되고 리다이렉트는 새로 요청 발생시 소멸
+- 리다이렉트는 req, resp 를 새로 생성함 ( 객체 생성 )
+- 즉, 요청과 관련된 객체들이 사라지면 리다이렉트, 유지되면 포워딩
+- 리다이렉트는 클라이언트에서 요청을다시보내고 req, resp를 넘겨주지 않음
+- url이 변경됨, 포워딩은 변경하지 않음
+- 지금까지 return 경로를 통해 이동한 방법은 포워딩, 리다이렉트 방법은 다음과 같다
+
+리다이렉트 사용방법 
+- 해당 메소드의 리턴 경로 앞에 redirect: 추가 후 해당 경로에 맞는 매핑을 가진 메소드 추가
+	ex )	@PostMapping("/insert")
+			public String insert(String title, String content){
+			return "redirect:/board/insert_result";
+			}
+		@GetMapping("/insert_result")
+			public String insert_result() {
+			return "board/insert_result";
+		}
+
+다중 파라미터 받기
+1. req.getParamValues();
+2. 파라미터 (String[] 타입)	:  @ReqeusetParam추가
+3. List<String>
+4. Model > filed // String [], List<String>
+
+
+인코딩 필터로 처리
+1. 필터만들기
+2. 필터를 스프링 컨테이너에 등록
+
+ex )	web.xml에 다음과 같이 추가
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>	// maven dependencies 안에 존재, 경로복사가능
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+- init-param : 해당 클래스를 가져왔으나 객체에 정보가 존재하지않음, 해당 init-param을 통해 해당 경로에 class파일에서 매개변수가
+encoding과 forceEncoding이라는 매개변수(param-name과 같아야함)에 각각 값인 UTF-8, true를 넣어 생성자가 객체 생성함
+
+
