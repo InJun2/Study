@@ -23,6 +23,29 @@
 	
 	<context:component-scan base-package="com.kh.app07" />
 	
+	<!-- DB 설정 관련 -->	
+	<beans:bean id="injunDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="oracle.jdbc.OracleDriver"></beans:property>
+		<beans:property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe"></beans:property>
+		<beans:property name="username" value="KH"></beans:property>	<!-- DB user -->
+		<beans:property name="password" value="KH"></beans:property>	<!-- DB password -->
+	</beans:bean>
+	
+	<!-- dbcp -->
+	<beans:bean id="injundbcpSource" class="org.apache.commons.dbcp2.BasicDataSource">
+		<beans:property name="driverClassName" value="oracle.jdbc.OracleDriver"></beans:property>
+		<beans:property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe"></beans:property>
+		<beans:property name="username" value="KH"></beans:property>	<!-- DB user -->
+		<beans:property name="password" value="KH"></beans:property>	<!-- DB password -->
+		<beans:property name="maxTotal" value="20"></beans:property>
+		<beans:property name="maxIdle" value="10"></beans:property>
+		<beans:property name="maxWaitMillis" value="3000"></beans:property>
+	</beans:bean>
+	
+	<!-- Jdbc Template -->
+	<beans:bean id="injunjdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<beans:property name="dataSource" ref="injunDataSource"></beans:property> <!-- 위에 등록한 db설정 id로 가져옴 -->
+	</beans:bean>
 	
 	
 </beans:beans>
