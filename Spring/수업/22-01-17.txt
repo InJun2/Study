@@ -1,0 +1,71 @@
+22-01-15 수업 복습 진행
+DB관련 설정
+pom.xml에 추가
+- ojdbc8 : 오라클 - 자바 연결 
+-spring-jdbc : ojdbc를 spring에서 사용하기 위함
+-dbcp : db연결 효율적
+
+servlet-context.xml에 추가
+-spring jdbc -> dataSource 빈 등록
+-spring jdbc -> jdbcTemplate 빈 등록
+-commons-dbcp2 -> dbcpSource 빈 등록
+
+ex)	@Autowired
+	private JdbcTemplate jt;
+
+	String sql = "insert into menu values(?,?)";
+	Object[] params = {menu, price};
+	jt.update(sql,params); 
+를 사용하여 db insert 확인
+
+
+mybatis 관련 설정
+pom.xml에 추가
+- mybatis : 쿼리 실행 목적 
+- mybatis-spring : 마이바티스 스프링 사용 목적
+
+servlet-context.xml에 추가
+-mybatis-spring -> SqlSessionFactoryBean 빈 등록 ( dataSource가 필요 )
+-mybatis-spring -> SqlSessionTemplate 빈 등록 ( SqlSessionFactoryBean 가 필요 )
+
+resources 폴더 하위에 mybatis 패키지 생성
+mybatis 안에 SqlSessionFactoryBean에 들어갈 mybatis-config.xml 생성
+mybatis 안에 menu패키지 생성 및 안에 menu-mapper.xml 생성
+
+servlet-context.xml에서 SqlSessionFactoryBean 안에 경로 지정
+<beans:property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"/>
+<beans:property name="mapperLocations" value="classpath:/mybatis/**/*-mapper.xml"/>	<!-- mapping은 여러 폴더와 자손의 mapper이 존재할수 있음, **은 모든 자손을 의미하고 *은 자식을 의미 -->
+
+mybatis-config.xml 입력
+- configuration 헤더 추가
+- <configuration>추가 해당 태그안에 설정은 <settings> 추가
+- <configuration>태그안에 <typeAliase>로 생성해둔 객체 경로 별칭 지정
+ex)	<configuration>
+		<settings>
+		<setting name="autoMappingBehavior" value="FULL"/>	<!-- 설정 지정 -->
+		</settings>
+		<typeAliases>
+			<typeAlias type="com.kh.app10.menu.model.vo.MenuVo" alias="membervo"/> <!-- 별칭 지정 -->
+		</typeAliases>
+	</configuration> 
+
+menu-mapper.xml 입력
+- mapper 헤더 추가
+- <mapper namespace="menu"> 추가
+- 실행할 sql문 mapper 안에 작성, 가져올 값은 #{변수명} 으로 가져옴
+ex)	<mapper namespace="menu">
+		<!-- parameterType에는 해당 Vo 경로가 들어가야 하지만 mybatis-config의 alias로 별칭 지정해둔 값 가져옴 -->
+		<insert id="insertMenu" parameterType="membervo">		<!-- 해당 실행 sql문 이름은 id로 지정 -->
+			INSERT INTO MENU (MENU, PRICE) VALUES (#{menu}, #{price})	<!-- 해당 경로의 객체의 변수를 #{변수명}의 형태로 넣음 -->
+		</insert>
+	</mapper>
+
+
+java 파일에서 menu-mapper.xml에 작성해놓은 sql 실행
+-선언
+	@Autowired
+	private SqlSession sqlSession;
+-실행
+	sqlSession.insert("menu.insertMenu", m);		//  만들어둔 mapper.xml의 (namespace명).(mapper 안의 sql id명) 과 객체 대입
+
+
