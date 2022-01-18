@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="menu">
+	<insert id="insert" parameterType="menuVo">
+		insert into menu values(#{menu}, #{price})
+	</insert>
+	
+	<select id="select" resultType="menuVo">	<!-- resultType으로 조회값 저장 -->
+		select * from menu
+	</select>
+</mapper>

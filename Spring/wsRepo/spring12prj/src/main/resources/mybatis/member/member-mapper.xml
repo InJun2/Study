@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="member">
+  	<insert id="joinMember" parameterType="memberVo">
+  		insert into member(
+  			id, 
+  			pwd, 
+  			nick, 
+  			enroll_date
+  		)
+  			values(
+  			#{id}, 
+  			#{pwd}, 
+  			#{nick},
+  			sysdate
+  		)
+  	</insert>
+  	
+  	<!-- 로그인 쿼리 -->
+  	<!-- 전달받기, 리턴받기 : 멤버의 값을 -->
+  	<select id="selectMemberLogin" parameterType="memberVo" resultType="memberVo"> <!-- parameterType에서 값을 가져와서 쿼리 실행 훟 resultType으로 값을 리턴  -->
+  		select 	*
+  		from member
+  		where id = #{id}
+  		and pwd = #{pwd}
+  	</select>
+  </mapper>
