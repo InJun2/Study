@@ -50,8 +50,8 @@
 	<!-- SqlSessionFactory -->
 	<beans:bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<beans:property name="dataSource" ref="injundbcpSource"/>
-		<beans:property name="configLocation" value="classpath:/com/kh/app09/mybatis/mybatis-config.xml"/>
-		<beans:property name="mapperLocations" value="경로설정"/>
+		<beans:property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"/>
+		<beans:property name="mapperLocations" value="classpath:/mybatis/**/*-mapper.xml"/>	
 	</beans:bean>
 	
 	<!-- sqlSessionTemplate -->
