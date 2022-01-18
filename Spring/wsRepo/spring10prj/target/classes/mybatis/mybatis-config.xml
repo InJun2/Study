@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="autoMappingBehavior" value="FULL"/>	<!-- 설정 지정 -->
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.kh.app10.menu.model.vo.MenuVo" alias="membervo"/> <!-- 별칭 지정 -->
+	</typeAliases>
+</configuration> 

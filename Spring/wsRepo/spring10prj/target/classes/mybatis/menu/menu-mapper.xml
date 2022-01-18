@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="menu">
+	<!-- parameterType에는 해당 Vo 경로가 들어가야 하지만 mybatis-config의 alias로 별칭 지정해둔 값 가져옴 -->
+	<insert id="insertMenu" parameterType="membervo">		<!-- 해당 실행 sql문 이름은 id로 지정 -->
+		INSERT INTO MENU (MENU, PRICE) VALUES (#{menu}, #{price})	<!-- 해당 경로의 객체의 변수를 #{변수명}로 매핑 -->
+	</insert>
+</mapper>
