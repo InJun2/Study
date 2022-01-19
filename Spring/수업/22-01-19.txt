@@ -1,0 +1,76 @@
+복습
+el문 : ${} 의 경우에는 그냥 값을 가져옴, #{}의 경우에는 값 양옆에 '를 붙여줌
+application 영역 : 누구나 접근가능한 저장공간, 어플리케이션 동작시 하나의 어플리케이션 영역 생성
+session 영역 : 각 사용자 개인의 접근가능한 저장공간, 웹 브라우저생성마다 세션 객체가 생성
+
+model 은 request에 종속 (어플리케이션 영역)  : 서버쪽에서 값을 포워딩할때 사용
+
+application 영역 : 누구나 접근가능한 저장공간, 어플리케이션 동작시 하나의 어플리케이션 영역 생성
+session 영역 : 각 사용자 개인의 접근가능한 저장공간, 웹 브라우저생성마다 세션 객체가 생성
+
+프레임워크란 : 개발자가 코드를 구현하는데 시간과 재사용성을 증가시키기 위해 일련의 클래스 묶음이나 뼈대, 틀을 제공하는 라이브러리를 구현해 놓은 것
+	-> 개발자가 따라야 하는 가이드 제공, 개발할수 있는 범위가 정해져있음, 개발자를 위한 다양한 도구, 플러그인 지원
+프레임 워크 종류
+- 영속성 Framework : 데이터의 저장, 조회, 변경, 삭제를 다루는 클래스 및 설정 파일 라이브러리화 ( 영속성은 자바 프로그램이 종료되더라도 데이터는 보존됨을 의미 , mybatis가 이에 해당)
+- 자바 Framework : 자바EE를 통한 웹 애플리케이션 개발에 초점을 맞춰 필요한 요소들을 모듈화해 제공 
+- 화면구현 Framework : Front-end를 쉽게 구현하는 틀 제공
+- 기능 지원 Framework : 특정 기능이나 업무 수행에 도움을 줄 수 있는 기능 제공
+
+mybatis
+- servlet-context : SessionFactroryBuilder 생성 및 mybatis-config.xml과 연결
+-mybatis-config : Class에 별칭지정, DB 연결설정, sql구문 경로 설정
+-mapper.xml : sql문 쿼리문 설정, 각 패키지 마다 존재
+- 아파치 프로젝트에서 운영하던 팀이 2010 5월에 구글팀으로 이동하면서 ibatis에서 mybatis로 이름 변경함
+mybatis 동적 쿼리
+- if, bind, choose, foreach, trim, include, where
+
+db 특정 값 검색
+- jsp에서 가져온 값의 name과 동일한 변수의 SearchVo 객체 생성 
+- Controller 부분은 어제와 동일, mymatis-config.xml 에 해당 SearchVo 경로 설정하고 별칭 지정
+- member-mapper.xml에 sql문 추가 ( 쿼리속성 )
+ex)	<select id="selectMemberSearch" parameterType="searchVo" resultType="memberVo">
+  		select * 
+  		from member 
+  		<if test="searchType != null and searchValue != null">		<!-- test에는 if 조건식이 들어감 -->
+  			<bind name="pro" value=" '%' + searchValue + '%' "/>	<!-- searchValue를 원하는 문자열으로 저장 -->
+  			where ${searchType} like #{pro}			<!-- $은 ''를 붙여주지않고 #는 ''를 붙여줌 -->  		
+  		</if>
+  	</select>
+
+ex2)		<choose>
+  			<when test="searchType == 'id'">		<!-- if문 -->
+  				where id = #{searchValue}
+  			</when>		
+  			<when test="searchType == 'nick'">		<!-- if문 -->
+  				where nick = #{searchValue}
+  			</when>
+  			<otherwise>				<!-- when에 해당하는 것이 없을 경우 -->
+  				where id = 'xxx' and nick = 'xxx'
+  			</otherwise>
+  		</choose>
+
+
+
+시험 예정
+@Autowired
+private SqlSession sqlsession
+
+스프링이아닐경우
+public void asd(){
+SqlSessionFactory sf;
+sqlsession = sf.openSession(true);		// true는 autocommit 여부 아닐경우 false
+}
+
+mybatis-config
+스프링이 아닐경우
+<environments default="">			// mybatis 홈페이지 참조
+	<enviroment id="asd">
+		<dataSource type="POOLED">	//POOLED, UNPOOLED 는 커넥션 사용 여부	
+
+mybatis 동적 쿼리
+- if, bind, choose, foreach, trim, include, where
+
+jdbc와 dbcp의 차이
+- 커넥션 풀의 사용 여부 차이
+- 커넥션 풀을 사용하는 이유 : 필요한 커넥션을 가져다 쓰기 위해 ( db까지 갈 필요가 없음 )
+
