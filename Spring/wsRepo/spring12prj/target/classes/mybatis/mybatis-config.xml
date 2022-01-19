@@ -9,5 +9,6 @@
   	</settings>
 	<typeAliases>
 		<typeAlias type="com.kh.app12.member.entity.MemberVo" alias="memberVo"/>
+		<typeAlias type="com.kh.app12.member.entity.SearchVo" alias="searchVo"/>
 	</typeAliases>
   </configuration>

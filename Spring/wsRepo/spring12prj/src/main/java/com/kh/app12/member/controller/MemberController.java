@@ -1,5 +1,7 @@
 package com.kh.app12.member.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.kh.app12.member.entity.MemberVo;
+import com.kh.app12.member.entity.SearchVo;
 
 @Controller
 @RequestMapping("member")
@@ -45,6 +48,21 @@ public class MemberController {
 			return "redirect:/";
 		}
 			return "common/errorPage";
+	}
+	
+	@GetMapping("search")
+	public String search(Model model) {
+		List<MemberVo> memberList = sqlSession.selectList("member.selectMemberSearch");
+		model.addAttribute("list",memberList);
+		return "member/search";
+	}
+	
+	@PostMapping("search")
+	public String search(SearchVo svo, Model model) {
+		List<MemberVo> memberList = sqlSession.selectList("member.selectMemberSearch", svo);
+		model.addAttribute("list",memberList);
+		
+		return "member/search";
 	}
 	
 	
