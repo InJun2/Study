@@ -51,7 +51,8 @@ ex2)		<choose>
 
 
 
-시험 예정
+mybatis 
+스프링일경우
 @Autowired
 private SqlSession sqlsession
 
