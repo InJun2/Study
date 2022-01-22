@@ -27,6 +27,9 @@
   		and pwd = #{pwd}
   	</select>
   	
+       <!-- mybatis동적쿼리 choose사용 그외의 동적쿼리 존재 -->
+
+
   	<select id="selectMemberSearch" parameterType="searchVo" resultType="memberVo" resultMap="abc">
   		select * 
   		from member 
