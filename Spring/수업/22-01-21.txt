@@ -1,0 +1,44 @@
+서버 ( 컨트롤러 하나에서 다 처리 -> mvc2 )
++ aop
++ 트랜잭션
++ 기타잡다한것들
+
+SSFB : SqlSessionFactoryBean 
+SST : SqlSessionTemplate
+
+SST는 SSFB를 활용해서 만듬
+
+pom.xml에 입력하는것들은 Spring Container안에 등록하게 됨
+현재 Spring Container안에 등록된  Bean ( 객체생성 )
+- dataSource
+- dbcpSource
+- jdbcTemplate
+- sqlSessionFactory
+- sqlSessionTemplate
+
+dateSource -> jdbcTemplate
+dbcpSource -> sqlSessionFactory -> sqlSessionTemplate
+
+생성한 자바파일도 Spring Container에 등록됨
+만들어둔 sqlSessionTemplate -> *Controller.java에서 사용됨
+
+Beans: 
+bean id = 객체이름
+bean class= 사용할 class 경로
+property name = 매개변수명
+property ref = 객체이름으로 객체 가져옴
+property value = 값 지정
+
+보안 양방향 , 단방향
+
+비번암호화
+spring security를 사용하기 위해 maven repository에서 spring security core 를 pom.xml에 등록
+사용할 class인 org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.class 경로로 사용
+
+mybatis 동적 쿼리
+- if, bind, choose, foreach, trim, include, where
+
+
+
+
+
