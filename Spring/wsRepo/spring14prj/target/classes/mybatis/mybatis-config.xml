@@ -9,5 +9,6 @@
   </settings>
   <typeAliases>
 		<typeAlias type="com.kh.app14.member.entity.MemberDto" alias="member"/>
+		<typeAlias type="com.kh.app14.board.entity.BoardDto" alias="board"/>
   </typeAliases>
   </configuration>

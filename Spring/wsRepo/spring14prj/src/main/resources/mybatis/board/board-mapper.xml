@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+  	<insert id="insert" parameterType="board">
+		insert into board (title, content, writer) values (#{title}, #{content}, #{writer})
+  	</insert>
+  	
+  	<select id="selectAll" resultType="board">
+  		select * from board
+  	</select>
+  	
+  	<select id ="selectOne" parameterType="string" resultType="board">
+  		select * from board where title = #{stringData}
+  	</select>
+  	
+  	<update id="update" parameterType="board">
+  		update board 
+  		set content = #{content}, writer = #{writer}
+  		where title = #{title}
+  	</update>
+  	
+  	<delete id="delete" parameterType="board">
+  		delete from board
+  		where title = #{title}
+  	</delete>
+</mapper>

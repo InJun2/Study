@@ -19,10 +19,13 @@
 		<%
 		} else{
 			%>
+			<br>
 			<a href="member/login">로그인이 필요합니다</a>	
 			<%
 		}
 	%>
+	<br>
+	<a href="board/insert">게시글 등록</a>
 	
 	
 </body>
