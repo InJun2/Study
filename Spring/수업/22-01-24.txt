@@ -1,11 +1,21 @@
-모듈화
+spring-security를 이용한 암호화 
+- pom.xml로 설치
+- servlet-context.xml에 등록 
+ex) <beans:bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></beans:bean>
+- 사용할 class 에서 @(어노테이션) 으로 spring에서 DI(의존성주입)으로 받아옴 
+ex) @Autowired private 
+	PasswordEncoder pe;
+- 비밀번호 암호화 
+ex) String newPwd = pe.encode(Pwd);
+- 암호화한 db의 비밀번호와 일치하는지 비교 ( 복호화는 불가능함 )
+ex) boolean login = pe.matches(pwd,dbPwd);	// pwd는 받아온 pwd, dbPwd는 db에서 받아온 암호화되어있는 pwd
 
 인터페이스
 - @Autowired를 이용하여 특정 사용할 클래스의 부모타입을 이용하여 사용하면 
-해당 부모의 자식들이 각각 접근해오나, 변경되더라도모두 해결할 수 있음
+해당 부모의 자식들이 각각 접근해 올수 있음
 - 인터페이스는 안의 동작을 모르지만 동작하는것은 아는 당연한 기능(규칙), 표면적인 구현부, 추상메소드의 집합
 
-
+모듈화
 controller - service- dao 구분, 모듈화를 하는 이유
 - 결합도를 낮추고 응집률을 높이기 위해서
 
@@ -13,5 +23,5 @@ controller와 controller에서 생성자로 직접 생성한 service 두곳에�
 - contoller는 정상작동
 - service는 spring-container에 들어가있지않으므로 @Service어노테이션을 추가해야함
 - controller에서 service를 new로 생성하는것이 아니라 해당 클래스도 spring에서 받아와야 됨 ( @Autowired로 service.class 추가 )
-- 즉 일을 전달하기위해서는 해당 class를 @autowired로 선언해두어야한다
+- 즉  전달하기위해서는 해당 class를 @autowired로 선언해두어야한다
 
