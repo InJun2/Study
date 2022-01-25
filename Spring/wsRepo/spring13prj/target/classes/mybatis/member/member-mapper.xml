@@ -41,5 +41,10 @@
   		where id = #{id}
   		and pwd = #{pwd}
   	</select>
+  	
+  	<select id="selectLogin" parameterType="string" resultType="string">
+  		select pwd from member
+  		where id = #{string}
+  	</select>
 
   </mapper>

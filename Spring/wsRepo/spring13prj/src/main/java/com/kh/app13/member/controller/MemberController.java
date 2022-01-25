@@ -48,17 +48,16 @@ public class MemberController {
 	
 	@PostMapping("login")
 	public String login(String id, String pwd) {
-		String newPwd = pe.encode(pwd);
 		
-		Map<String, String> map = new HashMap<>();
-		map.put("id", id);
-		map.put("pwd", newPwd);
+		String pwd2 = sql.selectOne("member.selectLogin", id);
 		
-		boolean login = pwd.matches("$2a$10$acirGK2eQZCgRll4dylKDefWecnFF9KFkRMYVA6I57ow/fo6bYEsK");
+		boolean login = pe.matches(pwd,pwd2);	// pwd는 jsp로 받아온 pwd, pwd2는 db에서 가져온 암호화되어있는 pwd
 		System.out.println(login);
-		MemberDto dto = sql.selectOne("member.login", map);
-		
-		return "redirect:/";
+		if(login == true) {
+			return "redirect:/";			
+		}else {
+			return "redirect:/member/login";
+		}
 	}
 	
 	
