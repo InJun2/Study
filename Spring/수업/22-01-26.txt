@@ -1,0 +1,46 @@
+
+MultipartFile 파일 저장
+
+pom.xml에 추가
+- commons-fileupload, commons-io
+
+servlet-context.xml에 추가 ( id는 multipartResolver로 고정 )
+ex)	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="defaultEncoding" value="UTF-8"/>
+		<beans:property name="maxUploadSize" value="100000000"/>		<!--  업로드할 파일의 총 크기 -->
+		<beans:property name="maxUploadSizePerFile" value="50000000"/>		<!-- 한 첨부파일 최대 용량 -- >
+	</beans:bean>
+
+
+jsp 에서 파일 받아오기	( muliple은 여러 파일 선택 가능여부, accept는 넣을 파일 확장자 지정제한 )
+ex)  <form action="" method="post" enctype="multipart/form-data">
+	프로필 사진 : <input type="file" name="profile" multiple accept=".jpg, .png"><br><br>
+       <input type="submit" value="전송">
+       </form>
+
+파일받기 
+- 타입을 MultipartFile 의 타입으로 받아옴
+- 파일업로드 여부는 .isEmpty()로 체크
+- 여러파일을 받아올때는 배열, 리스트 이용
+
+java 메소드 작성
+ex)	@PostMapping("join")
+	public String join(MemberVo vo) throws IllegalStateException, IOException {	//
+		for(MultipartFile p : vo.getProfilelist()) {
+			System.out.println("이름 : " + p.getOriginalFilename());	// 원래 파일 이름 확인
+			System.out.println("크기 : " + p.getSize());			// 바이트 크기 확인
+			System.out.println("타입 : " + p.getContentType());		// 파일 타입 확인
+			// 저장
+			File file = new File("D:/develop/06_FrameWork/wsRepo/spring16prj/src/main/webapp/resources/file", p.getOriginalFilename());	// 컴퓨터에 저장할 경로, 저장할 이름 지정
+			p.transferTo(file);
+	}
+
+@Component대신 @Contoller, @Service, @Repository 쓰는 이유
+- 다른 협업하는 사람들이 이해하기 쉬움
+- 각 어노테이션마다 약간의 기능 차이가 있음
+
+Vo, Dto에서 Validation을 작성
+- 역할과 책임에 대해 생각해볼 것
+
+private로 변수를 작성하고 setter로 값을 넣는 이유
+- 무분별한 접근을 막기위해서 지정한 방식으로만 변수의 값을 넣어줌
