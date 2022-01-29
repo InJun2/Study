@@ -1,0 +1,45 @@
+진행내용
+-필터
+-인터셉터
+-컨트롤러 어드바이스
+
+지금까지 클래스에 @을 붙이면서 사용한 이유
+- spring에 bean으로 등록해서 사용하기 위함 ( class를 보면 s가 붙어있음을 확인 가능 )
+
+spring class bean 이름 지정하기
+- @Component(value = "injunfilter") 처럼  value="이름"으로 지정하기, default값은 class 이름
+- spring explorer 에서 등록 확인
+
+proxy
+- proxy는 무언가를 만들었을 때 한번 감싸주는 역할을 함
+- 현재는 필터로 이용하여 사용
+
+@WebFilter 어노테이션 없이 spring으로 filter 사용해보기
+- web.xml에 filter 추가
+ex)	<filter>
+		<filter-name>injunFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>injunFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+- root-context.xml에 web.xml에 추가했던 filter-name과 해당 class 위치 등록
+ex)	<bean id="injunFilter" class="com.kh.app19.filter.MyFilter"></bean>
+
+- FIlter class 만들어서 @Component로 스프링에 등록
+ex)	@Component
+		public class MyFilter implements Filter{	// javax.servlet import
+
+
+
+web.xml 을 바탕으로 컨테이너를 만듬
+모든 서블릿, 필터 참조 파일
+- /WEB-INF/spring/root-context.xml
+- org.springframework.web.context.ContextLoaderListener
+디스패처 서블릿이 처리하는 요청 참조파일
+- /WEB-INF/spring/appServlet/servlet-context.xml
+
+
