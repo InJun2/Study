@@ -1,0 +1,34 @@
+root-context
+- spring 컨테이너 자체 연결
+servlet-context
+- dispatcher-servlet 과 연결
+
+트랜잭션
+- 한 작업을 하는데 진행되는 일련의 db 변경사항, 흐름
+
+트랙잭션 예제 ) 송금
+- 상품 재고 확인
+- 결제 정상처리 되는지 값 확인
+- 처리 결과 db 저장
+- 
+
+pom.xml 에 추가
+<!-- transaction -->
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-tx</artifactId>
+	<version>${org.springframework-version}</version>
+</dependency>
+
+root-context.xml에서 Source가 아닌 Namespaces로 변경 후 tx 체크
+
+root-context.xml에 추가
+<!-- tx -->
+<tx:annotation-driven/>
+<beans:bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<beans:property name="dataSource" ref="injundbcpSource"/>
+</beans:bean>
+
+Service에 사용할 트랙잭션 class 혹은 method에 @Transactional추가 ( try/catch 역할 )
+- @Transactional어노 테이션이 없다면 만약 a와 b를 실행하려할때 b가 에러가 있다면 a는 실행되고 b는 실행되지 않음
+- 트랜잭션은 한작업이라도 문제가 생긴다면 나머지 작업도 처리가 되지 않아야 함, 그용도를 위한 @Transactional ( 한작업이 오류시 전체 롤백 )
