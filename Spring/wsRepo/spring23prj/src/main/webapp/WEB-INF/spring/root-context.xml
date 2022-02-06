@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns ="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	 
+	 <!-- DB 설정 관련 -->
+	<bean id="injunDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe"></property>
+		<property name="username" value="KH"></property>	<!-- DB user -->
+		<property name="password" value="KH"></property>	<!-- DB password -->
+	</bean>
+	
+	<!-- dbcp -->
+	<bean id="injundbcpSource" class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe"></property>
+		<property name="username" value="KH"></property>	<!-- DB user -->
+		<property name="password" value="KH"></property>	<!-- DB password -->
+		<property name="maxTotal" value="20"></property>
+		<property name="maxIdle" value="10"></property>
+		<property name="maxWaitMillis" value="3000"></property>
+	</bean>
+	
+	<!-- Jdbc Template -->
+	<bean id="injunjdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="injunDataSource"></property> <!-- 위에 등록한 db설정 id로 가져옴 -->
+	</bean>
+	
+	<!-- SqlSessionFactory -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="injundbcpSource"/>
+		<property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"/>
+		<property name="mapperLocations" value="classpath:/mybatis/**/*-mapper.xml"/>
+	</bean>
+	
+	<!-- sqlSessionTemplate -->
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg index="0" ref="sqlSession"/>
+	</bean>
+	
+	<!-- spring security -->
+	<bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+	</bean>
+	
+	<!-- file -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="UTF-8"/>
+		<property name="maxUploadSize" value="100000000"/>
+		<property name="maxUploadSizePerFile" value="50000000"/>
+	</bean>
+	 
+</beans>
