@@ -1,0 +1,56 @@
+AOP 
+ 
+AOP 설정
+1. aop 사용을 위해 pom.xml에 aop 추가
+ex)<!-- aop  spring framework에서 복사 후 artifactId만  aop추가해서 변경-->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aop</artifactId>
+		<version>${org.springframework-version}</version>
+	</dependency>
+
+2. aspectJ(Runtime)는 기존에 존재, 버전만 변경 ( properties 안에 존재 )
+ex)	<org.aspectj-version>1.9.7</org.aspectj-version>
+
+3. aspectJ waver pom.xml에 추가 ( weaving : 원하는 코드를 넣기위해 사용 )
+ex)	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjrt</artifactId>
+		<version>${org.aspectj-version}</version>
+	</dependency>	
+
+4. 현재 root-context에서 component-scan이 없으므로 root-context에서 Namespaces들어간 후 context, aop 체크
+
+5. root- context 빈 등록, 어노테이션 ( @Aspect ) 활성화
+ex)	<!-- @aspect 활성화 -->
+	 <aop:aspectj-autoproxy />
+
+6. root-context에 context:component-scan 추가
+ex)	<context:component-scan base-package="com.kh.app24" />
+
+7. component-scan을 원하는 클래스만 탐색을 원할시 use-default-filter="false" 입력 후 사용할 annotation class 위치입력
+ex)	<context:component-scan base-package="com.kh.app24" use-default-filters="false">
+	 	<context:exclude-filter type="annotation" expression="org.aspectj.lang.annotation.Aspect"/>
+	 </context:component-scan>
+
+AOP  사용
+- 사용할 class에서 @EnableAspectJAutoProxy, @Component, @Aspect 사용
+- 사용할 method에서 @사용하여 언제실행할 지와 대상을 지정
+- 언제 사용할지 : @Before, @After, @AfterReturning, @AfterThrowing, @around
+- 어디서 사용할지 : target, 
+ex) @EnableAspectJAutoProxy
+@Component
+@Aspect
+@Slf4j
+public class MyAspect {
+	// 언제 : 어노테이션으로 설정
+	// 대상 : 괄호 안에다 설정
+	@Before("target(com.kh.app24.HomeController)")
+	public void myAdvice01() {
+		log.info("myAdvice called before home");
+	}
+}
+
+aop는 인터셉트가 안될 경우에도 되는 상황이 존재
+
+
