@@ -43,4 +43,13 @@ web.xml 을 바탕으로 컨테이너를 만듬
 디스패처 서블릿이 처리하는 요청 참조파일
 - /WEB-INF/spring/appServlet/servlet-context.xml
 
-
+컨트롤러 어드바이스
+- 주로 특정 어노테이션 클래스에서의 예외 핸들링
+ex)	@ControllerAdvice(annotations = Controller.class)
+//	@ControllerAdvice(basePackages = "com.kh.app25.member.controller")	// 위와 비슷한 결과
+	public class MemberErrorProcessor {	
+		@ExceptionHandler(Exception.class)	// 핸들링 하고싶은 Exception 클래스를 매개변수에 넣으면 됨, 현재는 Exception으로 되어있음
+		public String errorProcess() {
+			return "common/error/exception";
+		}
+	}
