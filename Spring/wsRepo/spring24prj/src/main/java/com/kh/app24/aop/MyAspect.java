@@ -25,8 +25,8 @@ public class MyAspect {
 	// 1. 언제 : 어노테이션으로 설정
 	/* - @Before 
 	 * - @After
-	 * - @AfterReturning
-	 * - @AfterThrowing
+	 * - @AfterReturning : 대상 안쪽으로 접근이 될때 에러가 없을시 실행 
+	 * - @AfterThrowing : 대상이 에러가 발생시에만 적용, 에러를 던지기위해 사용됨
 	 * - @Around
 	 */
 	// 2. 대상 : 괄호 안에다 설정
@@ -57,8 +57,8 @@ public class MyAspect {
 	
 	// @Around : after, before 두개의 시점 간섭 가능
 	// 리턴타입 Object, 파라미터 : 조인포인트, 예외 : throwable로 맞춰야 함
-	// joinPoint : 대상
-	// pointcut : 
+	// joinPoint : proxy와 aspect가 연결되는 지점 ( after 이라면 컨트롤러 실행 후 시점을 의미 )
+	// pointcut : 대상, aspect 위치 지정자 
 	@Around("execution(* com..*Dao.te*(..))")	// public 은 생략 가능, 모든 리턴타입을 *로 지정, class 나 method 명도 * 이용가능, 매개변수에서 *는 1개이상, ..은 0개 이상을 의미함
 	public Object myAdvice05(ProceedingJoinPoint jp) throws Throwable {
 		System.out.println("========== epalse ===========");
