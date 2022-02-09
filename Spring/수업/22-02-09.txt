@@ -1,0 +1,50 @@
+공공데이터 포털
+
+예시로 오픈api 중 한국환경공단_에어코리아_미세먼지 경보 발령 현황 사용 예정
+
+한국환경공단_에어코리아_미세먼지 경보 발령 현황
+- XML, JSON 제공
+- API 유형 : REST
+- 요청 주소 : 요청주소 존재
+- 요청변수 : 받아올 변수명
+- 출력결과 : 변수값에 맞는 해당 값 가져옴
+- 샘플코드 : 현재 java 이용
+활용신청 
+
+활용신청 상세기능정보 ( 미세먼지 경보 발령 현황의 파라미터 )
+- serviceKey : 인증키
+- returnType : xml
+- numOfRows : 100
+- pageNo : 1
+- year : 2020
+- itemCode : PM10
+
+이후 샘플코드에서 java를 선택한 후 복사, service키 입력하여 java에서 실행
+샘플코드 동작
+1. URL 셋팅 ( 요청주소 + 파라미터들 셋팅, 항목요소에 필수와 옵션이 존재, 필수만 작성해도 사용 가능 )
+2. URL 객체 생성 ( 1에서 만든 URL 이용해서 )
+3. URL을 이용해서 커넥션 가져오기
+4. request의 요청방식 (method), header 설정
+5. 커넥션에서 inputStream 가져옴 ( BufferedReader로 변환 )
+6. 5에서 가져온 스트림으로 데이터 한줄씩 읽기 ( 누적시키기 ) 
+7. 사용한 자원들 ( BufferedReader, HttpURLConnection ) 정리 하기 ( 자원 반납 )
+8. 누적한 String 확인
+
+// StringBuilder
+// HttpURLConnection을 이용해서 응답코드(responseCode) ghkrdls rksmd
+// 응답코드에 따른 처리 ( conn.getErrorStream() )
+
+// String vs StringBuilder vs StringBuffer 
+String : 문자열의 변경이 적을 경우
+StringBuilder : 문자열의 변경이 많을 경우, 동기화의 지원 X ( 단일쓰레드 성능은 StringBuffer 보다 좋음 )
+StringBuffer : 문자열의 변경이 많을 경우, 동기화의 지원 O ( 멀티쓰레드 환경에서 안전성 )
+
+스프링 Gson 추가
+- 공공데이터 포털에서 json으로 데이터를 가져오고 Gson 을 이용해 받아온 정보 파싱
+-pom.xml에 Gson 추가
+- 받아온 json 데이터 파싱 ( result는 json 데이터 StringBuilder로 나열하여 넣은 값 )
+ex)	JsonObject resultObj = JsonParser.parseString(result).getAsJsonObject();
+- 파싱해온 데이터에서 body 가져오기
+ex)	JsonObject bodyObj = responseObj.getAsJsonObject("body");
+- 가져온 body에서 items를 ArrayList로 넣기
+ex) 	JsonArray items = bodyObj.getAsJsonArray("items");
