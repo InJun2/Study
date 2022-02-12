@@ -9,7 +9,8 @@ import java.net.URLEncoder;
 
 public class Run {
 	public static void main(String[] args) throws IOException {
-		StringBuilder urlBuilder = new StringBuilder("http://127.0.0.1:8094/app26/"); /* spring���� ���� project URL ( �������� �� ) */
+		// 서버가 실행되어 있다면 내가 만들어둔 스프링 프로젝트에서도 웹 정보 가져오기가 가능
+		StringBuilder urlBuilder = new StringBuilder("http://127.0.0.1:8094/app26/"); /* 만들어둔 spring26 project URL 링크, 서버 실행상태 */
         
         URL url = new URL(urlBuilder.toString());
         
