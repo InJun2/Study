@@ -18,3 +18,8 @@
 #div-header table tr:nth-child(2){
 	height: 50px;
 }
+
+#div-main{
+	width: 80vw;
+	margin: auto;
+}

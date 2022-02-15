@@ -1,10 +1,13 @@
 package com.kh.app.member.controller;
 
+import java.io.File;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.kh.app.member.entity.MemberDto;
 import com.kh.app.member.service.MemberService;
@@ -40,7 +43,8 @@ public class MemberController {
 	// 회원가입 로직 처리
 	@PostMapping("join")
 	public String join(MemberDto dto) throws Exception {
-		int result = service.join(dto);
+		
+		 int result = service.join(dto);
 		
 		return "member/join";
 	}

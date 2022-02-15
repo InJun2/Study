@@ -15,16 +15,27 @@
 			user_pwd,
 			user_nick,
 			user_age,
-			user_gender,
-			user_profile	
+			user_gender
   		) values (
   			#{userNo},
   			#{userId},
   			#{userPwd},
   			#{userNick},
   			#{userAge},
-  			#{userGender},
-  			#{userProfile}
+  			#{userGender}
+  		)
+  	</insert>
+  	
+  	<insert id="insertProfile" parameterType="memberDto">
+  		insert into member_profile
+  		(
+  			file_no,
+  			user_no,
+  			change_name
+  		)values(
+  			member_profile_seq.nextval,
+  			#{userNo},
+  			#{changeName}
   		)
   	</insert>
   </mapper>

@@ -21,7 +21,7 @@
 	
 	<!-- File Appender txt-->
 	<appender name="injunfatxt" class="org.apache.log4j.FileAppender">
-		<param name="file" value="myLogFile.txt" />
+		<param name="file" value="D:/develop/06_FrameWork/logs/myLogFile.txt" /> <!-- 원하는 경로에 log txt 파일로 출력 -->
 		<param name="append" value="true" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p: %c - %m%n" />
@@ -40,7 +40,7 @@
 		
 	<!-- Application Loggers -->
 	<logger name="com.kh.app">
-		<level value="debug" />
+		<level value="warn" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
