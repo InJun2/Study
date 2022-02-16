@@ -1,22 +1,20 @@
 package com.kh.app.member.controller;
 
-import java.io.File;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.kh.app.member.entity.MemberDto;
 import com.kh.app.member.service.MemberService;
 
-import lombok.extern.slf4j.Slf4j;
 
 @Controller
 @RequestMapping("member")
-@Slf4j
 public class MemberController {
 	
 	@Autowired
@@ -30,8 +28,16 @@ public class MemberController {
 	
 	// 로그인 로직 처리
 	@PostMapping("login")
-	public String login(MemberDto dto) {
-		return "member/login";
+	public String login(MemberDto dto, HttpSession session) throws Exception {
+		MemberDto loginUser = service.login(dto);
+		
+		// loginUser 정보 
+		if(loginUser != null) {
+			session.setAttribute("loginUser", loginUser);
+			return "redirect:/";
+		}else {
+			return "redirect:/";
+		}
 	}
 	
 	// 회원가입 화면 보여주기
@@ -42,11 +48,43 @@ public class MemberController {
 	
 	// 회원가입 로직 처리
 	@PostMapping("join")
-	public String join(MemberDto dto) throws Exception {
+	public String join(MemberDto dto, HttpServletRequest req) throws Exception {
+		 int result = service.join(dto, req);
 		
-		 int result = service.join(dto);
+		 if(result>0) {
+			 return "redirect:/member/login";
+		 }else {
+			 return "redirect:/member/join";
+		 }
+	}
+	
+	// 로그아웃
+	@GetMapping("logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "redirect:/";
+	}
+	
+	// 마이페이지 화면 보여주기
+	@GetMapping("mypage")
+	public String mypage() {
 		
-		return "member/join";
+		
+		return "member/mypage";
+	}
+	
+	// 마이페이지 내 정보 수정 로직 처리
+	@PostMapping("mypage")
+	public String mypage(MemberDto dto, HttpSession session) throws Exception {
+		// 업데이트 처리
+		MemberDto member = service.editMember(dto);
+		
+		if(member != null) {
+			session.setAttribute("loginUser", member);
+			return "redirect:/";
+		}else {
+			return "redirect:/member/errorpage";
+		}
 	}
 	
 }

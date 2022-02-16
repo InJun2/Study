@@ -38,4 +38,32 @@
   			#{changeName}
   		)
   	</insert>
+  	
+  	<select id="getMember" parameterType="memberDto" resultType="memberDto">
+  		select *
+  		from member m
+  		join member_profile p
+  		on m.user_no = p.user_no
+  		where user_id = #{userId}
+  	</select>
+  	
+  	<update id="updateMember" parameterType="memberDto">
+  		update member
+  		set 
+  			user_no = #{userNo}
+  			<if test="userPwd != null and userPwd != ''">
+  				,user_pwd = #{userPwd}
+  			</if>
+  			<if test="userNick != null and userNick != ''">
+				,user_nick = #{userNick}
+  			</if>
+  			<if test="userAge != null and userAge != ''">
+				,user_age = #{userAge}
+  			</if>
+  			<if test="userGender != null and userGender != ''">
+				,user_gender = #{userGender}
+  			</if>
+  		where user_no = #{userNo}
+  	</update>
+  	
   </mapper>

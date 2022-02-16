@@ -9,5 +9,9 @@ public interface MemberDao {
 	int insertMember(MemberDto dto) throws Exception;
 
 	void uploadProfile(MemberDto dto) throws Exception;
+
+	MemberDto getMember(MemberDto dto) throws Exception;
+
+	int updateMember(MemberDto dto) throws Exception;
 	
 }

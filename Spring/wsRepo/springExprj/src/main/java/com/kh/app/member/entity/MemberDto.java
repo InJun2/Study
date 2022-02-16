@@ -12,7 +12,6 @@ public class MemberDto {
 	private String userNick;
 	private int userAge;
 	private String userGender;
-	private String userProfile;
 	private MultipartFile f;
 	private String changeName;
 }

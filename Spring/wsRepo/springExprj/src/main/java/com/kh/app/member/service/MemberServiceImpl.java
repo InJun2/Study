@@ -2,7 +2,10 @@ package com.kh.app.member.service;
 
 import java.io.File;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,9 +19,12 @@ public class MemberServiceImpl implements MemberService{
 	
 	@Autowired
 	private MemberDao dao;
+	
+	@Autowired
+	private PasswordEncoder pe;
 
 	@Override
-	public int join(MemberDto dto) throws Exception {
+	public int join(MemberDto dto, HttpServletRequest req) throws Exception {
 		// 회원가입 처리
 		
 		// 회원번호 // 시퀸스 nextval
@@ -26,6 +32,8 @@ public class MemberServiceImpl implements MemberService{
 		
 		// insert 처리
 		dto.setUserNo(no);
+		// 회원가입시 암호화
+		dto.setUserPwd(pe.encode(dto.getUserPwd()));
 		int result = dao.insertMember(dto);
 		
 		///////////////
@@ -40,9 +48,12 @@ public class MemberServiceImpl implements MemberService{
 			// 변경된 이름
 			String changeName = System.currentTimeMillis() +"_" +f.getOriginalFilename();
 			dto.setChangeName(changeName);
+			
+			// webapp 안의 profile 위치 지정
+			String path = req.getServletContext().getRealPath("/resources/upload/profile/");
 						
 			// 파일을 서버에 저장
-			File file = new File("D:/develop/06_FrameWork/wsRepo/springExprj/src/main/resources/upload/profile/" +f.getOriginalFilename());
+			File file = new File(path + changeName);
 			f.transferTo(file);
 			
 			// db에 insert
@@ -51,6 +62,36 @@ public class MemberServiceImpl implements MemberService{
 		}
 		
 		return result;
+	}
+
+	@Override
+	public MemberDto login(MemberDto dto) throws Exception {
+		// DB 에서 회원 정보 조회
+		MemberDto dbUser = dao.getMember(dto);
+		
+		// 비번 체크
+		if(pe.matches(dto.getUserPwd(), dbUser.getUserPwd())) {
+			// 로그인 성공
+			return dbUser;
+		}else {
+			return null;
+		}
+		
+		
+	}
+
+	@Override
+	public MemberDto editMember(MemberDto dto) throws Exception {
+		// 비밀번호 한번 더 확인
+		dto.setUserPwd(pe.encode(dto.getUserPwd()));
+		int result = dao.updateMember(dto);
+		
+		MemberDto member = null;
+		if(result>0) {
+			member = dao.getMember(dto);
+		}
+		
+		return member;
 	}
 	
 }

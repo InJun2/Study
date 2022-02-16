@@ -21,32 +21,52 @@
 				<option value="m">남자</option>
 				<option value="f">여자</option>
 			</select><br>
-			사진 : <input type="file" name="f" multiple="multiple" accept=".jpg, .png"><br>
-			<img id="profileImg" width="100px" height="100px">
+			사진 : <input type="file" name="f" multiple="multiple" accept=".jpg, .png" onchange="preview()"><br>
+			<div id="div-preview">
+			
+			</div>
 			<input type="submit" value="회원가입">
 		</form>
+		
 	</div>
 		
 	<script type="text/javascript">
-		let fileTag = document.querySelector("input[name=f]");
-		
-		fileTag.onchange = function(){
-			alert("파일 선택");
+		function preview(){
+			// 파일 여러개 미리보기	
+			let fileTag = document.querySelector('input[name=f]');
+			let divTag = document.querySelector('#div-preview');
 			
-			// 파일있는지 확인
-			if(fileTag.files.length > 0){
-				// 미리보기 작업 실행
-				let reader = new FileReader();
-				reader.onload = function(data){
-					console.log(data);
-					let imgTag = document.querySelector("#profileImg");
-					imgTag.src = data.target.result;
+			if(fileTag.files.length >0){
+				// 파일을 올렸을 때
+				
+				// 이미지 src에 들어갈 데이터 구하기
+				for(let i=0; i<fileTag.files.length; ++i){
+					let reader = new FileReader();
+					reader.onload = function(data){				
+						// 이미지 태그 만들어서 넣기
+						
+						// 1. 이미지 태그 만들기
+						let imgTag = document.createElement('img');
+						
+						// 2. 이미지 태그 속성들 셋팅하기
+						imgTag.setAttribute('src', data.target.result);
+						imgTag.setAttribute('width', '100');
+						imgTag.setAttribute('height', '100');
+						
+						// 3. 이미지 태그 집어넣기
+						divTag.appendChild(imgTag);
+					}
+					// 읽기 실행
+					reader.readAsDataURL(fileTag.files[i]);
 				}
-				reader.readAsDataURL(fileTag.files[0]);
-			}else{
-				//
-			}
+				
+			}else {
+				// 취소 버튼을 눌렀을 때
+				divTag.innerHTML= "";
+				
+			}		
 		}
+		
 	</script>
 		
 </body>

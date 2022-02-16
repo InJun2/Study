@@ -10,8 +10,7 @@ create table member(
     user_pwd varchar2(100),
     user_nick varchar2(100),
     user_age number,
-    user_gender char(1),
-    user_profile varchar2(500)
+    user_gender char(1)
 );
 
 create table member_profile(
