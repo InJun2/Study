@@ -68,6 +68,9 @@ public class MemberServiceImpl implements MemberService{
 	public MemberDto login(MemberDto dto) throws Exception {
 		// DB 에서 회원 정보 조회
 		MemberDto dbUser = dao.getMember(dto);
+		if(dbUser ==null) {
+			return null;
+		}
 		
 		// 비번 체크
 		if(pe.matches(dto.getUserPwd(), dbUser.getUserPwd())) {
@@ -83,7 +86,10 @@ public class MemberServiceImpl implements MemberService{
 	@Override
 	public MemberDto editMember(MemberDto dto) throws Exception {
 		// 비밀번호 한번 더 확인
-		dto.setUserPwd(pe.encode(dto.getUserPwd()));
+		if(dto.getUserPwd().length() >0) {
+			dto.setUserPwd(pe.encode(dto.getUserPwd()));			
+		}
+		
 		int result = dao.updateMember(dto);
 		
 		MemberDto member = null;

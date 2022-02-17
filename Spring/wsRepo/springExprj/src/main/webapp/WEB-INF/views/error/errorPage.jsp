@@ -8,12 +8,13 @@
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/common/header.jsp" %>
-	<script type="text/javascript" src="${root}/resources/js/home.js">
-		
-	</script>
+	<h1>에러페이지</h1>
 	
-	<div id="div-main">	<!-- 위의 header.jsp안의 header.css를 참조함 -->
-		<h1>홈페이지</h1>
-	</div>
+	<h2 id="msg">${msg}</h2>
+	
+	<script type="text/javascript">
+		alert(document.getElementById('msg').innerText);
+		window.location.href = "${root}";
+	</script>
 </body>
 </html>

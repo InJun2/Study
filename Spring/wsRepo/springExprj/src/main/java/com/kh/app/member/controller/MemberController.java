@@ -67,8 +67,13 @@ public class MemberController {
 	
 	// 마이페이지 화면 보여주기
 	@GetMapping("mypage")
-	public String mypage() {
-		
+	public String mypage(HttpSession session) {
+		// 로그인한 경우에만 보여주기
+		MemberDto loginUser = (MemberDto)session.getAttribute("loginUser");
+		if(loginUser == null) {
+			session.setAttribute("msg","로그인 정보 없음");
+			return "error/errorPage";
+		}
 		
 		return "member/mypage";
 	}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="notice">
+  	
+ 	<insert id="insertNotice" parameterType="noticeVo">
+ 		insert into notice
+ 		(
+ 			no,
+ 			title,
+ 			content,
+ 			writer
+ 		)
+ 		values
+ 		(	
+ 			notice_seq.nextval,
+ 			#{title},
+ 			#{content},
+ 			#{writer}
+ 		)
+ 	</insert>
+  	
+  	<select id="getNoticeList" resultType="noticeVo">
+  		select * 
+  		from notice n
+  		join member m
+  		on n.writer = m.user_no
+  		where del = 'N'
+  		order by n.no
+  	</select>
+  	
+  	<update id="deleteNotice">
+  		update notice
+  		set del = 'Y'
+  		where no in 
+  		<foreach collection="array" item="n" open="(" close=")" separator=",">
+  			${n}  		
+  		</foreach>
+  	</update>
+  	
+  </mapper>

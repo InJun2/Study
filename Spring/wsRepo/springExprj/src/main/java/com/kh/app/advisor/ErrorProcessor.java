@@ -13,6 +13,7 @@ public class ErrorProcessor {
 	@ExceptionHandler(Exception.class)
 	public String errorProcess(Exception e) {
 		log.error(e.toString());
+//		e.printStackTrace();
 		
 		return "error/exception";
 	}
