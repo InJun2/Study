@@ -15,12 +15,12 @@ public class PageVo {
 	private int endPage;	// 마지막 페이지
 	private int lastPage;	// db의 row 기준으로 마지막 페이지는 몇인지
 	
-	public PageVo(int currentPage, int cntPerPage, int pageBtnCnt, int totalRow) {
-		this.currentPage = currentPage;
+	public PageVo(String currentPage, int cntPerPage, int pageBtnCnt, int totalRow) {
+		this.currentPage = Integer.parseInt(currentPage);
 		this.cntPerPage = cntPerPage;
 		this.pageBtnCnt = pageBtnCnt;
 		this.totalRow = totalRow;
-		calc(currentPage, cntPerPage, pageBtnCnt, totalRow);
+		calc(this.currentPage, cntPerPage, pageBtnCnt, totalRow);
 	}
 	
 	private void calc(int currentPage, int cntPerPage, int pageBtnCnt, int totalRow) {

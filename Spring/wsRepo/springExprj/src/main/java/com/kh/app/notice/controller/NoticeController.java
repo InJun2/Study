@@ -32,10 +32,16 @@ public class NoticeController {
 		if(page == null)
 			page = "1";
 		
+		// 페이징 객체 필요
+		int cntPerPage = 10;	// 한 페이지당 10개씩 보여주기
+		int pageBtnCnt = 5;		// 한번에 보여줄 페이지 버튼 갯수
+		int totalRow = service.getNoticeCnt();	// DB에 있는 모든 row 개수
+		PageVo vo = new PageVo(page, cntPerPage, pageBtnCnt, totalRow);
 		
 		// 리스트 조회
-		List<NoticeVo> list = service.getNoticeList();
+		List<NoticeVo> list = service.getNoticeList(vo);
 		model.addAttribute("list",list);
+		model.addAttribute("page", vo);
 		
 		return "notice/list";
 	}

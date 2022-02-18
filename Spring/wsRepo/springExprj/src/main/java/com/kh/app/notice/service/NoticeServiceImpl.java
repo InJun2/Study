@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.kh.app.common.PageVo;
 import com.kh.app.notice.dao.NoticeDao;
 import com.kh.app.notice.vo.NoticeVo;
 
@@ -21,8 +22,8 @@ public class NoticeServiceImpl implements NoticeService{
 	}
 
 	@Override
-	public List<NoticeVo> getNoticeList() throws Exception {
-		return dao.getNoticeList();
+	public List<NoticeVo> getNoticeList(PageVo vo) throws Exception {
+		return dao.getNoticeList(vo);
 	}
 
 	@Override
@@ -30,6 +31,11 @@ public class NoticeServiceImpl implements NoticeService{
 		String[] delArr = str.split(",");
 		
 		return dao.deleteNotice(delArr);
+	}
+
+	@Override
+	public int getNoticeCnt() throws Exception {
+		return dao.getNoticeCnt();
 	}
 	
 }

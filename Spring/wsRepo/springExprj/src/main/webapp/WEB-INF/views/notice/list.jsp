@@ -38,6 +38,18 @@
 		<a href="${root}/notice/write">공지 작성</a>
 		<button onclick="del();">삭제하기</button>
 		
+		<!-- 페이지 -->
+		<br><br>
+		<c:if test="${page.startPage != 1}"><a href="${root}/notice/list/${page.startPage - 1}">이전</a></c:if>
+		
+		<c:forEach var="i" begin="${page.startPage}" end="${page.endPage}">
+			<c:if test="${page.currentPage != i and i <= page.lastPage}"><a href="${root}/notice/list/${i}">${i}</a> &nbsp;</c:if>
+			<c:if test="${page.currentPage == i and i <= page.lastPage}">${i} &nbsp;</c:if>
+		</c:forEach>
+		
+		<c:if test="${page.endPage < page.lastPage}"><a href="${root}/notice/list/${page.endPage + 1}">다음</a></c:if>
+		
+		
 	</div>
 	
 	<script type="text/javascript">

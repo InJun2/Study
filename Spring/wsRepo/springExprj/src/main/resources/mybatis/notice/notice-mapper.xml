@@ -22,12 +22,19 @@
  	</insert>
   	
   	<select id="getNoticeList" resultType="noticeVo">
-  		select * 
-  		from notice n
-  		join member m
-  		on n.writer = m.user_no
-  		where del = 'N'
-  		order by n.no
+  		select * from 
+  		(
+	  		select rownum rn, t.* 
+	  		from(
+		  		select * 
+		  		from notice n
+		  		join member m
+		  		on n.writer = m.user_no
+		  		where del = 'N'
+		  		order by n.no  		
+	  		) t
+  		)
+  		where rn between #{startRow} and #{endRow}
   	</select>
   	
   	<update id="deleteNotice">
@@ -38,5 +45,11 @@
   			${n}  		
   		</foreach>
   	</update>
+  	
+  	<select id="getNoticeCnt" resultType="int">
+  		select count(no) 
+  		from notice
+  		where del = 'N'
+  	</select>
   	
   </mapper>
