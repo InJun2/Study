@@ -4,18 +4,18 @@ public class ThreadMonitor {
 
 	public static void main(String[] args) {
 		
-		// »ç¿ëÇÒ °´Ã¼ »ı¼º
+		// ì‚¬ìš©í•  ê°ì²´ ìƒì„±
 		Worker worker = new Worker();
 		
-		// ½º·¹µå 2°³ »ı¼º
+		// ìŠ¤ë ˆë“œ 2ê°œ ìƒì„±
 		Thread t1 = new Thread(new Runnable() {
 			
 			@Override
 			public void run() {
 				while(true) {
-					// 1ÃÊ¸¶´Ù WorkerÀÇ A È£Ãâ
+					// 1ì´ˆë§ˆë‹¤ Workerì˜ A í˜¸ì¶œ
 					try {
-						Thread.sleep(1000);
+						Thread.sleep(1000);   //1ì´ˆ ë‹¨ìœ„ë¡œ ì¼ì‹œì •ì§€
 						worker.methodA();
 					} catch (InterruptedException e) {
 						e.printStackTrace();
@@ -29,7 +29,7 @@ public class ThreadMonitor {
 			@Override
 			public void run() {
 				while(true) {
-				// 1ÃÊ¸¶´Ù WorkerÀÇ B È£Ãâ
+				// 1ì´ˆë§ˆë‹¤ Workerì˜ B í˜¸ì¶œ
 					try {
 						Thread.sleep(1000);
 						worker.methodB();
@@ -40,17 +40,17 @@ public class ThreadMonitor {
 			}
 		});
 		
-		// °¢°¢ ¸Ş¼Òµå a,b °è¼Ó È£Ãâ
+		// ê°ê° ë©”ì†Œë“œ A,B ê³„ì† í˜¸ì¶œ
 		t1.start();
 		t2.start();
 		
-		// ÀÚ¹Ù´Â ½º·¹µå ½ºÄÉÁÙ¸µÀÌ ºÒ°¡´É
-		// ½º·¹µå ½ÇÇà¼ø¼­ : ½º·¹µå »ı¼º -> ½ÇÇà´ë±â -> ½ÇÇà ( -> ÀÏ½ÃÁ¤Áö -> ½ÇÇà´ë±â·Î µ¹¾Æ°¡±â ) -> ½º·¹µå ¼Ò¸ê
-		// ½º·¹µå ÄÁÆ®·Ñ : ½ÇÇàÁßÀÎ ½º·¹µåÀÇ »óÅÂ¸¦ Á¦¾îÇÏ±â À§ÇÑ °Í
-		// ÀÏ½ÃÁ¤Áö·Î º¯°æ : sleep(), join(), wait(), I/O block
-		// ½ÇÇà´ë±â·Î º¯°æ : interrupt(), notify(), notifyAll()
+		// ìë°”ëŠ” ìŠ¤ë ˆë“œ ìŠ¤ì¼€ì¤„ë§ì´ ë¶ˆê°€ëŠ¥
+		// ìŠ¤ë ˆë“œ ì‹¤í–‰ìˆœì„œ : ìŠ¤ë ˆë“œ ìƒì„± -> ì‹¤í–‰ëŒ€ê¸° -> ì‹¤í–‰ ( -> ì¼ì‹œì •ì§€ -> ì‹¤í–‰ëŒ€ê¸°ë¡œ ëŒì•„ê°€ê¸° ) -> ìŠ¤ë ˆë“œ ì†Œë©¸
+		// ìŠ¤ë ˆë“œ ì»¨íŠ¸ë¡¤ : ì‹¤í–‰ì¤‘ì¸ ìŠ¤ë ˆë“œì˜ ìƒíƒœë¥¼ ì œì–´í•˜ê¸° ìœ„í•œ ê²ƒ
+		// ì¼ì‹œì •ì§€ë¡œ ë³€ê²½ : sleep(), join(), wait(), I/O block
+		// ì‹¤í–‰ëŒ€ê¸°ë¡œ ë³€ê²½ : interrupt(), notify(), notifyAll()
 		
-		// ½º·¹µåÀÇ »óÅÂ : new, runnable, wait, terminated
+		// ìŠ¤ë ˆë“œì˜ ìƒíƒœ : new, runnable, wait, terminated
 		
 	}
 
