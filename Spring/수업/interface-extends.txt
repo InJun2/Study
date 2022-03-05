@@ -12,4 +12,6 @@ extends는 클래스를 확장하는 거고 implements는 인터페이스를 구
 인터페이스와 보통 클래스의 차이는 인터페이스는 정의한 메소드를 구현하지 않아도 된다.
 인터페이스를 상속받는 클래스에서 인터페이스에 정의된 메소드를 구현하면 된다.
 
+Enum 에 대해서는 다시 
+
 참조 : https://velog.io/@hkoo9329/%EC%9E%90%EB%B0%94-extends-implements-%EC%B0%A8%EC%9D%B4
