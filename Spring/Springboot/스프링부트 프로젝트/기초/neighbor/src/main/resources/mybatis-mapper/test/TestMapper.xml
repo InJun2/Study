@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.neighbor.mapper.TestMapper">				<!-- @Mapper로 지정한 클래스 위치 -->
+    <select id="getUser" resultType="DeptDto">	<!-- id는 namespace에 지정된 클래스의 메소드명과 동일해야함, resultType은 리턴할 타입 명시 ( 해당 객체는 application.properties에서 alias를 이용하여 패키지명까지 생략 후 클래스명 ) -->
+        SELECT *
+          FROM myuser
+    </select>
+</mapper> 
