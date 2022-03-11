@@ -9,4 +9,6 @@ public interface TestService {
 	public String getTime();
 
 	public List<DeptDto> getUser();
+
+	public int insertUser(DeptDto dto);
 }

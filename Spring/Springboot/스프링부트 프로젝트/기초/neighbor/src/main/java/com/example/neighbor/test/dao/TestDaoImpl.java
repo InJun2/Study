@@ -23,6 +23,11 @@ public class TestDaoImpl implements TestDao{
 	public List<DeptDto> getUser() {
 		return testMapper.getUser();
 	}
+
+	@Override
+	public int insertUser(DeptDto dto) {
+		return testMapper.insertUser(dto);
+	}
 	
 	
 }

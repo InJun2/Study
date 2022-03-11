@@ -23,5 +23,10 @@ public class TestServiceImple implements TestService{
 	public List<DeptDto> getUser() {
 		return dao.getUser();
 	}
+
+	@Override
+	public int insertUser(DeptDto dto) {
+		return dao.insertUser(dto);
+	}
 	
 }

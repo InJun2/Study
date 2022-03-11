@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -26,7 +27,7 @@ public class TestController {
 	
 	@GetMapping("resp")
 	public @ResponseBody List<DeptDto> myName(){		// @ResponseBody : 결과를 view page가 아닌 데이터만 출력
-		String date = service.getTime();
+//		String date = service.getTime();
 		List<DeptDto> dto = service.getUser();
 		return dto;
 	}
@@ -38,6 +39,18 @@ public class TestController {
 		log.trace("trace Massage");						// logback 에 해당 패키지내의 로그 정보는 debug 이상만 출력되므로 trace 로그는 출력되지 않음
 		log.debug("debug Message");
 		return "myUser";
+	}
+	
+	@GetMapping("insert")
+	public String insertUser() {
+		return "insertUser";
+	}
+	
+	@PostMapping("insert")
+	public String insertUser(DeptDto dto) {
+		if(service.insertUser(dto)>0)		
+			return "redirect:/test/view";
+		return "redirect:/test/insert";
 	}
 	
 	

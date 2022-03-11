@@ -6,4 +6,5 @@
         SELECT *
           FROM myuser
     </select>
+    
 </mapper> 

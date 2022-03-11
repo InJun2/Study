@@ -9,4 +9,6 @@ public interface TestDao {
 	String getTime();
 
 	List<DeptDto> getUser();
+
+	int insertUser(DeptDto dto);
 }
