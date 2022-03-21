@@ -95,3 +95,5 @@ root-context.xml
 - servlet-context와 다른점 이후 기술 예정	
 
 
+spring-boot
+- 위의 구성과는 다름 pom.mxl과 application.properties로 구성. 
