@@ -10,7 +10,6 @@
 </head>
 <body>
 	<h1>B</h1>
-	<h3>사용자권한 : ${user.userAuthority}</h3>
 	<a href="${path}/logout">로그아웃</a>
 </body>
 </html>

@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Component;
 
 import com.example.demo.member.vo.MemberVo;
 import com.example.demo.security.user.CustomUserDetails;
@@ -18,8 +19,5 @@ public interface MemberMapper {
 
 	@Select("select * from member where user_id=#{username}")
 	public MemberVo selectId(String username);
-
-	@Select("select * from member where user_id=#{username}")
-	public MemberVo selectUser(String username);
 
 }

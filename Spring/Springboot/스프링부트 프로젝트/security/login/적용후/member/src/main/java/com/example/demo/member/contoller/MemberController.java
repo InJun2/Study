@@ -34,18 +34,18 @@ public class MemberController {
 		return getUserAuthority(user, model);
 	}
 	
-	@PostMapping("/login")
-	public String login(MemberVo vo, Model model, HttpSession session) {
-		MemberVo user = service.loginUser(vo);
-		if(user == null) {
-			model.addAttribute("msg", "잘못된 로그인 정보입니다");
-			return "common/error";
-		}
-		model.addAttribute("user", user);
-		session.setAttribute("user", user);
-		
-		return getUserAuthority(user, model);
-	}
+//	@PostMapping("/login")
+//	public String login(MemberVo vo, Model model, HttpSession session) {
+//		MemberVo user = service.loginUser(vo);
+//		if(user == null) {
+//			model.addAttribute("msg", "잘못된 로그인 정보입니다");
+//			return "common/error";
+//		}
+//		model.addAttribute("user", user);
+//		session.setAttribute("user", user);
+//		
+//		return getUserAuthority(user, model);
+//	}
 	
 	@PostMapping("/join")
 	public String join(MemberVo vo, Model model) {
@@ -83,11 +83,11 @@ public class MemberController {
 		return sessionError(model);
 	}
 	
-	@GetMapping("/home")
+	@GetMapping("/C")
 	public String home(HttpSession session, Model model) {
 		MemberVo user = (MemberVo) session.getAttribute("user"); 
 		if(user.getUserAuthority().equals("ROLE_ADMIN"))
-			return "home";
+			return "C";
 		return sessionError(model);
 	}
 	
@@ -99,7 +99,7 @@ public class MemberController {
 			return "B";
 		}
 		if(user.getUserAuthority().equals("ROLE_ADMIN")) {
-			return "home";
+			return "C";
 		}
 		
 		return sessionError(model);
