@@ -13,10 +13,11 @@ import org.springframework.stereotype.Component;
 import com.example.demo.security.user.CustomUserDetails;
 import com.example.demo.security.userservice.CustomUserDetailsService;
 
-import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
-@RequiredArgsConstructor
+
 @Component
+@Slf4j
 public class CustomAuthenticationProvider implements AuthenticationProvider{
 	
 	@Autowired
@@ -25,16 +26,18 @@ public class CustomAuthenticationProvider implements AuthenticationProvider{
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 		UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken) authentication; // AuthenticaionFilter에서 생성된 토큰으로부터 아이디와 비밀번호를 조회함 ( 현재는 CustomAuthenticationFilter )
-		String userId = authentication.getPrincipal().toString();
-		String userPassword = authentication.getCredentials().toString();	// null 값이 들어가서 오류 발생
+		String userId = token.getPrincipal().toString();
+		String userPassword = token.getCredentials().toString();	// null 값이 들어가서 오류 발생
 		
 		CustomUserDetails user = userService.loadUserByUsername(userId);	// db에서 가져온 유저정보
 		
-		if(!passwordEncoder().matches(userPassword, user.getPassword())){	// 인증
+		if(passwordEncoder().matches(userPassword, user.getPassword())){	// 인증
+			log.info(user.getUsername() + " 회원 로그인 성공");
 			token = new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword(), user.getAuthorities());	// 인증 권한과 authenticated true로 새로운 토큰 생성
 		}
+		
 		return token;
-	}	// 쿠키를 제거하고 실행했을때 정상작동. 결과를 어디로 보내주는지 확인 ( 보내주는 곳이 없어서 해당 메소드가 다시돌고 에러 발생 )
+	}	
 
 	@Override
 	public boolean supports(Class<?> authentication) {

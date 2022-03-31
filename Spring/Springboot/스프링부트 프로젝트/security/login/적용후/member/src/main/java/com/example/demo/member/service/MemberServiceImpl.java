@@ -19,7 +19,6 @@ public class MemberServiceImpl implements MemberService{
 		return new BCryptPasswordEncoder(); 
 	}
 
-
 	@Override
 	public MemberVo loginUser(MemberVo vo) {
 		return decryptionPwd(vo);
