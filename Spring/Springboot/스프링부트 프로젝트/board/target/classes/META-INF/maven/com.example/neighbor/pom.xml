@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- POM.xml : - Maven Project의 설정 부분을 기록해 놓은 XML 형식의 파일 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">	<!-- project : 루트 태그, 문서의 단일한 이름을 특정하기 위해 적는 namespace -->
+	<modelVersion>4.0.0</modelVersion>
+	<parent>		<!-- parent : 하위프로젝트가 상위 프로젝트의 pom.xml을 상속받기 위해 사용되는 태그, 태그안의 그룹아이디, 아티팩트 아이디, 버전은 모두 상속받음 -->
+		<groupId>org.springframework.boot</groupId>	<!-- groupId : 자바에서 패키지 이름으로 회사나 단체의 유니크한 이름을 명시. 제작자나 회사, 혹은 단체를 식별하기 위해 작성 -->
+		<artifactId>spring-boot-starter-parent</artifactId>	<!-- artifactId : 공식문서에서는 프로젝트를 부를 때 아티팩트 아이디로 부른다고 한다. 프로젝트의 이름과 같은 의미 -->
+		<version>2.6.4</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>neighbor</artifactId>
+	<version>0.0.1-SNAPSHOT</version>	<!-- SNAPSHOT : 개발단계, 일종의 백업 시점 -->
+	<name>neighbor</name>				<!-- name : 프로그램의 이름. 일반적으로 아티팩트 아이디를 그대로 사용 -->
+	<description>Demo project for Spring Boot</description>
+	<properties>	<!-- properties : pom.xml에서 사용하는 속성들에 대한 명시 -->
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>		<!-- dependencies : 프로젝트가 참조하는 외부라이브러리들이 해당 태그로 감싸져서 명시되어 있음 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>			<!-- scope : 라이브러리가 사용되는 범위를 지정한 것. 언제 사용되는지를 명시해 놓은 것 -->
+			<exclusions> 
+				<exclusion> <!-- exclusion : 특정 의존 라이브러리를 제외시키는 기능 -->
+					<groupId>org.junit.vintage</groupId> 
+					<artifactId>junit-vintage-engine</artifactId> 
+				</exclusion> 
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+		
+		 <!-- DB -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+		    <groupId>org.mybatis.spring.boot</groupId>
+		    <artifactId>mybatis-spring-boot-starter</artifactId>
+		    <version>2.1.3</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
+		<dependency>
+		 	<groupId>org.springframework.boot</groupId> 
+		 	<artifactId>spring-boot-starter-aop</artifactId> 
+		</dependency>
+
+        <!-- DB -->
+		
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		
+		<!-- jsp 라이브러리 -->
+		<dependency> 
+			<groupId>org.apache.tomcat.embed</groupId> 
+			<artifactId>tomcat-embed-jasper</artifactId> 
+			<scope>provided</scope> 
+		</dependency> 
+		
+		<!-- jstl 라이브러리 --> 
+		<dependency> 
+			<groupId>javax.servlet</groupId> 
+			<artifactId>jstl</artifactId> 
+		</dependency>
+
+		
+	</dependencies>
+		
+	<!-- Maven이란 자바 프로젝트의 build를 자동화해주는 build tool, 자고로 spring boot의 mvnw 파일은 Maven을 설치하지 않아도 Maven Build를 할수 있게 함. Gradle Wrapper와 같은 개념의 도구 -->
+	<build>	
+		<plugins>
+			<plugin>	<!-- plugin : 빌들에서 사용할 플러그인을 명시해 놓은 것. 간단히 설명하면 추가기능으로 기본 소프트웨어를 지원해서 특수한 기능을 확장할 수 있도록 설계된 프로그램 -->
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
