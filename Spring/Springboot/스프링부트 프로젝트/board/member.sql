@@ -23,9 +23,9 @@ create table member_seq(
 	member_no int default 0
 );
 
-insert into member values (1, '111', '$2a$10$Ak3zANpSNPlCkZUMB8P0tuSw6i4J3ACHp.O1rlOnaigwyO6Ar82Au','ROLE_A');
-insert into member values (2, '222', '$2a$10$WJ69pK9YXHOVSQ7Tz5.UveIKXdd4dZl3.GhXh3HqQHwJ9ef2LNpWS', 'ROLE_B');
-insert into member values (3, '333', '$2a$10$ICky4gl5GtMT7MfGar7sYu2YPmbTAkUjD6gtKIKs5pE.U3DSfwoMu', 'ROLE_ADMIN');
+insert into member values (1, '111', '$2a$10$Ak3zANpSNPlCkZUMB8P0tuSw6i4J3ACHp.O1rlOnaigwyO6Ar82Au','ROLE_A');  /권한 A 비번111
+insert into member values (2, '222', '$2a$10$WJ69pK9YXHOVSQ7Tz5.UveIKXdd4dZl3.GhXh3HqQHwJ9ef2LNpWS', 'ROLE_B');   / 권한 B 비번 222
+insert into member values (3, '333', '$2a$10$ICky4gl5GtMT7MfGar7sYu2YPmbTAkUjD6gtKIKs5pE.U3DSfwoMu', 'ROLE_ADMIN');   / 권한 ADMIN 비번 333
 
 insert into member_seq values (3);
 
@@ -48,4 +48,4 @@ update member_seq set member_no =
 
 
 
-commit
+commit;
