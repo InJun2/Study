@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html>
 <html>
@@ -22,7 +23,7 @@
 		<br><br>
 		<h4 style="text-align: right">user : ${user}</h4>
 	
-		<table class="table table-bordered projects">
+		<table class="table table-bordered projects"  id="test">
 	    	<thead>
 	        	<tr>
 	            	<th style="width: 2%">
@@ -41,7 +42,7 @@
 						<td><a href="${path}/board/detail/${l.boardNo}">${l.boardNo}</a></td>
 						<td>${l.boardTitle}</td>
 						<td>${l.boardWriter}</td>
-						<td>${l.boardDate}</td>
+						<td class="text-center"><fmt:formatDate value="${l.boardDate}" pattern="yyyy-MM-dd"/></td>
 					</tr>
 				</c:forEach>
 	        </tbody>
@@ -61,20 +62,24 @@
 				result += checkArr[i].value + ",";
 			}
 		}
+		
+		console.log(0);
 
 		$.ajax({
 			url : "${path}/board/delete/admin",
 			type : "post",
 			data : {"deleteNoArr" : result },
-			success: function(data){    
+			success: function(data){
 				console.log("게시판 삭제 번호 전송 성공");
+				console.log(data[0]);
+				<!--location.href="${path}/board/list"; -->
+				$("#test").html(data);
 			},
 			error : function (e) {
+				console.log("1");
 				console.log(e);
 			}  
 		});
-		
-		window.location.reload(true);
 	}
 </script>	
 </body>

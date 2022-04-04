@@ -26,11 +26,12 @@ public class CustomLoginSuccessHandler extends SavedRequestAwareAuthenticationSu
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
 	                                        Authentication authentication) throws IOException {				// 이미 인증은 Provider에서 인증 성공하여 넘어왔으니 ContextHolder에 인증 정보 저장해 놓고 사용
 	    
+		@SuppressWarnings("unchecked")
 		List<GrantedAuthority> list = (List<GrantedAuthority>) authentication.getAuthorities();
 	    
 	    if(list.isEmpty()) {
 	    	request.getSession().invalidate();
-	    	log.error("회원 : " + authentication.getPrincipal() +" 잘못된 비밀번호 정보 접근");
+	    	log.info("회원 : " + authentication.getPrincipal() +" 잘못된 비밀번호 정보 접근");
 	    	response.sendError(400, "잘못된 비번 입력");	// 비번이 일치하지 않아 isAuthenticated false 면서 권한이 비어있을경우
 	    }
 	    
@@ -45,7 +46,7 @@ public class CustomLoginSuccessHandler extends SavedRequestAwareAuthenticationSu
 	    		redirectStrategy.sendRedirect(request, response, "/B");
 	    	else {
 	    		request.getSession().invalidate();
-	    		log.error("잘못된 권한 정보");
+	    		log.info("잘못된 권한 정보");
 		    	response.sendError(401, "잘못된 권한 정보");	// 지정된 권한이 아닐경우
 	    	}
 	    }

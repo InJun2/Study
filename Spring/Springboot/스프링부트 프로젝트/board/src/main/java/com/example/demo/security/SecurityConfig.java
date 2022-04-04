@@ -14,7 +14,7 @@ import com.example.demo.security.authentication.CustomLoginSuccessHandler;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
-	
+		
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 				.antMatchers("/C").hasAnyAuthority("ROLE_ADMIN")
 				.antMatchers("/A").hasAnyAuthority("ROLE_A", "ROLE_ADMIN")
 				.antMatchers("/B").hasAnyAuthority("ROLE_B", "ROLE_ADMIN")
-				.antMatchers("/board/admin", "board/admin/*").hasAnyAuthority("ROLE_ADMIN")
+				.antMatchers("/board/delete/admin", "board/admin/*").hasAnyAuthority("ROLE_ADMIN")
 				.anyRequest().authenticated();	// authenticated true면 허용	
 		
 		http

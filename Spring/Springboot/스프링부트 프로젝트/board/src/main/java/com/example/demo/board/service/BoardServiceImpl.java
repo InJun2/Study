@@ -3,14 +3,12 @@ package com.example.demo.board.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.board.dto.BoardDto;
 import com.example.demo.board.repository.BoardRepository;
+import com.example.demo.security.authentication.AuthenticationMethod;
 
 @Service
 public class BoardServiceImpl implements BoardService{
@@ -18,16 +16,8 @@ public class BoardServiceImpl implements BoardService{
 	@Autowired
 	private BoardRepository repo;
 	
-	private boolean getAuthentication() {	// Context안의 인증권한에 "ROLE_ADMIN"이 있다면 true
-		boolean result = false;
-		
-		List<GrantedAuthority> list = (List<GrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();
-		for(GrantedAuthority gaut : list) {
-			if(gaut.equals(new SimpleGrantedAuthority("ROLE_ADMIN"))) 
-				result= true;
-		}
-		return result;
-	}
+	@Autowired
+	private AuthenticationMethod auth;
 
 	@Override
 	public List<BoardDto> selectBoardList() throws Exception {
@@ -49,7 +39,7 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public boolean userCheck(BoardDto boardDto) throws Exception {
-		return boardDto.getBoardWriter().equals(SecurityContextHolder.getContext().getAuthentication().getPrincipal().toString()) || getAuthentication();
+		return boardDto.getBoardWriter().equals(auth.getUserId()) || auth.getAuthentication();
 	}
 
 	@Override

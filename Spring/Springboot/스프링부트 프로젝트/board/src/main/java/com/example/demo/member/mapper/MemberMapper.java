@@ -4,10 +4,8 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import org.springframework.stereotype.Component;
 
 import com.example.demo.member.vo.MemberVo;
-import com.example.demo.security.user.CustomUserDetails;
 
 @Mapper
 public interface MemberMapper {
