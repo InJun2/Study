@@ -23,7 +23,7 @@
 		<br><br>
 		<h4 style="text-align: right">user : ${user}</h4>
 	
-		<table class="table table-bordered projects"  id="test">
+		<table class="table table-bordered projects">
 	    	<thead>
 	        	<tr>
 	            	<th style="width: 2%">
@@ -35,14 +35,14 @@
 	               	<th style="width: 28%" class="text-center">작성일자</th>
 	            </tr>
 	      	</thead>
-	        <tbody>
+	        <tbody id="test">
 		        <c:forEach items="${list}" var="l">		
 					<tr>
 						<td><input type="checkbox" class="checkbox-no" value="${l.boardNo}"></td>
 						<td><a href="${path}/board/detail/${l.boardNo}">${l.boardNo}</a></td>
 						<td>${l.boardTitle}</td>
 						<td>${l.boardWriter}</td>
-						<td class="text-center"><fmt:formatDate value="${l.boardDate}" pattern="yyyy-MM-dd"/></td>
+						<td class="text-center"><fmt:formatDate value="${l.boardDate}" pattern="yyyy. M. d."/></td>
 					</tr>
 				</c:forEach>
 	        </tbody>
@@ -63,20 +63,28 @@
 			}
 		}
 		
-		console.log(0);
-
 		$.ajax({
 			url : "${path}/board/delete/admin",
 			type : "post",
 			data : {"deleteNoArr" : result },
 			success: function(data){
 				console.log("게시판 삭제 번호 전송 성공");
-				console.log(data[0]);
-				<!--location.href="${path}/board/list"; -->
-				$("#test").html(data);
+				
+				let str= "";
+					$.each(data, function(index, item){
+						str	+= 
+							"<tr>"+
+								"<td><input type='checkbox' class='checkbox-no' value="+ item.boardNo +"></td>"+
+								"<td><a href='${path}/board/detail/"+item.boardNo+"'>" + item.boardNo + "</a></td>"+
+								"<td>"+ item.boardTitle+"</td>"+
+								"<td>"+ item.boardWriter +"</td>"+
+								"<td class='text-center'>"+ new Date(item.boardDate).toLocaleDateString(); +"</td>"+
+							"</tr>";
+					})
+					
+				$("#test").html(str);
 			},
 			error : function (e) {
-				console.log("1");
 				console.log(e);
 			}  
 		});

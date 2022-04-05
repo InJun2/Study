@@ -39,7 +39,7 @@
 						<td><a href="${path}/board/detail/${l.boardNo}">${l.boardNo}</a></td>
 						<td>${l.boardTitle}</td>
 						<td>${l.boardWriter}</td>
-						<td class="text-center"><fmt:formatDate value="${l.boardDate}" pattern="yyyy-MM-dd"/></td>
+						<td class="text-center"><fmt:formatDate value="${l.boardDate}" pattern="yyyy. M. d."/></td>
 					</tr>
 				</c:forEach>
 	        </tbody>

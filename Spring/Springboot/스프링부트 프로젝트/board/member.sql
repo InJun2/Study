@@ -49,3 +49,5 @@ update member_seq set member_no =
 
 
 commit
+
+insert into member values

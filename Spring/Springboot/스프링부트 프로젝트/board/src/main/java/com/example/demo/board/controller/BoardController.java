@@ -44,7 +44,7 @@ public class BoardController {
 	}
 	
 	@PostMapping("/insert")
-	public String insertBoard(@RequestParam String boardTitle, @RequestParam String boardContent) throws Exception {
+	public String insertBoard(@RequestParam String boardTitle, @RequestParam String boardContent, Model model) throws Exception {
 		BoardDto boardDto = new BoardDto(boardTitle, boardContent, auth.getUserId());
 		service.insertBoard(boardDto);
 		
