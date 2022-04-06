@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- log.xml 내용참조 : https://ckddn9496.tistory.com/82 -->
+<configuration scanPeriod="10 seconds" scan="true">
+	<!-- appender : 어디에 어떻게 로그를 남길 것인지 방법을 작성하여 제공 -->
+	<appender class="ch.qos.logback.core.ConsoleAppender" name="InjunConsole">
+	<!-- ConsoleAppender : 콘솔에 로그를 어떻게 남길 것인지 작성 -->
+		<encoder>
+			<Pattern>%d{HH:mm:ss} [%thread] [%-5level] %logger{36}[line: %L] - %msg%n</Pattern>
+			<!-- Pattern : 로그 남기는 패턴을 정리 -->
+		</encoder>
+	</appender>
+	
+	<appender class="ch.qos.logback.core.rolling.RollingFileAppender" name="FILE">
+	<!-- RollingFileAppender : 하루 단위로 로그 파일을 백업하면서 로그를 남기기 위한 방법을 작성 -->
+		<file>logs/access.log</file>
+		<!-- file : 타킷 파일의 이름 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+		<!-- rollingPolicy : rollover 발생 시 RollingFileAppender에 기록되는 방식 -->
+			<fileNamePattern>logs/access-%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- fileNamePattern : 아카이브 될 로그 파일의 패턴을 정의 -->
+			
+			<maxHistory>50</maxHistory>
+			<!-- maxHistory : 로그 파일의 내용 최대 개수 -->
+		</rollingPolicy>
+	
+		<encoder>
+			<!-- encoder : 로그 이벤트가 OutputStreamAppender에 기록되는 방식 -->
+			<Pattern>%d{HH:mm:ss} [%thread] [%-5level] %logger{36}[line: %L] - %msg%n</Pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="com.example.demo" level="debug"/>
+	<!-- name : 패키지 경로에 넣으면 해당 패키지에 속한 클래스에서 출력하는 로그는 level 이상의 로그를 출력하라는 뜻 -->
+	
+	<root level="info">
+		<!-- root : root 하위 대상 전부 해당 레벨에 포함하는 로그 기록 -->
+		<appender-ref ref="InjunConsole"/>
+		<!-- appender-ref : appender를 참조 -->
+		
+		<appender-ref ref="FILE"/>
+	</root>
+</configuration>

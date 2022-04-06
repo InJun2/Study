@@ -1,0 +1,517 @@
+15:10:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 2116 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+15:10:19 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+15:10:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+15:10:20 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+15:10:20 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+15:10:20 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+15:10:20 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+15:10:20 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+15:10:20 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+15:10:20 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 321 ms
+15:10:20 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+15:10:20 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+15:10:20 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+15:10:20 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.543 seconds (JVM running for 246.218)
+15:10:20 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+15:10:34 [RMI TCP Connection(14)-127.0.0.1] [INFO ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[line: 159] - Application shutdown requested.
+15:10:39 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+15:10:39 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+15:10:39 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+15:10:40 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:10:40 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:10:40 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+15:10:41 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+15:10:41 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+15:10:41 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+15:10:41 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+15:10:41 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+15:10:41 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 1491 ms
+15:10:42 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+15:10:42 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+15:10:42 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+15:10:42 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 2.735 seconds (JVM running for 4.28)
+15:37:34 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+15:37:34 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+15:37:34 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+15:37:35 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+15:37:35 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+15:37:35 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+15:37:35 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+15:37:35 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+15:37:35 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+15:37:35 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 306 ms
+15:37:35 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+15:37:35 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+15:37:35 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+15:37:35 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.515 seconds (JVM running for 1617.353)
+15:37:35 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+15:43:38 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+15:43:38 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+15:43:38 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+15:43:38 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+15:43:38 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+15:43:38 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+15:43:38 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+15:43:38 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+15:43:38 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+15:43:38 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 279 ms
+15:43:38 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+15:43:38 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+15:43:38 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+15:43:38 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.489 seconds (JVM running for 1980.542)
+15:43:38 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:00:11 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:00:11 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:00:11 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:00:11 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:00:11 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:00:11 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:00:11 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:00:11 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:00:11 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:00:11 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 257 ms
+16:00:12 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:00:12 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:00:12 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:00:12 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.437 seconds (JVM running for 2974.083)
+16:00:12 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:00:16 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:00:16 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:00:16 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:00:17 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:00:17 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:00:17 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:00:17 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:00:17 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:00:17 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:00:17 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 266 ms
+16:00:17 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:00:17 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:00:17 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:00:17 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.442 seconds (JVM running for 2979.37)
+16:00:17 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:01:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:01:19 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:01:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:01:19 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:01:19 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:01:19 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:01:19 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:01:19 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:01:19 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:01:19 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 248 ms
+16:01:19 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:01:19 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:01:19 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:01:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.423 seconds (JVM running for 3041.874)
+16:01:19 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:01:28 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:01:28 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:01:28 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:01:28 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:01:29 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:01:29 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:01:29 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:01:29 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:01:29 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:01:29 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 233 ms
+16:01:29 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:01:29 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:01:29 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:01:29 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.403 seconds (JVM running for 3051.256)
+16:01:29 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:01:39 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:01:39 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:01:39 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:01:39 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:01:39 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:01:39 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:01:39 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:01:39 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:01:39 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:01:39 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 274 ms
+16:01:39 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:01:39 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:01:39 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:01:39 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.455 seconds (JVM running for 3061.675)
+16:01:39 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:01:49 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:01:49 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:01:49 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:01:49 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:01:49 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:01:49 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:01:49 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:01:49 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:01:49 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:01:49 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 290 ms
+16:01:49 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:01:50 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:01:50 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:01:50 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.472 seconds (JVM running for 3072.089)
+16:01:50 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:01:53 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:01:53 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:01:53 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:01:54 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:01:54 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:01:54 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:01:54 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:01:54 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:01:54 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:01:54 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 295 ms
+16:01:54 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:01:54 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:01:54 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:01:54 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.483 seconds (JVM running for 3076.39)
+16:01:54 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:02:00 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:02:00 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:02:00 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:02:00 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:02:00 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:02:00 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:02:00 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:02:00 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:02:00 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:02:00 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 245 ms
+16:02:00 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:02:00 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:02:00 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:02:00 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.45 seconds (JVM running for 3082.731)
+16:02:00 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:02:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:02:31 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:02:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:02:31 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:02:31 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:02:31 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:02:31 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:02:31 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:02:31 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:02:31 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 247 ms
+16:02:31 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:02:31 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:02:31 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:02:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.408 seconds (JVM running for 3113.551)
+16:02:31 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:09:49 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:09:49 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:09:49 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:09:50 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+16:09:50 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+16:09:50 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+16:09:50 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:09:50 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:09:50 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:09:50 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 243 ms
+16:09:50 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:09:50 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+16:09:50 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+16:09:50 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.405 seconds (JVM running for 3552.306)
+16:09:50 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:35:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:35:19 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:35:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:35:19 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:35:19 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:35:19 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:35:19 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:35:19 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:35:19 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:35:19 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 288 ms
+17:35:19 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:35:19 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:35:19 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:35:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.509 seconds (JVM running for 8681.924)
+17:35:19 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:36:05 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:36:05 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:36:05 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:36:05 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:36:05 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:36:05 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:36:05 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:36:05 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:36:05 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:36:05 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 311 ms
+17:36:06 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:36:06 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:36:06 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:36:06 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.495 seconds (JVM running for 8728.174)
+17:36:06 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:36:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:36:19 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:36:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:36:19 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:36:19 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:36:19 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:36:19 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:36:19 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:36:19 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:36:19 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 262 ms
+17:36:19 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:36:19 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:36:19 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:36:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.475 seconds (JVM running for 8741.794)
+17:36:19 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:37:21 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:37:21 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:37:21 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:37:22 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:37:22 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:37:22 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:37:22 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:37:22 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:37:22 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:37:22 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 236 ms
+17:37:22 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:37:22 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:37:22 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:37:22 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.422 seconds (JVM running for 8804.304)
+17:37:22 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:38:03 [http-nio-8446-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:38:03 [http-nio-8446-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+17:38:03 [http-nio-8446-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 2 ms
+17:38:03 [http-nio-8446-exec-1] [INFO ] com.example.demo.info.InfoController[line: 28] - /info start
+17:44:54 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:44:54 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:44:54 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:44:55 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:44:55 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:44:55 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:44:55 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:44:55 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:44:55 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:44:55 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 248 ms
+17:44:55 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:44:55 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:44:55 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:44:55 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.417 seconds (JVM running for 9257.286)
+17:44:55 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:45:28 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:45:28 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:45:28 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:45:28 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:45:28 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:45:28 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:45:28 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:45:28 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:45:28 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:45:28 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 236 ms
+17:45:29 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:45:29 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:45:29 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:45:29 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.41 seconds (JVM running for 9291.168)
+17:45:29 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:47:00 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:47:00 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:47:00 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:47:00 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:47:00 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:47:00 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:47:00 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:47:00 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:47:00 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:47:00 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 246 ms
+17:47:00 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:47:00 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:47:00 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:47:00 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.418 seconds (JVM running for 9382.874)
+17:47:00 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:48:07 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:48:07 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:48:07 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:48:07 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:48:07 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:48:07 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:48:07 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:48:07 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:48:07 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:48:07 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 273 ms
+17:48:07 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:48:07 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:48:07 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:48:07 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.46 seconds (JVM running for 9449.7)
+17:48:07 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:49:56 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:49:56 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:49:56 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:49:57 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:49:57 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:49:57 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:49:57 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:49:57 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:49:57 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:49:57 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 260 ms
+17:49:57 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:49:57 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:49:57 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:49:57 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.419 seconds (JVM running for 9559.422)
+17:49:57 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:50:06 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:50:06 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:50:06 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:50:06 [restartedMain] [WARN ] o.m.s.mapper.ClassPathMapperScanner[line: 44] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+17:50:06 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:50:06 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:50:06 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:50:06 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:50:06 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:50:06 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 249 ms
+17:50:06 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:50:06 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:50:06 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:50:06 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.421 seconds (JVM running for 9568.833)
+17:50:06 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:50:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:50:31 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:50:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:50:31 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:50:31 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:50:31 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:50:31 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:50:31 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:50:31 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 249 ms
+17:50:31 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:50:31 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:50:31 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:50:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.517 seconds (JVM running for 9593.732)
+17:50:31 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:50:43 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:50:43 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:50:43 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:50:43 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:50:43 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:50:43 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:50:43 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:50:43 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:50:43 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 247 ms
+17:50:44 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:50:44 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:50:44 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:50:44 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.41 seconds (JVM running for 9606.096)
+17:50:44 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:50:51 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:50:51 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:50:51 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:50:52 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:50:52 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:50:52 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:50:52 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:50:52 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:50:52 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 239 ms
+17:50:52 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:50:52 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:50:52 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:50:52 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.408 seconds (JVM running for 9614.436)
+17:50:52 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:51:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:51:31 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:51:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:51:31 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:51:31 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:51:31 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:51:31 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:51:31 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:51:31 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 242 ms
+17:51:31 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:51:31 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:51:31 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:51:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.402 seconds (JVM running for 9653.567)
+17:51:31 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:53:59 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:53:59 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:53:59 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:53:59 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:53:59 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:53:59 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:53:59 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:53:59 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:53:59 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 244 ms
+17:54:00 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:54:00 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:54:00 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:54:00 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.429 seconds (JVM running for 9802.179)
+17:54:00 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:54:04 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:54:04 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:54:04 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:54:04 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:54:04 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:54:04 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:54:04 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:54:04 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:54:04 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 292 ms
+17:54:04 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:54:04 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:54:04 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:54:04 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.495 seconds (JVM running for 9806.536)
+17:54:04 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:54:23 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:54:23 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:54:23 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:54:23 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:54:23 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:54:23 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:54:23 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:54:24 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:54:24 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 250 ms
+17:54:24 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:54:24 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:54:24 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:54:24 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.433 seconds (JVM running for 9826.24)
+17:54:24 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:54:32 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:54:32 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:54:32 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:54:32 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:54:32 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:54:32 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:54:32 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:54:32 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:54:32 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 302 ms
+17:54:32 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:54:32 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:54:32 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:54:32 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.546 seconds (JVM running for 9834.787)
+17:54:32 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:54:45 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:54:45 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:54:45 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:54:46 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+17:54:46 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+17:54:46 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:54:46 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:54:46 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:54:46 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 255 ms
+17:54:46 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:54:46 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+17:54:46 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+17:54:46 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.431 seconds (JVM running for 9848.274)
+17:54:46 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:54:51 [http-nio-8446-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:54:51 [http-nio-8446-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+17:54:51 [http-nio-8446-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 2 ms
+17:54:51 [http-nio-8446-exec-1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-1 - Starting...
+17:54:52 [http-nio-8446-exec-1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-1 - Start completed.
+17:54:52 [http-nio-8446-exec-1] [DEBUG] c.e.d.i.BoardMapper.boardSelectList[line: 137] - ==>  Preparing: select * from board where board_deleted='N'
+17:54:52 [http-nio-8446-exec-1] [DEBUG] c.e.d.i.BoardMapper.boardSelectList[line: 137] - ==> Parameters: 
+17:54:52 [http-nio-8446-exec-1] [DEBUG] c.e.d.i.BoardMapper.boardSelectList[line: 137] - <==      Total: 22
+18:01:14 [Thread-127] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-1 - Shutdown initiated...
+18:01:14 [Thread-127] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-1 - Shutdown completed.
+18:01:14 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 27732 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+18:01:14 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+18:01:14 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+18:01:14 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (http)
+18:01:14 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["http-nio-8446"]
+18:01:14 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+18:01:14 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+18:01:14 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+18:01:14 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 266 ms
+18:01:14 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+18:01:14 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["http-nio-8446"]
+18:01:14 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (http) with context path ''
+18:01:15 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.44 seconds (JVM running for 10237.065)
+18:01:15 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+18:02:29 [RMI TCP Connection(234)-127.0.0.1] [INFO ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[line: 159] - Application shutdown requested.
