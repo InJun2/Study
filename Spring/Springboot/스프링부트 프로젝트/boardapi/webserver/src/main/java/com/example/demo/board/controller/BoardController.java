@@ -3,6 +3,7 @@ package com.example.demo.board.controller;
 import java.io.IOException;
 import java.util.List;
 
+import org.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -97,16 +98,22 @@ public class BoardController {
 	
 	@GetMapping("/test")
 	@ResponseBody
-	public String test() throws Exception {
-		String result = service.testResult();
-		
-		return result;
+	public String test(Model model) throws Exception {
+		JSONArray jsonArr = service.testResult();
+		return jsonArr.toString();
+//		model.addAttribute("list", jsonArr);
+//		model.addAttribute("user", auth.getUserId());
+//		
+//		if(auth.getAuthentication())
+//			return "board/adminBoardList";
+//		
+//		return "board/BoardList";
 	}
 	
 	@PostMapping("/test/update")
 	@ResponseBody
-	public int updateTest(BoardDto dto) throws IOException {
-		int result = service.updateTest(dto);
+	public String updateTest(BoardDto dto) throws IOException {
+		String result = service.updateTest(dto);
 		
 		return result;
 	}

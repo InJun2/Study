@@ -19,7 +19,7 @@
 	<div class="container p-5 my-5">
 		<h1>Board Detail</h1>
 		
-		<form action="${path}/board/update" method="post">
+		<form action="${path}/board/test/update" method="post">
 			<div class="mb-3 mt-5">
 				<label class="form-label">Title:</label>
 				<input class="form-control" placeholder="Title" name="boardTitle" value="${boardDto.boardTitle}">

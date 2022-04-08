@@ -3,6 +3,8 @@ package com.example.demo.board.service;
 import java.io.IOException;
 import java.util.List;
 
+import org.json.JSONArray;
+
 import com.example.demo.board.dto.BoardDto;
 
 public interface BoardService {
@@ -21,9 +23,9 @@ public interface BoardService {
 
 	void deleteUdminBoard(String deleteNoArr) throws Exception;
 
-	String testResult() throws Exception;
+	JSONArray testResult() throws Exception;
 
-	int updateTest(BoardDto dto) throws IOException;
+	String updateTest(BoardDto dto) throws IOException;
 
 
 }
