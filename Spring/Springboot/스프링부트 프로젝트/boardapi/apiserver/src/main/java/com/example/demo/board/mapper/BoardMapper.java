@@ -24,7 +24,7 @@ public interface BoardMapper {
 	@Select("select * from board where board_no = ${boardNo} and board_deleted = 'N'")
 	public BoardDto selectBoardDetail(String boardNo) throws Exception;
 
-	@Update("update board set board_title = ${boardTitle}, board_content = ${boardContent} where board_no = ${boardNo} and board_deleted = 'N'")
+	@Update("update board set board_title = #{boardTitle}, board_content = #{boardContent} where board_no = ${boardNo} and board_deleted = 'N'")
 	public int updateBoard(BoardDto boardDto) throws Exception;
 
 	@Update("update board set board_deleted = 'Y' where board_no = ${deleteNo}")

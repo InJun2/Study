@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -46,8 +47,8 @@ public class BoardController {
 	}
 	
 	
-	@PutMapping("/update")
-	public int updateBoardPost(BoardDto dto) throws Exception {
+	@PostMapping("/update")
+	public int updateBoardPost(@RequestBody BoardDto dto) throws Exception {	// json library를 추가하지 않아서 json 데이터가 @ReqeustBody로 넘어왔지만 객체에 저장해주지 못했었음.. ( 오류 해결 )
 		int result = service.updateBoard(dto);
 		 
 		return result;

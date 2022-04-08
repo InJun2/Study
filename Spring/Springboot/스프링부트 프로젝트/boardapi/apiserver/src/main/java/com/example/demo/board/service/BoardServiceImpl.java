@@ -39,7 +39,7 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public int deleteBoard(String deleteNo) throws Exception {
-		return repo.deleteBoard(deleteNo);
+		return repo.deleteBoard(deleteNo); 
 	}
 
 	@Override
