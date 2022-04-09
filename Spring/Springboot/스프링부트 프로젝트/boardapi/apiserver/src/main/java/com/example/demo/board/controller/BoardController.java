@@ -33,7 +33,7 @@ public class BoardController {
 	
 	@PostMapping("/insert")
 	public int insertBoard(@RequestParam String boardTitle, @RequestParam String boardContent, @RequestParam String user) throws Exception {	// post 처리는 어케해
-		BoardDto boardDto = new BoardDto(boardTitle, boardContent, user);
+		BoardDto boardDto = new BoardDto(boardTitle, boardContent, user);		// 해당부분 제거 및 파라미터를 @RequestBody BoardDto 로 받아올 예정
 		int result = service.insertBoard(boardDto);
 		
 		return result;
