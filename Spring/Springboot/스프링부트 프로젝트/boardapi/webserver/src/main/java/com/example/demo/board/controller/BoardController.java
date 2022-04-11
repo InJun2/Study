@@ -1,9 +1,7 @@
 package com.example.demo.board.controller;
 
-import java.io.IOException;
 import java.util.List;
 
-import org.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,8 +28,8 @@ public class BoardController {
 	
 	@GetMapping("/list")
 	public String list(Model model) throws Exception {
-		List<BoardDto> boardDto = service.selectBoardList();
-		model.addAttribute("list", boardDto);
+		List<BoardDto> boardList = service.loadBoardList();
+		model.addAttribute("list", boardList);
 		model.addAttribute("user", auth.getUserId());
 		
 		if(auth.getAuthentication())
@@ -56,8 +54,7 @@ public class BoardController {
 	@GetMapping("/detail/{boardNo}")
 	public String detailBoard(@PathVariable String boardNo, Model model) throws Exception {
 		BoardDto boardDto = service.selectBoardDetail(boardNo);
-		boolean userCheck = service.userCheck(boardDto);
-		model.addAttribute("userCheck", userCheck);
+		model.addAttribute("userCheck", auth.userCheck(boardDto.getBoardWriter()));
 		model.addAttribute("boardDto", boardDto);
 		
 		return "board/detailBoard";
@@ -66,7 +63,7 @@ public class BoardController {
 	@GetMapping("/update/{boardNo}")
 	public String updateBoard(@PathVariable String boardNo, Model model) throws Exception {
 		BoardDto boardDto = service.selectBoardDetail(boardNo);
-		if(!service.userCheck(boardDto))
+		if(!auth.userCheck(boardDto.getBoardWriter()))
 			return "redirect:/board/list";
 		model.addAttribute("boardDto", boardDto);
 		
@@ -75,47 +72,31 @@ public class BoardController {
 	
 	@PostMapping("/update")
 	public String updateBoardPost(BoardDto dto) throws Exception {
-		service.updateBoard(dto);
-		 
-		return "redirect:/board/list";
+		int result = service.updateBoard(dto);
+		if(result > 0) {
+			return "redirect:/board/list";
+		}
+		
+		throw new Exception("게시판 업데이트 실패");
 	}
 	
 	@GetMapping("/delete/{deleteNo}")
 	public String deleteBoard(@PathVariable String deleteNo) throws Exception{
-		service.deleteBoard(deleteNo);
+		int result = service.deleteBoard(deleteNo);
+		if(result > 0) {
+			return "redirect:/board/list";
+		}
 		
-		return "redirect:/board/list";
+		throw new Exception("게시판 삭제 실패");
 	}
 	
-	@PostMapping("/delete/admin")
+	@GetMapping("/delete/admin/{deleteNoArr}")
 	@ResponseBody
-	public List<BoardDto> deleteUdminBoard(String deleteNoArr) throws Exception {
+	public List<BoardDto> deleteUdminBoard(@PathVariable String deleteNoArr) throws Exception {
 		service.deleteUdminBoard(deleteNoArr);
-		List<BoardDto> list = service.selectBoardList();
+		List<BoardDto> list = service.loadBoardList();
 		
 		return list;
-	}
-	
-	@GetMapping("/test")
-	@ResponseBody
-	public String test(Model model) throws Exception {
-		JSONArray jsonArr = service.testResult();
-		return jsonArr.toString();
-//		model.addAttribute("list", jsonArr);
-//		model.addAttribute("user", auth.getUserId());
-//		
-//		if(auth.getAuthentication())
-//			return "board/adminBoardList";
-//		
-//		return "board/BoardList";
-	}
-	
-	@PostMapping("/test/update")
-	@ResponseBody
-	public String updateTest(BoardDto dto) throws IOException {
-		String result = service.updateTest(dto);
-		
-		return result;
 	}
 	
 }

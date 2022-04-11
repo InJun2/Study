@@ -64,9 +64,8 @@
 		}
 		
 		$.ajax({
-			url : "${path}/board/delete/admin",
-			type : "post",
-			data : {"deleteNoArr" : result },
+			url : "${path}/board/delete/admin/"+result,
+			type : "get",
 			success: function(data){
 				console.log("게시판 삭제 번호 전송 성공");
 				

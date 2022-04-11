@@ -26,5 +26,9 @@ public class AuthenticationMethod {
 	public String getUserId() {
 		return SecurityContextHolder.getContext().getAuthentication().getPrincipal().toString();
 	}
+	
+	public boolean userCheck(String userName) throws Exception {
+		return userName.equals(getUserId()) || getAuthentication();
+	}
 
 }
