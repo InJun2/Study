@@ -17,5 +17,5 @@ public interface BoardService {
 	int deleteBoard(String deleteNo) throws Exception;
 
 	int deleteUdminBoard(String deleteNoArr) throws Exception;
-
+	
 }
