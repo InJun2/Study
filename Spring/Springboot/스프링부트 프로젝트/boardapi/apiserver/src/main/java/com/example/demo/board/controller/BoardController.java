@@ -39,7 +39,7 @@ public class BoardController {
 	@GetMapping("/detail/{boardNo}")
 	public BoardDto detailBoard(@PathVariable String boardNo) throws Exception {
 		BoardDto boardDto = service.selectBoardDetail(boardNo);
-		
+		System.out.println();
 		return boardDto;
 	}
 	
