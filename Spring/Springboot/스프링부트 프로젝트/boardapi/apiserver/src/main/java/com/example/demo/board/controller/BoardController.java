@@ -19,7 +19,7 @@ import com.example.demo.board.service.BoardService;
 public class BoardController {
 	
 	@Autowired
-	private BoardService service;
+	private BoardService service; // 동건이 피드백 적용 예정
 	
 	@GetMapping("/list")
 	public List<BoardDto> list() throws Exception {
