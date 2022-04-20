@@ -1,6 +1,7 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 
-export default class ContactDetail extends React.Component{
+class ContactDetail extends React.Component{
     render(){
         const details = (
         <div>
@@ -23,5 +24,16 @@ ContactDetail.defaultProps = {
     contact:{
         name:'',
         phone:''
-    }
+    },
+    isSelected : false
 };
+
+ContactDetail.Proptypes = {
+    contact: {
+        name: Proptypes.node.isRequired,
+        phone: Proptypes.node.isRequired
+    },
+    isSelected : Proptypes.bool
+};
+
+export default ContactDetail;
