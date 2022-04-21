@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import proptypes from 'prop-types';
 
 export default class ContactCreate extends React.Component{
     constructor(props){
@@ -10,6 +10,7 @@ export default class ContactCreate extends React.Component{
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
     }
 
     handleChange(e){
@@ -24,20 +25,29 @@ export default class ContactCreate extends React.Component{
             phone: this.state.phone
         };
 
-        this.props.onCreate(contact);   // 이게 어떻게 동작하는 건지 잘 모르겠음 ( 여기서 부모js 로 보내는것 같은데 )
+        this.props.onCreate(contact);   // Contacts.js에서 함수를 받아와서 실행 ?
 
         this.setState({
             name: '',
             phone: ''
         });
+
+        this.nameInput.focus(); // 클릭 후 해당 ref 위치(DOM)에 커서 동작
+        console.log(this.nameInput.value);  // 헤당 ref를 지닌 DOM의 값 출력
+    }
+
+    handleKeyDown(e){
+        if(e.keyCode === 13){
+            this.handleClick();
+        }
     }
 
     render(){
         return (
-            <div>
+            <div onKeyDown={this.handleKeyDown}>
                 <h2>Create Contact</h2>
                 <p>
-                    <input type="text" name = "name" placeholder="name" value={this.state.name} onChange={this.handleChange}/>
+                    <input type="text" name = "name" placeholder="name" value={this.state.name} onChange={this.handleChange} ref={(ref) => {this.nameInput = ref }}/>   {/*ref를 arrow 함수로 지정, react에서 DOM 접근 하는 방법 */}
                     <input type="text" name = "phone" placeholder="phone" value={this.state.phone} onChange={this.handleChange}/>
                 </p>
                 <button onClick={this.handleClick}>Create</button>
@@ -50,6 +60,6 @@ ContactCreate.defaultProps = {
     onCreate: ()=> {console.error('onCreate not definded')}
 };
 
-ContactCreate.PropTypes = {
-    onCreate: PropTypes.func
+ContactCreate.proptypes = {
+    onCreate: proptypes.func    // 함수 타입임을 정의
 };
