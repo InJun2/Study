@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-
 export default class listSet extends Component{
     render(){
         let object = {
@@ -30,7 +29,7 @@ export default class listSet extends Component{
 
         return (
             <div>
-                <h3>{JSON.stringify(changed.c)}</h3>
+                <h3>{JSON.stringify(changed.c)}</h3> {/* JSON.parse는 string to Object, JSON.stringfy는 JavaScript 값으나 객체를 JSON string 으로 출력 */}
             </div>
         );
     }
