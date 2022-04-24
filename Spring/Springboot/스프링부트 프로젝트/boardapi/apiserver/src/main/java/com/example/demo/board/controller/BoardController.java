@@ -2,7 +2,6 @@ package com.example.demo.board.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,8 +17,11 @@ import com.example.demo.board.service.BoardService;
 @RequestMapping("/board")
 public class BoardController {
 	
-	@Autowired
-	private BoardService service; // 동건이 피드백 적용 예정
+	private BoardService service;
+	
+	public BoardController(BoardService service) {
+		this.service = service;
+	}
 	
 	@GetMapping("/list")
 	public List<BoardDto> list() throws Exception {
@@ -28,9 +30,8 @@ public class BoardController {
 		return boardDtoList;
 	}
 	
-	
-	@PostMapping("/insert")	// 이거 그냥 boarddto 아니냐.. 파라미터를 BoardDto로 받자
-	public int insertBoard(@RequestBody BoardDto boardDto) throws Exception {	// post 처리는 어케해
+	@PostMapping("/insert")	
+	public int insertBoard(@RequestBody BoardDto boardDto) throws Exception {	
 		int result = service.insertBoard(boardDto);
 		
 		return result;
@@ -39,7 +40,7 @@ public class BoardController {
 	@GetMapping("/detail/{boardNo}")
 	public BoardDto detailBoard(@PathVariable String boardNo) throws Exception {
 		BoardDto boardDto = service.selectBoardDetail(boardNo);
-		System.out.println();
+		
 		return boardDto;
 	}
 	

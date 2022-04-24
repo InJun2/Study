@@ -2,7 +2,6 @@ package com.example.demo.board.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,8 +11,11 @@ import com.example.demo.board.repository.BoardRepository;
 @Service
 public class BoardServiceImpl implements BoardService{
 	
-	@Autowired
 	private BoardRepository repo;
+	
+	public BoardServiceImpl(BoardRepository repository) {
+		this.repo = repository;
+	}
 
 	@Override
 	public List<BoardDto> selectBoardList() throws Exception {

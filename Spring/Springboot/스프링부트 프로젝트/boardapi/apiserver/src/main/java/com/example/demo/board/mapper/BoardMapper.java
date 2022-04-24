@@ -30,3 +30,4 @@ public interface BoardMapper {
 	@Update("update board set board_deleted = 'Y' where board_no = ${deleteNo}")
 	public int deleteBoard(String deleteNo) throws Exception;
 }
+

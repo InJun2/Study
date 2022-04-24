@@ -2,7 +2,6 @@ package com.example.demo.board.repository;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.example.demo.board.dto.BoardDto;
@@ -11,8 +10,11 @@ import com.example.demo.board.mapper.BoardMapper;
 @Repository
 public class BoardRepositoryImpl implements BoardRepository{
 
-	@Autowired
 	private BoardMapper mapper;
+	
+	public BoardRepositoryImpl(BoardMapper mapper) {
+		this.mapper = mapper;
+	}
 	
 	@Override
 	public List<BoardDto> selectBoard() throws Exception {
