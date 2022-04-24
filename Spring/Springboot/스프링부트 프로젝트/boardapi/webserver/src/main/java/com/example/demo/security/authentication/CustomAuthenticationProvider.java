@@ -19,9 +19,13 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 @Slf4j
 public class CustomAuthenticationProvider implements AuthenticationProvider{
-	
 	@Autowired
 	private CustomUserDetailsService userService;
+	
+//	@Autowired
+//	public CustomAuthenticationProvider(CustomUserDetailsService userService) {
+//		this.userService = userService;
+//	}
 	
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {

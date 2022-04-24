@@ -3,7 +3,6 @@ package com.example.demo.security.userservice;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -20,9 +19,12 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CustomUserDetailsService implements UserDetailsService{
 	
-	@Autowired
 	private MemberMapper mapper;
 
+	public CustomUserDetailsService(MemberMapper mapper) {
+		this.mapper = mapper;
+	}
+	
 	@Override
 	public CustomUserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		MemberVo userInfo = mapper.selectId(username);	// db에서 userId를 이용하여 찾고 memberVo에 보관

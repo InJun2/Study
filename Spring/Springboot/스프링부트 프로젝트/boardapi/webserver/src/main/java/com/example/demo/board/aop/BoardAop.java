@@ -4,7 +4,6 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.example.demo.board.dto.BoardDto;
@@ -15,11 +14,13 @@ import com.example.demo.security.authentication.AuthenticationMethod;
 @Component
 public class BoardAop {
 	
-	@Autowired
 	private BoardService service;
-	
-	@Autowired
 	private AuthenticationMethod auth;
+	
+	public BoardAop(BoardService service, AuthenticationMethod auth) {
+		this.service = service;
+		this.auth = auth;
+	}
 	
 	@Pointcut("execution(* com..board.service.BoardServiceImpl.updateBoard(..))")		// 적용할 지점 혹인 범위, 현재 서비스의 0개이상의 파라미터를 가진 모든 메소드가 대상
 	private void BoardUpdateTarget() { }
