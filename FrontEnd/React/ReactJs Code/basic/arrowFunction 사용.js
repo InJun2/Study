@@ -28,7 +28,7 @@ class Contact extends React.Component{
 
   render(){
     const mapToComponent = (data) => {
-      return data.map((contact, i) => {
+      return data.map((contact, i) => { // arrow 함수는 js코드
         return (
           <ContactInfo contact = {contact} key = {i}/>
         );
