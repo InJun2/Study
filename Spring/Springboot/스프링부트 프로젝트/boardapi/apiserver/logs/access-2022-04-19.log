@@ -1,0 +1,50 @@
+17:26:03 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 6400 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:26:03 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:26:03 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:26:03 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:26:03 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:26:07 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+17:26:08 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+17:26:08 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:26:08 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:26:08 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:26:08 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 4796 ms
+17:26:10 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:26:10 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+17:26:13 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+17:26:13 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 10.981 seconds (JVM running for 16.869)
+17:28:30 [https-jsse-nio-8446-exec-3] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:28:30 [https-jsse-nio-8446-exec-3] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+17:28:30 [https-jsse-nio-8446-exec-3] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 1 ms
+17:28:30 [https-jsse-nio-8446-exec-3] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-1 - Starting...
+17:28:31 [https-jsse-nio-8446-exec-3] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-1 - Start completed.
+17:28:31 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+17:28:31 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+17:28:31 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+17:32:28 [Thread-5] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-1 - Shutdown initiated...
+17:32:28 [Thread-5] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-1 - Shutdown completed.
+17:32:28 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 6400 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+17:32:28 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+17:32:28 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+17:32:28 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+17:32:28 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+17:32:28 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+17:32:28 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+17:32:28 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+17:32:28 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 408 ms
+17:32:28 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+17:32:29 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+17:32:29 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+17:32:29 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.228 seconds (JVM running for 392.758)
+17:32:29 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+17:32:44 [https-jsse-nio-8446-exec-7] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:32:44 [https-jsse-nio-8446-exec-7] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+17:32:44 [https-jsse-nio-8446-exec-7] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 1 ms
+17:32:44 [https-jsse-nio-8446-exec-7] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-2 - Starting...
+17:32:44 [https-jsse-nio-8446-exec-7] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-2 - Start completed.
+17:32:44 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+17:32:44 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+17:32:44 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+17:34:56 [RMI TCP Connection(17)-127.0.0.1] [INFO ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[line: 159] - Application shutdown requested.
+17:34:56 [RMI TCP Connection(17)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-2 - Shutdown initiated...
+17:34:56 [RMI TCP Connection(17)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-2 - Shutdown completed.

@@ -8,14 +8,13 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.demo.board.dto.BoardDto;
 import com.example.demo.board.repository.BoardRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class BoardServiceImpl implements BoardService{
 	
-	private BoardRepository repo;
-	
-	public BoardServiceImpl(BoardRepository repository) {
-		this.repo = repository;
-	}
+	private final BoardRepository repo;
 
 	@Override
 	public List<BoardDto> selectBoardList() throws Exception {

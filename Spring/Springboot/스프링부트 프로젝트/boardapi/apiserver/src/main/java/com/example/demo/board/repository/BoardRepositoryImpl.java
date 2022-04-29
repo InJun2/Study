@@ -7,15 +7,14 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.board.dto.BoardDto;
 import com.example.demo.board.mapper.BoardMapper;
 
+import lombok.RequiredArgsConstructor;
+
 @Repository
+@RequiredArgsConstructor
 public class BoardRepositoryImpl implements BoardRepository{
 
-	private BoardMapper mapper;
-	
-	public BoardRepositoryImpl(BoardMapper mapper) {
-		this.mapper = mapper;
-	}
-	
+	private final BoardMapper mapper;
+
 	@Override
 	public List<BoardDto> selectBoard() throws Exception {
 		return mapper.selectBoard();

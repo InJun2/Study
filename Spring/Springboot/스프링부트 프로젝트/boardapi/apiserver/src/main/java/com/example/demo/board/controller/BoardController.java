@@ -13,15 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.board.dto.BoardDto;
 import com.example.demo.board.service.BoardService;
 
+import lombok.RequiredArgsConstructor;
+
 @RestController
 @RequestMapping("/board")
+@RequiredArgsConstructor
 public class BoardController {
 	
-	private BoardService service;
-	
-	public BoardController(BoardService service) {
-		this.service = service;
-	}
+	private final BoardService service;
 	
 	@GetMapping("/list")
 	public List<BoardDto> list() throws Exception {

@@ -1,0 +1,19 @@
+15:12:12 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 2040 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+15:12:12 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+15:12:12 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+15:12:12 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:12:12 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:12:15 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+15:12:15 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+15:12:15 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+15:12:15 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+15:12:15 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+15:12:15 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 3438 ms
+15:12:16 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+15:12:16 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+15:12:18 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+15:12:18 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 8.19 seconds (JVM running for 13.579)
+15:12:34 [https-jsse-nio-8446-exec-7] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:12:34 [https-jsse-nio-8446-exec-7] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+15:12:34 [https-jsse-nio-8446-exec-7] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 1 ms
+15:18:41 [RMI TCP Connection(15)-127.0.0.1] [INFO ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[line: 159] - Application shutdown requested.

@@ -1,0 +1,71 @@
+10:32:22 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 8444 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+10:32:23 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+10:32:23 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+10:32:23 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:32:23 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:32:28 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+10:32:28 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+10:32:28 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+10:32:28 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+10:32:28 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+10:32:28 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 5463 ms
+10:32:32 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+10:32:32 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+10:32:33 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+10:32:34 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 12.023 seconds (JVM running for 16.763)
+10:32:51 [https-jsse-nio-8446-exec-5] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:32:51 [https-jsse-nio-8446-exec-5] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+10:32:51 [https-jsse-nio-8446-exec-5] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 1 ms
+10:32:51 [https-jsse-nio-8446-exec-5] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-1 - Starting...
+10:32:51 [https-jsse-nio-8446-exec-5] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-1 - Start completed.
+10:32:51 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+10:32:51 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+10:32:51 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 21
+10:32:55 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 126 and board_deleted = 'N'
+10:32:55 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+10:32:55 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+10:32:57 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 126 and board_deleted = 'N'
+10:32:57 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+10:32:57 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+10:32:59 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.updateBoard[line: 137] - ==>  Preparing: update board set board_title = ?, board_content = ? where board_no = 126 and board_deleted = 'N'
+10:32:59 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.updateBoard[line: 137] - ==> Parameters: sss(String), sss(String)
+10:32:59 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.updateBoard[line: 137] - <==    Updates: 1
+10:33:00 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+10:33:00 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+10:33:00 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 21
+10:33:01 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 126 and board_deleted = 'N'
+10:33:01 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+10:33:01 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+10:33:02 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 126 and board_deleted = 'N'
+10:33:02 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+10:33:02 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+10:33:02 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==>  Preparing: update board set board_deleted = 'Y' where board_no = 126
+10:33:02 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==> Parameters: 
+10:33:02 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - <==    Updates: 1
+10:33:02 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+10:33:02 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+10:33:02 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+10:33:05 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==>  Preparing: update board set board_deleted = 'Y' where board_no = 134
+10:33:05 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==> Parameters: 
+10:33:05 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - <==    Updates: 1
+10:33:05 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+10:33:05 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+10:33:05 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+10:33:12 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+10:33:12 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+10:33:12 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+10:33:14 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 136 and board_deleted = 'N'
+10:33:14 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+10:33:14 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+10:33:16 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+10:33:16 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+10:33:16 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+10:33:24 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+10:33:24 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+10:33:24 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+11:49:44 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool[line: 788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m52s148ms130µs300ns).
+12:58:47 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool[line: 788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m31s603ms284µs500ns).
+16:08:56 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool[line: 788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h23m39s574ms19µs700ns).
+17:57:14 [RMI TCP Connection(257)-127.0.0.1] [INFO ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[line: 159] - Application shutdown requested.
+17:57:14 [RMI TCP Connection(257)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-1 - Shutdown initiated...
+17:57:15 [RMI TCP Connection(257)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-1 - Shutdown completed.

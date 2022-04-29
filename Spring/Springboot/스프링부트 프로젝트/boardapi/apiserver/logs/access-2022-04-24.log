@@ -1,0 +1,675 @@
+13:21:29 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+13:21:29 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+13:21:29 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+13:21:29 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:21:29 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:21:32 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+13:21:32 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+13:21:32 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+13:21:32 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+13:21:32 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+13:21:32 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 3000 ms
+13:21:33 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+13:21:33 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+13:21:35 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+13:21:35 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 7.347 seconds (JVM running for 13.817)
+14:53:16 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:53:16 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:53:16 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:53:17 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:53:17 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:53:17 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:53:17 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:53:17 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:53:17 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 793 ms
+14:53:17 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:53:17 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:53:18 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:53:18 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.868 seconds (JVM running for 5516.892)
+14:53:18 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:53:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:53:19 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:53:19 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:53:20 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:53:20 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:53:20 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:53:20 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:53:20 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:53:20 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 413 ms
+14:53:20 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:53:20 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:53:20 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:53:20 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.066 seconds (JVM running for 5519.568)
+14:53:20 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:54:10 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:54:10 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:54:10 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:54:11 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:54:11 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:54:11 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:54:11 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:54:11 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:54:11 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 366 ms
+14:54:11 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:54:11 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:54:11 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:54:11 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.914 seconds (JVM running for 5570.326)
+14:54:11 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:54:16 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:54:16 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:54:16 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:54:16 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:54:16 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:54:16 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:54:16 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:54:16 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:54:16 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 293 ms
+14:54:16 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:54:16 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:54:17 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:54:17 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.823 seconds (JVM running for 5575.779)
+14:54:17 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:54:33 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:54:33 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:54:33 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:54:33 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:54:33 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:54:33 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:54:33 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:54:33 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:54:33 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 289 ms
+14:54:33 [restartedMain] [WARN ] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[line: 591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardController' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\controller\BoardController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardServiceImpl' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\service\BoardServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardRepositoryImpl' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\repository\BoardRepositoryImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.board.repository.BoardRepositoryImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "BoardRepositoryImpl", delete this token
+
+14:54:33 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Stopping service [Tomcat]
+14:54:33 [restartedMain] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener[line: 136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:54:33 [restartedMain] [ERROR] o.s.boot.SpringApplication[line: 830] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardController' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\controller\BoardController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardServiceImpl' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\service\BoardServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardRepositoryImpl' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\repository\BoardRepositoryImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.board.repository.BoardRepositoryImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "BoardRepositoryImpl", delete this token
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.example.demo.ApiserverApplication.main(ApiserverApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardServiceImpl' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\service\BoardServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardRepositoryImpl' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\repository\BoardRepositoryImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.board.repository.BoardRepositoryImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "BoardRepositoryImpl", delete this token
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardRepositoryImpl' defined in file [D:\neighbor\apiserver\bin\main\com\example\demo\board\repository\BoardRepositoryImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.board.repository.BoardRepositoryImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "BoardRepositoryImpl", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.board.repository.BoardRepositoryImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "BoardRepositoryImpl", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 50 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "BoardRepositoryImpl", delete this token
+
+	at com.example.demo.board.repository.BoardRepositoryImpl.<init>(BoardRepositoryImpl.java:17)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 52 common frames omitted
+14:54:54 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:54:54 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:54:54 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:54:54 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:54:54 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:54:54 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:54:54 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:54:54 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:54:54 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 330 ms
+14:54:55 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:54:55 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:54:55 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:54:55 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.331 seconds (JVM running for 5614.555)
+14:54:55 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:54:57 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:54:57 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:54:57 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:54:57 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:54:57 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:54:57 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:54:57 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:54:57 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:54:57 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 356 ms
+14:54:57 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:54:57 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:54:57 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:54:57 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.911 seconds (JVM running for 5616.624)
+14:54:57 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:55:01 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:55:01 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:55:01 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:55:01 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:55:01 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:55:01 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:55:01 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:55:02 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:55:02 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 298 ms
+14:55:02 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:55:02 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:55:02 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:55:02 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.811 seconds (JVM running for 5621.199)
+14:55:02 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:57:46 [https-jsse-nio-8446-exec-1] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:57:46 [https-jsse-nio-8446-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+14:57:46 [https-jsse-nio-8446-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 3 ms
+14:57:46 [https-jsse-nio-8446-exec-1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-1 - Starting...
+14:57:47 [https-jsse-nio-8446-exec-1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-1 - Start completed.
+14:57:47 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+14:57:47 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+14:57:48 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+14:58:21 [Thread-34] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-1 - Shutdown initiated...
+14:58:21 [Thread-34] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-1 - Shutdown completed.
+14:58:21 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:58:21 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:58:21 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:58:21 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:58:21 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:58:21 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:58:21 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:58:21 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:58:21 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 419 ms
+14:58:22 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:58:22 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:58:22 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:58:22 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.997 seconds (JVM running for 5821.051)
+14:58:22 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:58:39 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:58:39 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:58:39 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:58:39 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:58:39 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:58:39 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:58:39 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:58:39 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:58:39 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 294 ms
+14:58:39 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:58:39 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:58:40 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:58:40 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.017 seconds (JVM running for 5839.093)
+14:58:40 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+14:58:41 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+14:58:41 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+14:58:41 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+14:58:42 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+14:58:42 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+14:58:42 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+14:58:42 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+14:58:42 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+14:58:42 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 278 ms
+14:58:42 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+14:58:42 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+14:58:42 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+14:58:42 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.782 seconds (JVM running for 5841.374)
+14:58:42 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+15:01:53 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+15:01:53 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+15:01:53 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+15:01:53 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+15:01:53 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+15:01:53 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+15:01:53 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+15:01:53 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+15:01:53 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 292 ms
+15:01:53 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+15:01:53 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+15:01:53 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+15:01:53 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.811 seconds (JVM running for 6032.547)
+15:01:53 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+15:04:06 [https-jsse-nio-8446-exec-7] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:04:06 [https-jsse-nio-8446-exec-7] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+15:04:06 [https-jsse-nio-8446-exec-7] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 2 ms
+15:04:06 [https-jsse-nio-8446-exec-7] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-2 - Starting...
+15:04:06 [https-jsse-nio-8446-exec-7] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-2 - Start completed.
+15:04:06 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:04:06 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:04:07 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+15:05:04 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:05:04 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:05:04 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+15:25:48 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:25:48 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:25:48 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 19
+15:25:52 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - ==>  Preparing: update board_seq set seq =(select seq +1 from (select seq from board_seq)tmp)
+15:25:52 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - ==> Parameters: 
+15:25:53 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - <==    Updates: 1
+15:25:53 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - ==>  Preparing: insert into board values ((select seq from board_seq) , ?, ?, ?, sysdate(), 'N')
+15:25:53 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - ==> Parameters: asdasd(String), asdasd(String), 333(String)
+15:25:53 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - <==    Updates: 1
+15:25:53 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:25:53 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:25:53 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+15:25:56 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 190 and board_deleted = 'N'
+15:25:56 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+15:25:56 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+15:25:58 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 190 and board_deleted = 'N'
+15:25:58 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+15:25:58 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+15:26:00 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.updateBoard[line: 137] - ==>  Preparing: update board set board_title = ?, board_content = ? where board_no = 190 and board_deleted = 'N'
+15:26:00 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.updateBoard[line: 137] - ==> Parameters: asdasd(String), asdasd234(String)
+15:26:00 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.updateBoard[line: 137] - <==    Updates: 1
+15:26:00 [https-jsse-nio-8446-exec-9] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:26:00 [https-jsse-nio-8446-exec-9] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:26:00 [https-jsse-nio-8446-exec-9] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+15:26:02 [https-jsse-nio-8446-exec-4] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 190 and board_deleted = 'N'
+15:26:02 [https-jsse-nio-8446-exec-4] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+15:26:02 [https-jsse-nio-8446-exec-4] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+15:26:05 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 190 and board_deleted = 'N'
+15:26:05 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+15:26:05 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+15:26:07 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:26:07 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:26:07 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+15:26:10 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - ==>  Preparing: update board_seq set seq =(select seq +1 from (select seq from board_seq)tmp)
+15:26:10 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - ==> Parameters: 
+15:26:10 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - <==    Updates: 1
+15:26:10 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - ==>  Preparing: insert into board values ((select seq from board_seq) , ?, ?, ?, sysdate(), 'N')
+15:26:10 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - ==> Parameters: wef(String), wef(String), 333(String)
+15:26:10 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - <==    Updates: 1
+15:26:10 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:26:10 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:26:10 [https-jsse-nio-8446-exec-10] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 21
+15:26:12 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 191 and board_deleted = 'N'
+15:26:12 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+15:26:12 [https-jsse-nio-8446-exec-5] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+15:26:13 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==>  Preparing: select * from board where board_no = 191 and board_deleted = 'N'
+15:26:13 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - ==> Parameters: 
+15:26:13 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.B.selectBoardDetail[line: 137] - <==      Total: 1
+15:26:13 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==>  Preparing: update board set board_deleted = 'Y' where board_no = 191
+15:26:13 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==> Parameters: 
+15:26:13 [https-jsse-nio-8446-exec-8] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - <==    Updates: 1
+15:26:13 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:26:13 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:26:13 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+15:26:17 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - ==>  Preparing: update board_seq set seq =(select seq +1 from (select seq from board_seq)tmp)
+15:26:17 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - ==> Parameters: 
+15:26:17 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.updateBoardSeq[line: 137] - <==    Updates: 1
+15:26:17 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - ==>  Preparing: insert into board values ((select seq from board_seq) , ?, ?, ?, sysdate(), 'N')
+15:26:17 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - ==> Parameters: 123123(String), 123123(String), 333(String)
+15:26:17 [https-jsse-nio-8446-exec-1] [DEBUG] c.e.d.b.m.BoardMapper.insertBoard[line: 137] - <==    Updates: 1
+15:26:17 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:26:17 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:26:17 [https-jsse-nio-8446-exec-7] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 21
+15:26:20 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==>  Preparing: update board set board_deleted = 'Y' where board_no = 192
+15:26:20 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - ==> Parameters: 
+15:26:20 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.deleteBoard[line: 137] - <==    Updates: 1
+15:26:20 [https-jsse-nio-8446-exec-9] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+15:26:20 [https-jsse-nio-8446-exec-9] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+15:26:20 [https-jsse-nio-8446-exec-9] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+16:13:39 [Thread-50] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-2 - Shutdown initiated...
+16:13:39 [Thread-50] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-2 - Shutdown completed.
+16:13:40 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:13:40 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:13:40 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:13:40 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+16:13:40 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+16:13:40 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:13:40 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:13:40 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:13:40 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 715 ms
+16:13:40 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:13:41 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+16:13:41 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+16:13:41 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.703 seconds (JVM running for 10340.25)
+16:13:41 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:14:43 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:14:43 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:14:43 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:14:43 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+16:14:43 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+16:14:43 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:14:43 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:14:43 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:14:43 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 359 ms
+16:14:44 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:14:44 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+16:14:44 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+16:14:44 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 0.888 seconds (JVM running for 10403.103)
+16:14:44 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:14:55 [https-jsse-nio-8446-exec-6] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:14:55 [https-jsse-nio-8446-exec-6] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+16:14:55 [https-jsse-nio-8446-exec-6] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 1 ms
+16:14:55 [https-jsse-nio-8446-exec-6] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-3 - Starting...
+16:14:55 [https-jsse-nio-8446-exec-6] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-3 - Start completed.
+16:14:55 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+16:14:55 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+16:14:55 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+16:15:19 [Thread-58] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-3 - Shutdown initiated...
+16:15:19 [Thread-58] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-3 - Shutdown completed.
+16:15:20 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 924 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:15:20 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:15:20 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:15:20 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+16:15:20 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+16:15:20 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:15:20 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:15:20 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:15:20 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 497 ms
+16:15:20 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:15:20 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+16:15:21 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+16:15:21 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.106 seconds (JVM running for 10439.884)
+16:15:21 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:15:21 [https-jsse-nio-8446-exec-6] [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:15:21 [https-jsse-nio-8446-exec-6] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+16:15:21 [https-jsse-nio-8446-exec-6] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 1 ms
+16:15:21 [https-jsse-nio-8446-exec-6] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-4 - Starting...
+16:15:21 [https-jsse-nio-8446-exec-6] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-4 - Start completed.
+16:15:21 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+16:15:21 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+16:15:21 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+16:15:21 [https-jsse-nio-8446-exec-6] [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet][line: 175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at com.example.demo.board.service.BoardServiceImpl.selectBoardList(BoardServiceImpl.java:23)
+	at com.example.demo.board.service.BoardServiceImpl$$FastClassBySpringCGLIB$$5e9b59ea.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.board.service.BoardServiceImpl$$EnhancerBySpringCGLIB$$f78f7e4d.selectBoardList(<generated>)
+	at com.example.demo.board.controller.BoardController.list(BoardController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:16:56 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+16:16:56 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+16:16:56 [https-jsse-nio-8446-exec-2] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+16:16:56 [https-jsse-nio-8446-exec-2] [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet][line: 175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at com.example.demo.board.service.BoardServiceImpl.selectBoardList(BoardServiceImpl.java:23)
+	at com.example.demo.board.service.BoardServiceImpl$$FastClassBySpringCGLIB$$5e9b59ea.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.board.service.BoardServiceImpl$$EnhancerBySpringCGLIB$$f78f7e4d.selectBoardList(<generated>)
+	at com.example.demo.board.controller.BoardController.list(BoardController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:17:16 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+16:17:16 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+16:17:16 [https-jsse-nio-8446-exec-6] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+16:17:16 [https-jsse-nio-8446-exec-6] [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet][line: 175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at com.example.demo.board.service.BoardServiceImpl.selectBoardList(BoardServiceImpl.java:23)
+	at com.example.demo.board.service.BoardServiceImpl$$FastClassBySpringCGLIB$$5e9b59ea.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.board.service.BoardServiceImpl$$EnhancerBySpringCGLIB$$f78f7e4d.selectBoardList(<generated>)
+	at com.example.demo.board.controller.BoardController.list(BoardController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:17:22 [RMI TCP Connection(223)-127.0.0.1] [INFO ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[line: 159] - Application shutdown requested.
+16:17:22 [RMI TCP Connection(223)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-4 - Shutdown initiated...
+16:17:22 [RMI TCP Connection(223)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-4 - Shutdown completed.
+16:17:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 25360 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:17:31 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:17:31 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:17:31 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:17:31 [restartedMain] [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[line: 255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:17:33 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+16:17:33 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+16:17:33 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:17:33 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:17:33 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:17:33 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 2324 ms
+16:17:34 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:17:35 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+16:17:35 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+16:17:35 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 4.975 seconds (JVM running for 7.547)
+16:17:42 [https-jsse-nio-8446-exec-3] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:17:42 [https-jsse-nio-8446-exec-3] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+16:17:42 [https-jsse-nio-8446-exec-3] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 2 ms
+16:18:13 [https-jsse-nio-8446-exec-3] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-1 - Starting...
+16:18:21 [https-jsse-nio-8446-exec-3] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-1 - Start completed.
+16:18:21 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+16:18:21 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+16:18:22 [https-jsse-nio-8446-exec-3] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
+16:19:55 [Thread-5] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 350] - HikariPool-1 - Shutdown initiated...
+16:19:55 [Thread-5] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 352] - HikariPool-1 - Shutdown completed.
+16:19:56 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 25360 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:19:56 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:19:56 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:19:56 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+16:19:56 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+16:19:56 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:19:56 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:19:56 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:19:56 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 478 ms
+16:19:56 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:19:56 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+16:19:57 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+16:19:57 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.152 seconds (JVM running for 149.1)
+16:19:57 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:19:58 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 55] - Starting ApiserverApplication using Java 11.0.13 on DESKTOP-R60F8GN with PID 25360 (D:\neighbor\apiserver\bin\main started by USER in D:\neighbor\apiserver)
+16:19:58 [restartedMain] [DEBUG] c.example.demo.ApiserverApplication[line: 56] - Running with Spring Boot v2.6.6, Spring v5.3.18
+16:19:58 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 640] - No active profile set, falling back to 1 default profile: "default"
+16:19:59 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 108] - Tomcat initialized with port(s): 8446 (https)
+16:19:59 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Initializing ProtocolHandler ["https-jsse-nio-8446"]
+16:19:59 [restartedMain] [INFO ] o.a.catalina.core.StandardService[line: 173] - Starting service [Tomcat]
+16:19:59 [restartedMain] [INFO ] o.a.catalina.core.StandardEngine[line: 173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+16:19:59 [restartedMain] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring embedded WebApplicationContext
+16:19:59 [restartedMain] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext[line: 290] - Root WebApplicationContext: initialization completed in 405 ms
+16:19:59 [restartedMain] [INFO ] o.s.b.d.a.OptionalLiveReloadServer[line: 58] - LiveReload server is running on port 35729
+16:19:59 [restartedMain] [INFO ] o.a.coyote.http11.Http11NioProtocol[line: 173] - Starting ProtocolHandler ["https-jsse-nio-8446"]
+16:19:59 [restartedMain] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer[line: 220] - Tomcat started on port(s): 8446 (https) with context path ''
+16:19:59 [restartedMain] [INFO ] c.example.demo.ApiserverApplication[line: 61] - Started ApiserverApplication in 1.021 seconds (JVM running for 151.72)
+16:19:59 [restartedMain] [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener[line: 63] - Condition evaluation unchanged
+16:20:57 [https-jsse-nio-8446-exec-4] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/][line: 173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:20:57 [https-jsse-nio-8446-exec-4] [INFO ] o.s.web.servlet.DispatcherServlet[line: 525] - Initializing Servlet 'dispatcherServlet'
+16:20:57 [https-jsse-nio-8446-exec-4] [INFO ] o.s.web.servlet.DispatcherServlet[line: 547] - Completed initialization in 1 ms
+16:20:57 [https-jsse-nio-8446-exec-4] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 110] - HikariPool-2 - Starting...
+16:20:57 [https-jsse-nio-8446-exec-4] [INFO ] com.zaxxer.hikari.HikariDataSource[line: 123] - HikariPool-2 - Start completed.
+16:20:57 [https-jsse-nio-8446-exec-4] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==>  Preparing: select * from board where board_deleted = 'N'
+16:20:57 [https-jsse-nio-8446-exec-4] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - ==> Parameters: 
+16:20:57 [https-jsse-nio-8446-exec-4] [DEBUG] c.e.d.b.m.BoardMapper.selectBoard[line: 137] - <==      Total: 20
