@@ -5,15 +5,14 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.member.mapper.MemberMapper;
 import com.example.demo.member.vo.MemberVo;
 
+import lombok.RequiredArgsConstructor;
+
 @Repository
+@RequiredArgsConstructor
 public class MemberDaoImpl implements MemberDao{
 	
-	private MemberMapper mapper;
+	private final MemberMapper mapper;
 
-	public MemberDaoImpl(MemberMapper mapper) {
-		this.mapper = mapper;
-	}
-	
 	@Override
 	public MemberVo selectId(String username) {
 		return mapper.selectId(username);

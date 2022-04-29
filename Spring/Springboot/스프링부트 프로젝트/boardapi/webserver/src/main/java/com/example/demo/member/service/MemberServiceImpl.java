@@ -7,14 +7,13 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.demo.member.dao.MemberDao;
 import com.example.demo.member.vo.MemberVo;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class MemberServiceImpl implements MemberService{
 
-	private MemberDao dao;
-	
-	public MemberServiceImpl(MemberDao dao) {
-		this.dao = dao;
-	}
+	private final MemberDao dao;
 	
 	public BCryptPasswordEncoder passwordEncoder() { 
 		return new BCryptPasswordEncoder(); 

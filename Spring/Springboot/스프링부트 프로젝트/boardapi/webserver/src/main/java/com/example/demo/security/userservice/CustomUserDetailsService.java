@@ -13,18 +13,16 @@ import com.example.demo.member.mapper.MemberMapper;
 import com.example.demo.member.vo.MemberVo;
 import com.example.demo.security.user.CustomUserDetails;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class CustomUserDetailsService implements UserDetailsService{
 	
-	private MemberMapper mapper;
+	private final MemberMapper mapper;
 
-	public CustomUserDetailsService(MemberMapper mapper) {
-		this.mapper = mapper;
-	}
-	
 	@Override
 	public CustomUserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		MemberVo userInfo = mapper.selectId(username);	// db에서 userId를 이용하여 찾고 memberVo에 보관

@@ -15,17 +15,15 @@ import com.example.demo.board.dto.BoardDto;
 import com.example.demo.board.service.BoardService;
 import com.example.demo.security.authentication.AuthenticationMethod;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
 @RequestMapping("/board")
+@RequiredArgsConstructor
 public class BoardController {
 	
-	private BoardService service;
-	private AuthenticationMethod auth;	
-	
-	public BoardController(BoardService service, AuthenticationMethod auth) {
-		this.service = service;
-		this.auth = auth;
-	}
+	private final BoardService service;
+	private final AuthenticationMethod auth;	
 	
 	@GetMapping("/list")
 	public String list(Model model) throws Exception {

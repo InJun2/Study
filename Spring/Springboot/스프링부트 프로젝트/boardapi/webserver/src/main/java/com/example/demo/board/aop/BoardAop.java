@@ -10,17 +10,15 @@ import com.example.demo.board.dto.BoardDto;
 import com.example.demo.board.service.BoardService;
 import com.example.demo.security.authentication.AuthenticationMethod;
 
+import lombok.RequiredArgsConstructor;
+
 @Aspect
 @Component
+@RequiredArgsConstructor
 public class BoardAop {
 	
-	private BoardService service;
-	private AuthenticationMethod auth;
-	
-	public BoardAop(BoardService service, AuthenticationMethod auth) {
-		this.service = service;
-		this.auth = auth;
-	}
+	private final BoardService service;
+	private final AuthenticationMethod auth;
 	
 	@Pointcut("execution(* com..board.service.BoardServiceImpl.updateBoard(..))")		// 적용할 지점 혹인 범위, 현재 서비스의 0개이상의 파라미터를 가진 모든 메소드가 대상
 	private void BoardUpdateTarget() { }

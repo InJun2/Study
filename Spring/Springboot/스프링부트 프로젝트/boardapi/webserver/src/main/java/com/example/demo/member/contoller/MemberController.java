@@ -8,16 +8,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.demo.member.service.MemberService;
 import com.example.demo.member.vo.MemberVo;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
+@RequiredArgsConstructor
 public class MemberController {
 	
-	private MemberService service;
+	private final MemberService service;
 
-	
-	public MemberController(MemberService service) {
-		this.service = service;
-	}
-	
 	@GetMapping({"/login", "/"})
 	public String login() {
 		return "member/login";

@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CustomAuthenticationProvider implements AuthenticationProvider{
 	@Autowired
-	private CustomUserDetailsService userService;
+	private CustomUserDetailsService userService;	// 이건 왜 생성자 주입이 안되는지 확인 에정
 	
 //	@Autowired
 //	public CustomAuthenticationProvider(CustomUserDetailsService userService) {
