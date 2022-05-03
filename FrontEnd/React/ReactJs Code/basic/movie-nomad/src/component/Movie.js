@@ -4,19 +4,31 @@ import PropTypes from "prop-types";
 import "../css/Movie.css";
 
 function Movie({ id, year, title, summary, poster, genres }) {
+    const saveStateValues = (id) => {
+        localStorage.setItem(id, JSON.stringify({    // localStorage가 누적됨
+            "id":id,
+            "year":year,
+            "title":title,
+            "summary":summary,
+            "poster":poster,
+            "genres":genres
+        }));
+    };
+
     return (
         <div className="movie">
             <Link
                 to={{           // Detail에 props 정보 전달
                 pathname: `/movie/${id}`,
-                state: {
-                    year,
-                    title,
-                    summary,
-                    poster,
-                    genres
-                }
+                // state: {     // v6부터 Link to로 state 전달 불가능, 매개 장치 사용해야함
+                //     year,
+                //     title,
+                //     summary,
+                //     poster,
+                //     genres
+                // }    
                 }}
+                onClick={() => saveStateValues(id)}
             >
                 <img src={poster} alt={title} title={title} />
                 <div className="movie__data">

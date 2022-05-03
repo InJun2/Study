@@ -1,22 +1,14 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
-class Detail extends React.Component {
-    componentDidMount() {
-        const { location, history } = this.props;
-        
-        if (location.state === undefined) { // uri로 직접 접속시 props 정보가 없으므로 home으로 다이렉트 보냄
-            history.push("/");
-        }
-    }
-    
-    render() {
-        const { location } = this.props;
-        console.log(location);
-        if (location.state) {
-            return <span>{location.state.title}</span>;
-        } else {
-            return null;
-        }
+function Detail(){
+    const {id} = useParams();
+    const value = JSON.parse(localStorage.getItem(id));
+
+    if (id!=null) {
+        return <span>{value.title}</span>;
+    } else {
+        return <span>잘못된 접근입니다.</span>;
     }
 }
 

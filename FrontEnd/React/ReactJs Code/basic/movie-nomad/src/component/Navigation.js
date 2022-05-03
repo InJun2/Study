@@ -9,9 +9,9 @@ function Navigation() {
             <Link 
                 to={{           // 링크이동시 state에 존재하는 obj 형태로 props 전달
                     pathname: "/about",
-                    state: {
-                        fromNavigation: true
-                    }
+                    // state: {    // es6 부터 Link to에서 state/props 전달 불가능
+                    //     fromNavigation: true
+                    // }
                 }}
             >
                 About
