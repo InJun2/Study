@@ -1,26 +1,29 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import { movieContext } from "../routes/Home";
 import "../css/Movie.css";
 
-function Movie({ id, year, title, summary, poster, genres }) {
-    const saveStateValues = (id) => {
-        localStorage.setItem(id, JSON.stringify({    // localStorage가 누적됨
-            "id":id,
-            "year":year,
-            "title":title,
-            "summary":summary,
-            "poster":poster,
-            "genres":genres
+function Movie() {
+    const movie = useContext(movieContext);     // Home.js에서 생성해둔 movieContext에서 값 가져옴
+
+    const saveStateValues = (movie) => {
+        localStorage.setItem(movie.id, JSON.stringify({    // localStorage가 누적됨, useContext에 담아둔 것을 localState에 저장
+            "id":movie.id,
+            "year":movie.year,
+            "title":movie.title,
+            "summary":movie.summary,
+            "poster":movie.poster,
+            "genres":movie.genres
         }));
     };
+    
 
     return (
         <div className="movie">
             <Link
                 to={{           // Detail에 props 정보 전달
-                pathname: `/movie/${id}`,
-                // state: {     // v6부터 Link to로 state 전달 불가능, 매개 장치 사용해야함
+                pathname: `/movie/${movie.id}`,
+                // state: {     // v6부터 Link to로 state 전달 불가능, 매개 장치 사용해야함 ( localStorage 사용 )
                 //     year,
                 //     title,
                 //     summary,
@@ -28,33 +31,24 @@ function Movie({ id, year, title, summary, poster, genres }) {
                 //     genres
                 // }    
                 }}
-                onClick={() => saveStateValues(id)}
+                onClick={() => saveStateValues(movie)}
             >
-                <img src={poster} alt={title} title={title} />
+                <img src={movie.poster} alt={movie.title} title={movie.title} />
                 <div className="movie__data">
-                    <h3 className="movie__title">{title}</h3>
-                    <h5 className="movie__year">{year}</h5>
+                    <h3 className="movie__title">{movie.title}</h3>
+                    <h5 className="movie__year">{movie.year}</h5>
                     <ul className="movie__genres">
-                        {genres.map((genre, index) => (
+                        {movie.genres.map((genre, index) => (
                         <li key={index} className="genres__genre">
                             {genre}
                         </li>
                         ))}
                     </ul>
-                    <p className="movie__summary">{summary.slice(0, 180)}...</p>  
+                    <p className="movie__summary">{movie.summary.slice(0, 180)}...</p>  
                 </div>
             </Link>
         </div>
     );
 }
-
-Movie.propTypes = {
-    id: PropTypes.number.isRequired,
-    year: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    summary: PropTypes.string.isRequired,
-    poster: PropTypes.string.isRequired,
-    genres: PropTypes.arrayOf(PropTypes.string).isRequired
-};
 
 export default Movie;

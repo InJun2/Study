@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import Movie from "../component/Movie";
 import "../css/Home.css";
+
+export const movieContext = createContext();
 
 function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -9,18 +11,32 @@ function Home() {
 
     useEffect(()=>{
         async function get(){
-            const result = await axios.get(
+            await axios.get(
                 "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
-                );
-            if(isLoading) {
-                setIsLoading(false);
-                setMovies(result.data.data.movies);
-            }
+                ).then((response)=>{
+                    console.log("success get response movies info");
+                    setIsLoading(false);
+                    setMovies(response.data.data.movies);
+                }).catch((ex)=>{
+                    throw new Error(ex);
+                });
         }
-
         get();
-    });
+    }, []);
 
+
+    const movieObject = (movie) =>{
+        const movieObj = {
+            id: movie.id,
+            year: movie.year,
+            title: movie.title,
+            summary: movie.summary,
+            poster: movie.medium_cover_image,
+            genres: movie.genres
+        };
+
+        return movieObj;
+    }
 
     return (
         <section className="container">
@@ -31,15 +47,9 @@ function Home() {
             ) : (
             <div className="movies">
                 {movies.map(movie => (
-                <Movie
-                    key={movie.id}
-                    id={movie.id}
-                    year={movie.year}
-                    title={movie.title}
-                    summary={movie.summary}
-                    poster={movie.medium_cover_image}
-                    genres={movie.genres}
-                />
+                    <movieContext.Provider key={movie.id} value={movieObject(movie)}>
+                        <Movie/>
+                    </movieContext.Provider>
                 ))}
             </div>
             )}
