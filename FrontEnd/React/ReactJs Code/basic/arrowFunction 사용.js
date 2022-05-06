@@ -27,8 +27,8 @@ class Contact extends React.Component{
   }
 
   render(){
-    const mapToComponent = (data) => {
-      return data.map((contact, i) => { // arrow 함수는 js코드
+    const mapToComponent = (data) => {  // arrow 함수는 js코드, 
+      return data.map((contact, i) => { // 해당 map 함수는 data에 있는 contact 만큼 반복, 반복횟수는 i 를 뜻함, 마찬가지로 js 
         return (
           <ContactInfo contact = {contact} key = {i}/>
         );
