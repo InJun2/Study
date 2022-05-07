@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-class App extends React.Component{
+class App extends React.Component{ // class형 컴포넌트, 현재는 주로 함수헝컴포넌트사용
   state = {
     count : 0
   }
