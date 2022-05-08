@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
 </head>
 <body>
     <!-- 
@@ -20,14 +21,14 @@
     <br>
     <span>이메일 : </span><input type="email" id="email">
 
-    <script>
-        const id = document.getElementById("id");
-        const pwd = document.getElementById("pwd");
-        const pwdCheck = document.getElementById("pwdCheck");
-        const email = document.getElementById("email");
-        const idSpan = document.getElementById("idSpan");
-        const pwdSpan = document.getElementById("pwdSpan");
-        const pwdCheckSpan = document.getElementById("pwdCheckSpan");
+    <script>                    /* 현재 jquery는 잘 사용되지 않음 */
+        const id =  $('#id');   /* ==document.getElementById("id"); */
+        const pwd = $("#pwd");
+        const pwdCheck = $("#pwdCheck");
+        const email = $("#email");
+        const idSpan = $("#idSpan");
+        const pwdSpan = $("#pwdSpan");
+        const pwdCheckSpan = $("#pwdCheckSpan");
 
         pwd.addEventListener("click", function(){
             pwdSpan.innerText = "8글자 이상, 특수문자 포함";
