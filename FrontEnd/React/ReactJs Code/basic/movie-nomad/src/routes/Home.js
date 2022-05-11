@@ -17,26 +17,12 @@ function Home() {
                     console.log("success get response movies info");
                     setIsLoading(false);
                     setMovies(response.data.data.movies);
-                }).catch((ex)=>{
-                    throw new Error(ex);
+                }).catch((err)=>{
+                    throw new Error(err);
                 });
         }
         get();
     }, []);
-
-
-    const movieObject = (movie) =>{
-        const movieObj = {
-            id: movie.id,
-            year: movie.year,
-            title: movie.title,
-            summary: movie.summary,
-            poster: movie.medium_cover_image,
-            genres: movie.genres
-        };
-
-        return movieObj;
-    }
 
     return (
         <section className="container">
@@ -47,7 +33,7 @@ function Home() {
             ) : (
             <div className="movies">
                 {movies.map(movie => (
-                    <movieContext.Provider key={movie.id} value={movieObject(movie)}>
+                    <movieContext.Provider key={movie.id} value={movie}>
                         <Movie/>
                     </movieContext.Provider>
                 ))}

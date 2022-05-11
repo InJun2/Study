@@ -12,11 +12,10 @@ function Movie() {
             "year":movie.year,
             "title":movie.title,
             "summary":movie.summary,
-            "poster":movie.poster,
+            "poster":movie.medium_cover_image,
             "genres":movie.genres
         }));
     };
-    
 
     return (
         <div className="movie">
@@ -33,7 +32,7 @@ function Movie() {
                 }}
                 onClick={() => saveStateValues(movie)}
             >
-                <img src={movie.poster} alt={movie.title} title={movie.title} />
+                <img src={movie.medium_cover_image} alt={movie.title} title={movie.title} />
                 <div className="movie__data">
                     <h3 className="movie__title">{movie.title}</h3>
                     <h5 className="movie__year">{movie.year}</h5>
