@@ -1,0 +1,23 @@
+
+.navbar{
+    top:0;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(234, 244, 247);
+}
+
+.navi-item{
+    flex: auto;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar :hover{
+    background-color: rgb(171, 209, 241);
+}
+
+.navbar div {
+    padding-top:15px;
+}

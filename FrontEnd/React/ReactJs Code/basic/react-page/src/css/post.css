@@ -1,0 +1,11 @@
+.post_box{
+    width: 85%;
+    display: flex;
+    flex-flow: column wrap;
+    border: 0px;
+    border-top-left-radius: 30px;
+    background-color: #cccccc;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}

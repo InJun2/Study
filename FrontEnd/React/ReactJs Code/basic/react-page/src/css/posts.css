@@ -1,0 +1,25 @@
+.post_container{
+    width: 100%;
+    margin-left: 5%;
+}
+
+.post_container h1 {
+    margin-bottom: 60px;
+}
+
+.post_container h1:after{
+    content: "";
+    display: block;
+    width: 80px;
+    border-bottom: 2px solid #bcbcbc;
+    margin: 20px;
+}
+
+.post_boxs{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
