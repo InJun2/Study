@@ -1,10 +1,27 @@
+.header{
+    top:0;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.logo:hover{
+    transition: 0.2s;
+    opacity: 0.2;
+}
 
 .navbar{
-    top:0;
-    height: 80px;
+    height: 60px;
     display: flex;
     flex-flow: row nowrap;
-    background-color: rgb(234, 244, 247);
+    border-top: 1.5px solid rgb(168, 163, 163);
+    border-bottom: 1.5px solid rgb(168, 163, 163);
 }
 
 .navi-item{
@@ -15,9 +32,9 @@
 }
 
 .navbar :hover{
-    background-color: rgb(171, 209, 241);
+    background-color: rgb(234, 244, 247);
 }
 
 .navbar div {
-    padding-top:15px;
+    padding-top:8px;
 }

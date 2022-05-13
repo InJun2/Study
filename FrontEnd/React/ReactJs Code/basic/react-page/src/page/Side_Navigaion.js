@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 import '../css/side_navi.css';
+import { FiAlignJustify } from 'react-icons/fi';
 
 export default function SideNavigation(){
     const [menuToggle, setMenu] = useState(false);
-
-    useEffect(()=>{
-        if(menuToggle===true){
-            
-        }
-        if(menuToggle===false){
-            
-        }
-    }, [menuToggle])
 
     const openMenu = () =>{
         setMenu(!menuToggle);
@@ -21,18 +12,16 @@ export default function SideNavigation(){
 
     return(
         <div>
-            <ul class="navigation">
-                <li class="nav-item"><Link to="#">Home</Link></li>
-                <li class="nav-item"><Link to="#">Portfolio</Link></li>
-                <li class="nav-item"><Link to="#">About</Link></li>
-                <li class="nav-item"><Link to="#">Blog</Link></li>
-                <li class="nav-item"><Link to="#">Contact</Link></li>
+            <ul className={menuToggle ? "show-menu navigation" : "hide-menu navigation"}>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="Post">Post</Link></li>
+                <li><Link to="#">About</Link></li>
+                <li><Link to="#">About</Link></li>
+                <li><Link to="#">About</Link></li>
             </ul>
 
-            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-            <label for="nav-trigger"></label>
-
-            
+            <input type="checkbox" id ="nav-trigger" className="nav-trigger" onChange={()=>openMenu()}/>
+            <label htmlFor="nav-trigger"><FiAlignJustify className='toggle-menu-icon'/></label>
         </div>
     );
 }
