@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import Post from '../component/Post';
+import SubTitle from '../component/SubTitle';
 import '../css/posts.css';
-import SideNavigation from './Side_Navigaion';
 
 export default function Posts(){
     const [load, setLoad] = useState(true);
@@ -19,24 +19,20 @@ export default function Posts(){
     }, [])
 
     return(
-        <>
-            <SideNavigation/>
+        <div className='post_container'>
+            <SubTitle title="Post Infomation"/>
 
-            <div className='post_container'>
-                <h1>Post Infomation</h1>
-
-                {load?
-                    <div></div>
-                :
-                    <div className='post_boxs'>
-                            {posts.map((post)=>(
-                                <React.Fragment key={post.id}>
-                                    <Post post={post}/>
-                                </React.Fragment>
-                            ))}
-                    </div>
-                }
+            {load?
+                <div></div>
+            :
+                <div className='post_boxs'>
+                        {posts.map((post)=>(
+                            <React.Fragment key={post.id}>
+                                <Post post={post}/>
+                            </React.Fragment>
+                        ))}
                 </div>
-        </>
+            }
+        </div>
     );
 }

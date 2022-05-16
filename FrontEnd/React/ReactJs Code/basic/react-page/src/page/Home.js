@@ -1,32 +1,29 @@
 import React from 'react';
 import '../css/home.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
-import LineChart from '../component/Line_Chart';
-import SideNavigation from './Side_Navigaion';
+import LineChart from '../component/LineChart';
+import CarouselUI from '../component/Carousel';
+import HomeTable from './Table';
 
 function Home(){
 
     return(
         <>
-            <SideNavigation/>
-
-            <div className='container'>
-                <div className='home_img_box'>
-                    <img  src='img/river1.png' alt='home_img'/>
-                </div>
-                <div className='container_item'>
-                    Home IMG.. or BootStrap Carousel Slide..
+            <div className='container_home'>
+                <div className="home_img_box shadow-lg">
+                    <CarouselUI/>
                 </div>
 
-                <div className='container_item'>
-                    NIVO LINE CHART Library
+                <div className='home_boarder'>
+                    <HomeTable/>
                 </div>
 
-                <div className="line_chart_box">
+                <div className="line_chart_box shadow">
                     <LineChart/>
                 </div>
 
-                <div className='container_item'>
+                <div className='container_item shadow-lg'>
                     make sure parent container have a defined height when using
                     responsive component, otherwise height will be 0 and
                     no chart will be rendered.

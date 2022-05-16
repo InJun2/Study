@@ -2,3 +2,14 @@ body{
     width: 100%;
     height: 100%;
 }
+
+@font-face {
+    font-family: "BMJ";
+    src: url("../public/font/BMJUA_ttf.ttf");
+}
+
+
+@font-face {
+    font-family: "BMD";
+    src: url("../public/font/BMDOHYEON_ttf.ttf");
+}

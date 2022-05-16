@@ -1,37 +1,37 @@
-.container{
+.container_home{
     height: 100%;
     width: 90%;
     margin-left: 5%;
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));   /* home과 post 페이지 화면 width 길이 차이남*/
-    grid-template-rows: repeat(auto, 300px);
-    margin-top: 50px;
+    grid-template-rows: 350px repeat(3, 300px);
+    padding-top: 25px;
     justify-content: space-around;
     gap: 30px;
 }
 
 .home_img_box{
-    grid-column: 1/4;
-    border: 1px solid #000000;
-    background-color: antiquewhite;
+    grid-column: 1/5;
+    border-radius: 4px;
+    overflow: hidden;
 }
-
-.home_img_box img{
-    width: 80%;
-    height: 300px;
-    padding-left: 10%;
+.home_boarder{
+    grid-column: 1/5;
+    grid-row: 2/4;
+    overflow: hidden;
 }
 
 .container_item{
     font-size: 20px;
     overflow: auto;
     padding: 10px;
-    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: blanchedalmond;
+    opacity: 0.8;
 }
 
 .line_chart_box{
-    grid-column: 2/4;   /* grid 컬럼 길이 지정 2부터 시작해서 4 이전까지*/
+    grid-column: 1/4;   /* grid 컬럼 길이 지정 2부터 시작해서 4 이전까지*/
     height: 300px;
-    border: 1px solid #000000;
 }
 

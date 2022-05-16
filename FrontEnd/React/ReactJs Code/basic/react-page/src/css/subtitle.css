@@ -1,0 +1,12 @@
+.subtitle h1 {
+    font-family: "BMD";
+    margin-bottom: 40px;
+}
+
+.subtitle h1:after{
+    content: "";
+    display: block;
+    width: 80px;
+    border-bottom: 2px solid #bcbcbc;
+    margin: 20px;
+}

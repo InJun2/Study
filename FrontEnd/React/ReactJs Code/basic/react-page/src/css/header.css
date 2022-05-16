@@ -1,0 +1,46 @@
+.header{
+    top:0;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.logo{
+    display: flex;
+    position: line;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.logo:hover{
+    transition: 0.2s;
+    opacity: 0.2;
+}
+
+.header .navbar a{
+    background-color: blanchedalmond;
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-top: 1.5px solid rgb(168, 163, 163);
+    border-bottom: 1.5px solid rgb(168, 163, 163);
+    margin-bottom: 25px;
+}
+
+.navi-item{
+    flex: auto;
+    color: gray;
+    font-family: "BMJ";
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar :hover{
+    color: white;
+    background-color: rgb(234, 244, 247);
+}
