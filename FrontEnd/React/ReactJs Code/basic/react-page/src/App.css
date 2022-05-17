@@ -13,3 +13,18 @@ body{
     font-family: "BMD";
     src: url("../public/font/BMDOHYEON_ttf.ttf");
 }
+
+@font-face {
+    font-family: "BMHA";
+    src: url("../public/font/BMHANNAAir_ttf.ttf");
+}
+
+@font-face {
+    font-family: "BMHP";
+    src: url("../public/font/BMHANNAPro.ttf");
+}
+
+@font-face {
+    font-family: "BMY";
+    src: url("../public/font/BMYEONSUNG_ttf.ttf");
+}

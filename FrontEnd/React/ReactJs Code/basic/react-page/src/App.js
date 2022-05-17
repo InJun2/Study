@@ -6,17 +6,18 @@ import Header from './page/Header';
 import Posts from './page/Posts';
 import Footer from './page/Footer';
 import SideNavigation from './page/Side_Navigaion';
+import Login from './page/Login';
 
 export default function App() {
   return (
     <BrowserRouter>
       <SideNavigation/>
-
       <ScrollToTop/>
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/post" element={<Posts/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -1,16 +1,16 @@
 .header{
     top:0;
     width: 90%;
+    display: flex;
     margin-left: 5%;
     margin-top: 30px;
+    border-bottom: 1.5px solid rgb(168, 163, 163);
 }
 
 .logo{
-    display: flex;
     position: line;
     width: 80px;
     height: 80px;
-    margin-bottom: 30px;
 }
 
 .logo:hover{
@@ -18,24 +18,27 @@
     opacity: 0.2;
 }
 
-.header .navbar a{
-    background-color: blanchedalmond;
+.main-text{
+    font-family: 'BMHP';
+    font-size: 50px;
+    margin-left: 40px;
 }
 
 .navbar{
+    width: 100%;
     height: 60px;
     display: flex;
     flex-flow: row nowrap;
+    margin-left: 40px;
+    margin-top: 50px;
     border-top: 1.5px solid rgb(168, 163, 163);
-    border-bottom: 1.5px solid rgb(168, 163, 163);
-    margin-bottom: 25px;
 }
 
-.navi-item{
-    flex: auto;
+.navbar .navi-item{
+    flex-grow: 1;
     color: gray;
-    font-family: "BMJ";
-    font-size: 30px;
+    font-family: "BMHA";
+    font-size: 20px;
     text-decoration: none;
     text-align: center;
 }
@@ -43,4 +46,38 @@
 .navbar :hover{
     color: white;
     background-color: rgb(234, 244, 247);
+}
+
+.header_toolbar{
+    position: absolute;
+    right: 5%;
+    font-size: 18px;
+    font-family: "BMHP";
+    color: rgb(168, 163, 163);
+}
+
+.header_toolbar a{
+    text-decoration: none;
+    color: rgb(168, 163, 163);
+}
+
+.header_toolbar a:hover{
+    transition: 0.2s;
+    color: rgb(44, 44, 44);
+}
+
+@media screen and (max-width:768px){
+    .container_home{
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar{
+        width: 0%;
+        overflow: hidden;
+    }
+    
+    .header_toolbar{
+        top:110px
+    }
 }

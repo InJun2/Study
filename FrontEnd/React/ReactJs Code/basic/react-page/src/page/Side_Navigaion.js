@@ -15,9 +15,9 @@ export default function SideNavigation(){
             <ul className={menuToggle ? "show-menu navigation" : "hide-menu navigation"}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/post">Post</Link></li>
+                <li><Link to="#">Inquiry</Link></li>
                 <li><Link to="#">About</Link></li>
-                <li><Link to="#">About</Link></li>
-                <li><Link to="/login">LogIn/LogOut</Link></li>
+                <li><Link to="/login">Login</Link></li>
             </ul>
 
             <input type="checkbox" id ="nav-trigger" className="nav-trigger" onChange={()=>openMenu()}/>

@@ -23,7 +23,7 @@ export default function Posts(){
             <SubTitle title="Post Infomation"/>
 
             {load?
-                <div></div>
+                <div className='spinner-border'></div>
             :
                 <div className='post_boxs'>
                         {posts.map((post)=>(

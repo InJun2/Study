@@ -1,16 +1,29 @@
 .post_box{
     width: 85%;
-    display: flex;
-    flex-flow: row wrap;
+    display: block;
     border: 0px;
-    height: 140px;
+    height: auto;
     border-top-left-radius: 25px;
     background-color: #cccccc;
-    padding: 10px;
-    padding-left: 30px;
-    margin-bottom: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-overflow: ellipsis;
+
+}
+
+.post_box h3{
+    font-family: "BMD";
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .post_box p{
-    overflow: hidden;
+    font-family: "BMJ";
+    padding-left: 15px;
+}
+
+@media screen and (max-width:1024px){
+    .post_box{
+        width: 100%;
+    }
 }

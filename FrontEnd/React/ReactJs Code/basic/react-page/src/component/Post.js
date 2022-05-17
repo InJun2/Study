@@ -19,10 +19,8 @@ export default function Post(props){
 
     return(
             <div className='post_box'>
-                {/* <Link to ='/post'> */}
                     <h3>{post.title}</h3>
-                    <p>{post.body.slice(0,150)}...</p>
-                {/* </Link> */}
+                    <p>{post.body}</p>
             </div>
     );
 }

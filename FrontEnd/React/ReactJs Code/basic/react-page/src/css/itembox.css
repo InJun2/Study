@@ -1,0 +1,41 @@
+.itembox{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.itembox_title{
+    width: 100%;
+    height: 15%;
+    padding: 6px;
+    font-size: 28px;
+    font-family: "BMY";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.itembox_img{
+    width: 100%;
+    height: 70%;
+    border-top: 2px solid rgb(223, 220, 220);
+    border-bottom: 2px solid rgb(223, 220, 220);
+    overflow: hidden;
+}
+
+.itembox_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itembox_content{
+    width: 100%;
+    height: 15%;
+    padding: 8px;
+    font-size: 18px;
+    font-family: "BMHP";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

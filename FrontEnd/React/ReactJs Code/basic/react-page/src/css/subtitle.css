@@ -1,6 +1,7 @@
 .subtitle h1 {
     font-family: "BMD";
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .subtitle h1:after{

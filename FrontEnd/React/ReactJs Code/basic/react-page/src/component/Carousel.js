@@ -11,6 +11,10 @@ function CarouselUI(){
                     src="img/river1.png"
                     alt="First slide"
                 />
+                <Carousel.Caption>
+                    <h3 style={{fontFamily:"BMHA", color:"black"}}>First img</h3>
+                    <p style={{fontFamily:"BMHA", color:"black"}}>this is river</p>
+                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
@@ -19,6 +23,10 @@ function CarouselUI(){
                     src="img/tower1.png"
                     alt="Second slide"
                 />
+                <Carousel.Caption>
+                    <h3 style={{fontFamily:"BMHA"}}>Second img</h3>
+                    <p style={{fontFamily:"BMHA"}}>this is tower</p>
+                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     );
