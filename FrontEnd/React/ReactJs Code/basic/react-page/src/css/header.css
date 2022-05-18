@@ -1,8 +1,9 @@
 .header{
     top:0;
-    width: 90%;
+    width: 1600px;
+    height: 114px;
     display: flex;
-    margin-left: 5%;
+    margin: auto;
     margin-top: 30px;
     border-bottom: 1.5px solid rgb(168, 163, 163);
 }
@@ -11,6 +12,7 @@
     position: line;
     width: 80px;
     height: 80px;
+    margin-top: 5px;
 }
 
 .logo:hover{
@@ -38,7 +40,7 @@
     flex-grow: 1;
     color: gray;
     font-family: "BMHA";
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
     text-align: center;
 }
@@ -49,8 +51,9 @@
 }
 
 .header_toolbar{
+    width: 1600px;
+    text-align: end;
     position: absolute;
-    right: 5%;
     font-size: 18px;
     font-family: "BMHP";
     color: rgb(168, 163, 163);
@@ -67,17 +70,19 @@
 }
 
 @media screen and (max-width:768px){
-    .container_home{
-        width: 100%;
+    .header{
+        width: 90%;
         height: auto;
+    }
+    .header_toolbar{
+        width: max-content;
+        top:110px;
+        right:0;
+        margin-right: 5%;
     }
 
     .navbar{
         width: 0%;
         overflow: hidden;
-    }
-    
-    .header_toolbar{
-        top:110px
     }
 }

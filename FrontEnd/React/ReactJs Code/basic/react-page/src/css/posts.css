@@ -1,7 +1,8 @@
 .post_container{
+    width: 1400px;
     height: 100%;
+    margin:auto;
     margin-top: 60px;
-    margin-left: 5%;
 }
 
 .post_boxs{
@@ -10,4 +11,5 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    margin-top: 60px;
 }

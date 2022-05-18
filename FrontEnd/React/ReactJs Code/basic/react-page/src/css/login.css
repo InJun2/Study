@@ -1,0 +1,66 @@
+.login_container{
+    width: 1400px;
+    height: 670px;
+    display: block;
+}
+
+.login_container .login_box{
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.login_container .login_button_box{
+    width: 600px;
+    height: 80px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(118, 219, 118);
+    font-family: "BMHP";
+}
+
+.login_container a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.login_container .login_button_box:hover{
+    transition: 0.4s;
+    opacity: 0.6;
+    transform: scale(1.2);
+    object-fit: fill;
+
+}
+
+
+
+.login_container .login_box_bottom{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: "BMHP";
+    padding-top: 30px;
+}
+
+.login_container .login_box_bottom a{
+    text-decoration: none;
+    color: gray;
+}
+
+.login_container .login_box_bottom a:nth-child(1){
+    padding-left: 100px;
+}
+
+.login_container .login_box_bottom a:nth-child(2){
+    padding-right: 100px;
+}
+
+.login_container .login_box_bottom a:hover{
+    color: black;
+}
+

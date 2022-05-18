@@ -1,20 +1,26 @@
 .footer{
-    width: 90%;
-    margin-left: 5%;
+    width: 1600px;
+    margin: auto;
     margin-top: 50px;
     padding-top: 20px;
     margin-bottom: 50px;
     border-top: 1.5px solid #bcbcbc;
 }
 
-.footer h3:before{
-    padding-top : 10px;
-}
-
 .footer h3, .footer p, .footer p a{
     color: #8a8686;
 }
 
+.footer h3:before{
+    padding-top : 10px;
+}
+
 .footer p a:hover{
     color: #000000;
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        width: 90%;
+    }
 }
