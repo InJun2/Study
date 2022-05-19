@@ -41,6 +41,7 @@
     grid-column: 1/4;   /* grid 컬럼 길이 지정 2부터 시작해서 4 이전까지*/
     grid-row: 4/4;
     height: 300px;
+    overflow: hidden;
 }
 
 .container_chart_info_box{

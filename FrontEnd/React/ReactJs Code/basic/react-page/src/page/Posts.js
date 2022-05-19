@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import { useInView } from 'react-intersection-observer';
 
 import Post from '../component/Post';
 import SubTitle from '../component/SubTitle';
@@ -8,6 +9,8 @@ import '../css/posts.css';
 export default function Posts(){
     const [load, setLoad] = useState(true);
     const [posts, setPost] = useState([]);
+    
+    const [ref, inView] = useInView();
 
     useEffect (()=>{
         axios.get("https://jsonplaceholder.typicode.com/posts")

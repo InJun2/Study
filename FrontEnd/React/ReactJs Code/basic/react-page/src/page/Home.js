@@ -25,9 +25,9 @@ function Home(){
 
             <div className='container_info_box shadow-lg'>
                 <InfoBox title="React" 
-                    content="웹 프레임워크 & 자바스크립트 라이브러리<br/>
-                    싱글 페이지, 모바일 애플리케이션 개발<br/>
-                    VirtualDom을 이용, 동적 UI<br/>
+                    content="웹 프레임워크 & 자바스크립트 라이브러리
+                    싱글 페이지, 모바일 애플리케이션 개발
+                    VirtualDom을 이용, 동적 UI
                     Component 기반으로 Data Flow는 단방향"/>
             </div>
 
