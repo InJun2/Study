@@ -10,25 +10,23 @@ function Login(){
                     ID
                 </div>
                 <div className='login_input_id'>
-                    <input type='text' placeholder='ID' required/>
+                    <input type='text' placeholder='ID' name='userId' required/>
                 </div>
 
                 <div className='login_text_pwd'>
                     PassWord
                 </div>
                 <div className='login_input_pwd'>
-                    <input type='password' placeholder='Pwd' required/>
+                    <input type='password' placeholder='Pwd' name='userPwd' required/>
                 </div>
 
                 <div className='login_button_box'>
-                    <Link to="#">
-                            Login
-                    </Link>
+                    <input type="submit" value="Login"/>
                 </div>
             </div>
 
             <div className='login_bottom_link'>
-                <Link to="#">Join?</Link>
+                <Link to="/join">Join?</Link>
                 <Link to="#">Forgot Id/Pwd?</Link>
             </div>
         </div>

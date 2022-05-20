@@ -18,7 +18,7 @@ function header(){
             </div>
 
             <div className='header_toolbar'>
-            <Link to="/login">Login/Logout</Link> | <Link to="#">Join</Link> | <Link to="#">Mypage</Link> 
+            <Link to="/login">Login/Logout</Link> | <Link to="/join">Join</Link> | <Link to="#">Mypage</Link> 
             </div>
         </div>
     )

@@ -39,7 +39,7 @@ function Home(){
                     return(
                         <React.Fragment key={index}>
                             <div className='home_item_box'>
-                                <ItemBox title={item.title} src={item.src} content={item.content} key={item.index}/>
+                                <ItemBox title={item.title} src={item.src} content={item.content}/>
                             </div>
                         </React.Fragment>
                     );
