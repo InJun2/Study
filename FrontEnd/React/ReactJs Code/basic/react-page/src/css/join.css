@@ -36,14 +36,14 @@
     display: block;
 }
 
-.join_input_row span.pull_input_span, .join_input_row span.pull_input_span_readonly{
+.join_input_row span.pull_input_span, .join_input_row span.input_span_readonly{
     width: 100%;
     height: 50px;
     border: 2.5px solid gray;
     padding: 10px;
 }
 
-.join_input_row span.pull_input_span_readonly, .pull_input_span_readonly input{
+span.input_span_readonly, .input_span_readonly input{
     background-color: rgb(218, 218, 218);
 }
 
@@ -63,12 +63,6 @@
     justify-content: space-between;
 }
 
-.join_content span.join_error_text{
-    color: rgb(245, 62, 62);
-    font-size: 15px;
-    font-family: "BMHA";
-    display: none;
-}
 
 .join_input_row .join_birthday_div span{
     width: 32%;
@@ -77,7 +71,7 @@
     padding: 5px;
 }
 
-.join_content input, .join_content .pull_input_span select, .join_address span:nth-child(2){
+.join_content input, .join_content .pull_input_span select{
     width: 100%;
     height: 100%;
     font-size: 20px;
@@ -96,22 +90,34 @@
     width: 78%;
     height: 50px;
     border: 2.5px solid gray;
+    border-right: 0;
     padding: 10px;
     margin-bottom:3px
 }
 
 .join_address button{
-    width: 20%;
+    width: 22%;
     height: 50px;
+    font-family: "BMHP";
     border: 2.5px solid gray;
     padding: 10px;
-    font-family: "BMHP";
+    margin-bottom: 3px;
 }
 
 .join_address button:active{
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(255,255,255,.5), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.join_address div.addressPopup{
+    margin-top: 15px;
+}
+
+.join_address button.postCode_btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
 }
 
 .join_button_row{
