@@ -32,6 +32,23 @@
     display: block;
 }
 
+.join_content span.join_error_text{
+    color: rgb(245, 62, 62);
+    font-size: 15px;
+    font-family: "BMHA";
+}
+
+.join_content span.join_success_text{
+    color: rgb(88, 247, 67);
+    font-size: 15px;
+    font-family: "BMHA";
+    display: none;
+}
+
+.join_input_row{
+    margin-bottom: 20px;
+}
+
 .join_input_row span{
     display: block;
 }
@@ -52,7 +69,6 @@ span.input_span_readonly, .input_span_readonly input{
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 .join_input_row div.join_birthday_div{
@@ -80,6 +96,12 @@ span.input_span_readonly, .input_span_readonly input{
     padding-left: 15px;
     padding-right: 50px;
     outline: none;
+}
+
+.join_content input::placeholder{
+    font-size: 15px;
+    font-family: "BMHP";
+    color: rgb(199, 199, 199);
 }
 
 .join_content input[type=password]{
