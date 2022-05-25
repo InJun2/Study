@@ -38,13 +38,6 @@
     font-family: "BMHA";
 }
 
-.join_content span.join_success_text{
-    color: rgb(88, 247, 67);
-    font-size: 15px;
-    font-family: "BMHA";
-    display: none;
-}
-
 .join_input_row{
     margin-bottom: 20px;
 }
@@ -91,11 +84,15 @@ span.input_span_readonly, .input_span_readonly input{
     width: 100%;
     height: 100%;
     font-size: 20px;
-    font-family: "BMHP";
+    font-family: "BMD";
     border: 0;
     padding-left: 15px;
     padding-right: 50px;
     outline: none;
+}
+
+.join_content input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .join_content input::placeholder{

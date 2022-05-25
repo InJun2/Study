@@ -28,3 +28,10 @@ body{
     font-family: "BMY";
     src: url("../public/font/BMYEONSUNG_ttf.ttf");
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}   /* 자동 완성 input 백그라운드 색상 제거 */
