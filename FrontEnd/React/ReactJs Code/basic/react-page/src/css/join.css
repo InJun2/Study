@@ -72,7 +72,6 @@ span.input_span_readonly, .input_span_readonly input{
     justify-content: space-between;
 }
 
-
 .join_input_row .join_birthday_div span{
     width: 32%;
     height: 50px;
@@ -80,11 +79,16 @@ span.input_span_readonly, .input_span_readonly input{
     padding: 5px;
 }
 
+.join_content span:focus-within, .join_content span:focus-within{
+    transition: 0.6s;
+    border: 2.5px solid rgb(138, 252, 32);
+}
+
 .join_content input, .join_content .pull_input_span select{
     width: 100%;
     height: 100%;
     font-size: 20px;
-    font-family: "BMD";
+    font-family: "BMJ";
     border: 0;
     padding-left: 15px;
     padding-right: 50px;
@@ -117,7 +121,7 @@ span.input_span_readonly, .input_span_readonly input{
 .join_address button{
     width: 22%;
     height: 50px;
-    font-family: "BMHP";
+    font-family: "BMJ";
     border: 2.5px solid gray;
     padding: 10px;
     margin-bottom: 3px;

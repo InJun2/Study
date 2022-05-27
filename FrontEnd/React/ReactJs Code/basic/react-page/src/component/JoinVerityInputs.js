@@ -47,25 +47,15 @@ export const verityIsJoinInputs = yup.object().shape({
         .matches(/^[0-9]+$/g, { message: '숫자만 입력해주세요.' })
         .test(
             "birthDay",
-            "테스트",
-            value=> {
-                const year = (yup.ref('birthYear'));
-                const month = (yup.ref('birthMonth'));
-                console.log(year, month)
+            "잘못된 생일 정보입니다",
+            function(day){
+                const year = this.resolve(yup.ref('birthYear'));
+                const month = this.resolve(yup.ref('birthMonth'));
 
-                if(month === 2){
-                    if((year % 4 === 0) && (year % 100 !== 0 || year % 400 === 0))
-                        return value<=29 && value>=1
-                    else
-                        return value<=28 && value>=1
-                }
-                else if(month ===4 || month ===6 || month ===9 || month===11){
-                    return value<=30 && value>=1
-                }
-                else{
-                    return value<=31 && value>=1
-                }
-            }),
+                console.log(verityBirth(year, month, day))
+                return verityBirth(year, month, day);
+            }
+        ),
     email: yup 
         .string()
         .required("이메일을 입력해주세요")
@@ -82,36 +72,26 @@ export const verityIsJoinInputs = yup.object().shape({
         .min(12, "잘못된 휴대폰 번호 입니다")
         .max(13, "잘못된 휴대폰 번호 입니다")
         .matches(/^01([0|1|6|7|8|9])*-([0-9]{3,4})*-([0-9]{4})$/, {message: "잘못된 핸드폰번호 입니다"})
-    
 })
 
-        // required: { value: true, message: "태어난 연도를 입력해주세요"},
-        // validate: { checkBirthYear :value => { return (value>new Date().getFullYear()-101 && value < new Date().getFullYear()-8) ||"잘못된 생년 정보 입니다"},
-        //             checkInteger: value => checkInteger(value) ||"잘못된 생년 정보 입니다",
-        //             checkBirthAll: () => verityBirthYear() || "잘못된 생일 정보입니다"}
-        // required: { value: true, message: "태어난 월을 입력해주세요"},
-        // validate: { checkBirthMonth :value => {return (value>=1 && value<=12) || "잘못된 생월 정보 입니다"},
-        //             checkInteger: value => checkInteger(value) ||"잘못된 생월 정보 입니다",
-        //             checkBirthAll: () => verityBirthMonth() || "잘못된 생일 정보 입니다"} 
-        // required: { value: true, message: "태어난 일을 입력해주세요"},
-        // validate: { checkBirthDay :value => {return birthDayValidate(value) || "잘못된 생일 정보 입니다"},
-        //             checkInteger: value => checkInteger(value) ||"잘못된 생일 정보 입니다"}
+const verityBirth = (yearStr, monthStr, dayStr) =>{
+    if(yearStr === "" || monthStr ===""){
+        return true
+    } 
+    const year = parseInt(yearStr);
+    const month = parseInt(monthStr);
+    const day = parseInt(dayStr);
 
-
-// const verityBirthMonth = () => {
-//     const year = getValues("birthYear");
-//     const day = getValues("birthDay");
-//     if(year!=="" && day!==""){
-//         return birthDayValidate(day);
-//     }else
-//         return true;
-// }
-
-// const verityBirthYear = () => {
-//     const month = getValues("birthYear");
-//     const day = getValues("birthDay");
-//     if(month!=="" && day!==""){
-//         return birthDayValidate(day);
-//     }else
-//         return true;
-// }
+    if(month === 2){
+        if((year % 4 === 0) && (year % 100 !== 0 || year % 400 === 0))
+            return day<=29 && day>=1
+        else
+            return day<=28 && day>=1
+    }
+    else if(month ===4 || month ===6 || month ===9 || month===11){
+        return day<=30 && day>=1
+    }
+    else{
+        return day<=31 && day>=1
+    }
+}
