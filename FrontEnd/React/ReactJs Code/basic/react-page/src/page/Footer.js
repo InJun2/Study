@@ -6,7 +6,7 @@ function Footer(){
     return(
         <div className='footer'>
             <h3>React Page</h3>
-            <p>react / react-bootstrap / react-icons / nivo chart / axios </p>
+            <p>react / react-router-dom / react-bootstrap / react-icons / nivo chart / axios / react-hook-form & yup</p>
             <p>
                 <a href='https://ko-kr.facebook.com/'><BsFacebook/></a> |&nbsp; 
                 <a href='https://www.google.com/'><BsGoogle/></a> |&nbsp;
