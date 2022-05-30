@@ -18,6 +18,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/board")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000")
 public class BoardController {
 	
 	private final BoardService service;
