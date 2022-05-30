@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import {BsArrowRight} from 'react-icons/bs'
 import SubTitle from '../component/SubTitle';
-import '../css/hometable.css';
+import '../css/table.css';
 
 function HomeTable(){
     return(

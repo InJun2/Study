@@ -8,6 +8,7 @@ import Footer from './page/Footer';
 import SideNavigation from './component/SideNavigaion';
 import Login from './page/Login';
 import Join from './page/Join';
+import Board from './page/Board';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/post" element={<Posts/>}/>
+        <Route path="/board" element={<Board/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/join' element={<Join/>}/>
       </Routes>

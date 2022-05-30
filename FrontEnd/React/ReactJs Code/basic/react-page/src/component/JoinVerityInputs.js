@@ -76,7 +76,7 @@ export const verityIsJoinInputs = yup.object().shape({
 
 const verityBirth = (yearStr, monthStr, dayStr) =>{
     if(yearStr === "" || monthStr ===""){
-        return true
+        return false
     } 
     const year = parseInt(yearStr);
     const month = parseInt(monthStr);
