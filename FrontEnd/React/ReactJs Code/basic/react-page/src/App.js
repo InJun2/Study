@@ -3,12 +3,13 @@ import './App.css';
 import ScrollToTop from './component/ScrollToTop';
 import Home from './page/Home';
 import Header from './page/Header';
-import Posts from './page/Posts';
+import Support from './page/Support';
 import Footer from './page/Footer';
 import SideNavigation from './component/SideNavigaion';
 import Login from './page/Login';
 import Join from './page/Join';
 import Board from './page/Board';
+import Inquery from './page/Inquery';
 
 export default function App() {
   return (
@@ -19,8 +20,9 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/post" element={<Posts/>}/>
+        <Route path="/support" element={<Support/>}/>
         <Route path="/board" element={<Board/>}/>
+        <Route path="/inquery" element={<Inquery/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/join' element={<Join/>}/>
       </Routes>

@@ -14,9 +14,9 @@ export default function SideNavigation(){
         <div>
             <ul className={menuToggle ? "show-menu navigation" : "hide-menu navigation"}>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/post">Post</Link></li>
-                <li><Link to="#">Inquiry</Link></li>
-                <li><Link to="#">About</Link></li>
+                <li><Link to="/support">Support</Link></li>
+                <li><Link to="/inquery">My Inquiry</Link></li>
+                <li><Link to="/board">Board</Link></li>
                 <li><Link to="/login">Login</Link></li>
             </ul>
 

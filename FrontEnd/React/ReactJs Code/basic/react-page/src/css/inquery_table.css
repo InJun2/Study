@@ -1,0 +1,26 @@
+.inquery_board_container{
+    width: 100%;
+    height: 550px;
+}
+
+.inquery_board_container table{
+    margin-bottom: 40px;
+}
+
+.inquery_board_container .table-button{
+    width: 100px;
+    height: 40px;
+    float: right;
+    background-color: white;
+    font-family: "BMD";
+    color: #8d8a8a;
+    border: 2px solid #8d8a8a;
+    border-radius: 3px;
+}
+
+.inquery_board_container .table-button:hover{
+    transition: 0.4s;
+    border: 2px solid #8d8a8a;
+    color: #ffffff;
+    background-color: #8d8a8a;
+}

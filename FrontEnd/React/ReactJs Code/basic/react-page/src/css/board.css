@@ -1,0 +1,33 @@
+div.board_container{
+    display: wrap;
+    width: 1400px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 25px;
+}
+
+.board_container span.end_right_button{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.end_right_button .table-button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    font-family: "BMD";
+    color: #8d8a8a;
+    border: 2px solid #8d8a8a;
+    border-radius: 3px;
+}
+
+.end_right_button .table-button:hover{
+    transition: 0.4s;
+    border: 2px solid #8d8a8a;
+    color: #ffffff;
+    background-color: #8d8a8a;
+}
+

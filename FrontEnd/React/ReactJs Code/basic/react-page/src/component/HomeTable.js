@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import {BsArrowRight} from 'react-icons/bs'
 import SubTitle from './SubTitle';
-import '../css/table.css';
+import '../css/board.css';
 
 function HomeTable(){
     return(
@@ -79,7 +79,7 @@ function HomeTable(){
                 </tbody>
             </Table>
 
-            <span className="float-end">
+            <span className="end_right_button float-end">
                 <button className='table-button'>Go <BsArrowRight/></button>
             </span>
         </>

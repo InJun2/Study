@@ -5,7 +5,7 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));   /* home과 post 페이지 화면 width 길이 차이남*/
-    grid-template-rows: 350px 100px repeat(4, 300px);
+    grid-template-rows: 350px 100px 300px 100px repeat(4, 300px);
     padding-top: 25px;
     justify-content: space-around;
     gap: 30px;
@@ -19,7 +19,7 @@
 
 .home_boarder{
     grid-column: 1/5;
-    grid-row: 5/7;
+    grid-row: 7/9;
     overflow: hidden;
 }
 
@@ -29,23 +29,49 @@
 }
 
 .home_subtitle{
-    grid-row: 2/3;
     grid-column: 1/4;
 }
 
 .home_item_box{
+    grid-row: 5/6;
+}
+
+.team_box{
+    grid-column: 1/5;
     grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 420px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(to bottom, rgb(201, 172, 93), rgb(206, 206, 206));
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.team_box span.team_role{
+    grid-column:1/2;
+    font-family: "BMD";
+    font-size: 30px;
+    color:rgb(88, 88, 88);
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.team_box span.team_member{
+    font-family: "BMHP";
+    font-size: 22px;
+    color: beige;
+    padding-top:20px;
 }
 
 .line_chart_box{
     grid-column: 1/4;   /* grid 컬럼 길이 지정 2부터 시작해서 4 이전까지*/
-    grid-row: 4/4;
+    grid-row: 6/7;
     height: 300px;
     overflow: hidden;
 }
 
 .container_chart_info_box{
-    grid-row:4/4;
+    grid-row:6/7;
     font-size: 20px;
     overflow: auto;
     padding: 20px;

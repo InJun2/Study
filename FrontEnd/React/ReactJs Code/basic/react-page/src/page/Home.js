@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/home.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import { BsFillPersonFill } from 'react-icons/bs'
 
 import LineChart from '../component/LineChart';
 import CarouselUI from '../component/Carousel';
@@ -29,6 +30,27 @@ function Home(){
                     싱글 페이지, 모바일 애플리케이션 개발
                     VirtualDom을 이용, 동적 UI
                     Component 기반으로 Data Flow는 단방향"/>
+            </div>
+
+            <div className="home_subtitle">
+                <SubTitle title="Team Role"/>
+            </div>
+
+            <div className='team_box shadow-lg'>
+                <span className='team_role'>BACK-END</span>
+                <span className='team_member'>
+                    <p><BsFillPersonFill/> 최동환</p>
+                    <p><BsFillPersonFill/> 강성혁</p>
+                </span>
+                <span className='team_member'>
+                    <p><BsFillPersonFill/> 김경기</p>
+                    <p><BsFillPersonFill/> 손장미</p>
+                </span>
+                <span className='team_role'>FRONT-END</span>
+                <span className='team_member'>
+                    <p><BsFillPersonFill/> 황인준</p>
+                    <p><BsFillPersonFill/> 김민석</p>
+                </span>
             </div>
 
             <div className="home_subtitle">

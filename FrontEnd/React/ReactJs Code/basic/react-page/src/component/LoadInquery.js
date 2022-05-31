@@ -1,13 +1,10 @@
 import React from 'react';
+import '../css/inquery_table.css';
 import { Table } from 'react-bootstrap';
-import {BsArrowRight} from 'react-icons/bs'
-import SubTitle from '../component/SubTitle';
-import '../css/table.css';
 
-function HomeTable(){
+function LoadInquery(){
     return(
-        <>
-            <SubTitle title="TestBoard"/>
+        <div className='inquery_board_container'>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -75,20 +72,13 @@ function HomeTable(){
                         <td>Otto</td>
                         <td>@mdo</td>
                     </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
+                    
                 </tbody>
             </Table>
 
-            <span className="float-end">
-                <button className='table-button'>Go <BsArrowRight/></button>
-            </span>
-        </>
+            <button className='table-button'>등록</button>
+        </div>
     );
 }
 
-export default HomeTable;
+export default LoadInquery;

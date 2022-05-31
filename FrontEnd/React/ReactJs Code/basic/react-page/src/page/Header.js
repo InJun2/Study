@@ -13,8 +13,8 @@ function header(){
         
             <div className='navbar'>
                 <Link to={{pathname: `/`}} className='navi-item'><div>Home</div></Link>
-                <Link to={{pathname: `/post`}} className='navi-item'><div>Post</div></Link>
-                <Link to={{pathname: `/`}} className='navi-item'><div>Inquiry</div></Link>
+                <Link to={{pathname: `/support`}} className='navi-item'><div>Support</div></Link>
+                <Link to={{pathname: `/board`}} className='navi-item'><div>Board</div></Link>
             </div>
 
             <div className='header_toolbar'>
