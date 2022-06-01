@@ -35,3 +35,21 @@
     font-size: 20px;
     font-family: 'BMHA';
 }
+
+.inquery_container .table-button{
+    width: 100px;
+    height: 40px;
+    float: right;
+    background-color: white;
+    font-family: "BMD";
+    color: #8d8a8a;
+    border: 2px solid #8d8a8a;
+    border-radius: 3px;
+}
+
+.inquery_container .table-button:hover{
+    transition: 0.4s;
+    border: 2px solid #8d8a8a;
+    color: #ffffff;
+    background-color: #8d8a8a;
+}

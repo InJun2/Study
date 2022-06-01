@@ -10,6 +10,7 @@ import Login from './page/Login';
 import Join from './page/Join';
 import Board from './page/Board';
 import Inquery from './page/Inquery';
+import InqueryWrite from './page/InqueryWrite';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/support" element={<Support/>}/>
         <Route path="/board" element={<Board/>}/>
         <Route path="/inquery" element={<Inquery/>}/>
+        <Route path="/inquery-write" element={<InqueryWrite/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/join' element={<Join/>}/>
       </Routes>

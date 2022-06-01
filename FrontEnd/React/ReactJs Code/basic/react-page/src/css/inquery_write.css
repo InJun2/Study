@@ -1,0 +1,20 @@
+.inquery_write_container{
+    width: 1400px;
+    height: 800px;
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.inquery_write_container .inquery_write_explanation_box{
+    width: 100%;
+    height: 150px;
+    font-size: 14px;
+    color: gray;
+    font-family: "BMD";
+    line-height: 40px;
+    padding-left: 50px;
+}

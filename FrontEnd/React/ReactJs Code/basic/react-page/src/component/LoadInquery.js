@@ -75,8 +75,6 @@ function LoadInquery(){
                     
                 </tbody>
             </Table>
-
-            <button className='table-button'>등록</button>
         </div>
     );
 }

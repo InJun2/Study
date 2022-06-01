@@ -2,6 +2,7 @@ import React from 'react';
 import SubTitle from '../component/SubTitle';
 import '../css/inquery.css';
 import LoadInquery from '../component/LoadInquery';
+import { Link } from 'react-router-dom';
 
 function Inquery(){
     return(
@@ -27,6 +28,10 @@ function Inquery(){
             </div>
             
             <LoadInquery/>
+
+            <Link to="/inquery-write">
+                <button className='table-button'>등록</button>
+            </Link>
         </div>
     );
 }
