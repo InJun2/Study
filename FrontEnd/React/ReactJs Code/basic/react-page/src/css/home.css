@@ -42,7 +42,7 @@
     display: grid;
     grid-template-columns: 420px 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background: linear-gradient(to bottom, rgb(201, 172, 93), rgb(206, 206, 206));
+    background: linear-gradient(to top, rgb(241, 241, 241), rgb(206, 206, 206));
     border-radius: 4px;
     padding: 30px;
 }
@@ -59,7 +59,7 @@
 .team_box span.team_member{
     font-family: "BMHP";
     font-size: 22px;
-    color: beige;
+    color: rgb(189, 189, 189);
     padding-top:20px;
 }
 

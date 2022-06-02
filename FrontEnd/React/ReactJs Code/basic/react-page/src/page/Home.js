@@ -11,7 +11,7 @@ import ItemBox from '../component/ItemBox';
 import InfoBox from '../component/InfoBox';
 
 function Home(){
-    const item_info = [
+    const items = [
         {title: "React-Query",src: "img/react_query.png",content: "#네트워크데이터 #상태변수필요X"}, 
         {title: "React-Router", src:"img/react_router.jpg",content: "#라우팅라이브러리 #요청URL페이지이동"}, 
         {title: "React-BootStrap", src:"img/react_bootstrap.jpg", content:"#React+Bootstrap #반응형 #웹프레임워크"},
@@ -39,17 +39,17 @@ function Home(){
             <div className='team_box shadow-lg'>
                 <span className='team_role'>BACK-END</span>
                 <span className='team_member'>
-                    <p><BsFillPersonFill/> 최동환</p>
-                    <p><BsFillPersonFill/> 강성혁</p>
+                    <p><BsFillPersonFill/> OOO</p>
+                    <p><BsFillPersonFill/> OOO</p>
                 </span>
                 <span className='team_member'>
-                    <p><BsFillPersonFill/> 김경기</p>
-                    <p><BsFillPersonFill/> 손장미</p>
+                    <p><BsFillPersonFill/> OOO</p>
+                    <p><BsFillPersonFill/> OOO</p>
                 </span>
                 <span className='team_role'>FRONT-END</span>
                 <span className='team_member'>
-                    <p><BsFillPersonFill/> 황인준</p>
-                    <p><BsFillPersonFill/> 김민석</p>
+                    <p><BsFillPersonFill/> OOO</p>
+                    <p><BsFillPersonFill/> OOO</p>
                 </span>
             </div>
 
@@ -57,11 +57,11 @@ function Home(){
                 <SubTitle title="Use Library"/>
             </div>
 
-            {item_info.map((item, index)=>{
+            {items.map((item, index)=>{
                     return(
                         <React.Fragment key={index}>
                             <div className='home_item_box'>
-                                <ItemBox title={item.title} src={item.src} content={item.content}/>
+                                <ItemBox item={item}/>
                             </div>
                         </React.Fragment>
                     );

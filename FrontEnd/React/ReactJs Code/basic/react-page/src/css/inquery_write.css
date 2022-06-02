@@ -1,15 +1,15 @@
 .inquery_write_container{
     width: 1400px;
-    height: 800px;
+    height: 1200px;
     display: flex;
     flex-flow: column wrap;
-    border: 1px solid black;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 100px;
+
 }
 
-.inquery_write_container .inquery_write_explanation_box{
+.inquery_write_explanation_box{
     width: 100%;
     height: 150px;
     font-size: 14px;
@@ -17,4 +17,95 @@
     font-family: "BMD";
     line-height: 40px;
     padding-left: 50px;
+}
+
+.inquery_write_content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+.inquery_write_row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap:10px;
+}
+
+.inquery_write_row .inquery_write_row_title{
+    font-size: 20px;
+    font-family: "BMHP";
+    padding-left: 20px;
+}
+
+.inquery_write_row .inquery_write_row_input{
+    width: 90%;
+    height: 60px;
+    margin: auto;
+}
+
+.inquery_write_row_input input[type=text], .inquery_write_row_input select{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #b9b9b9;
+    background-color: rgb(230, 230, 230);
+    font-size: 24px;
+    font-family: "BMHP";
+    padding-left: 40px;
+}
+
+.inquery_write_row .inquery_write_row_textarea{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+}
+
+.inquery_write_row_textarea textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid #b9b9b9;
+    resize: none;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+.inquery_write_row input[type=file]{
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-family: "BMHP";
+}
+
+.inquery_write_content .inquery_write_button_box{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap:30px;
+}
+
+.inquery_write_button_box button{
+    width: 70px;
+    height: 45px;
+    border: 2px solid #b9b9b9;
+    font-size: 24px;
+    font-family: "BMHP";
+}
+
+.inquery_write_button_box button:hover{
+    background: linear-gradient(to left, #cfcfcf, #b9b9b9) ;
+}
+
+.inquery_write_button_box button:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(255,255,255,.5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }

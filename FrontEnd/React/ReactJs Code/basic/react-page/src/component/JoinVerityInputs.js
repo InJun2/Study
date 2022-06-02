@@ -52,7 +52,6 @@ export const verityIsJoinInputs = yup.object().shape({
                 const year = this.resolve(yup.ref('birthYear'));
                 const month = this.resolve(yup.ref('birthMonth'));
 
-                console.log(verityBirth(year, month, day))
                 return verityBirth(year, month, day);
             }
         ),

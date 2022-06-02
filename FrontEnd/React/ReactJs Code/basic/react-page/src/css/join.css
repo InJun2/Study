@@ -168,3 +168,10 @@ span.input_span_readonly, .input_span_readonly input{
     opacity: 0.6;
     font-size: 55px;
 }
+
+.join_content input:-webkit-autofill,
+.join_content input:-webkit-autofill:hover, 
+.join_content input:-webkit-autofill:focus, 
+.join_content input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px white inset !important;
+}   /* input 자동 완성 백그라운드 색상 제거 */
