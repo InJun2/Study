@@ -19,7 +19,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/board")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")	// react에서 정보를 받아오기 위해 react port cros 문제 해결
 public class BoardController {
 	
 	private final BoardService service;
