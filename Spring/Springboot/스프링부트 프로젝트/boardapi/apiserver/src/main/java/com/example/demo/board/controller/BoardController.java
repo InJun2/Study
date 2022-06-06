@@ -20,6 +20,7 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/board")
 @RequiredArgsConstructor
 @CrossOrigin(origins = "http://localhost:3000")	// react에서 정보를 받아오기 위해 react port cros 문제 해결
+// 현재 피드백 받은 내용 수정 예정 : 트랜잭션 사용 방식, interface 제거 예정, json 데이터를 객체를 담은 리스트가 아닌 리스트인 객체로 반납, 컨트롤러 리턴시 responseentity 사용 예정
 public class BoardController {
 	
 	private final BoardService service;
